@@ -1,5 +1,5 @@
 import React from "react";
-import mainPageLogo from "../Images/main-page-logo.webp";
+import mainPageLogo from "../Images/mainPageLogo.png";
 
 const MainPage = () => {
   return (
