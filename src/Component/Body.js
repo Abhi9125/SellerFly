@@ -20,7 +20,7 @@ const Body = () => {
       <ContactPage />
       <WhyChooseUs />
       <StrategySection />
-      <AchivementComponent />
+      {/* <AchivementComponent /> */}
     </div>
   );
 };
