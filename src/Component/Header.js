@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header className="bg-white shadow-md py-4">
       <div className="container mx-auto flex justify-between items-center">
-        <img src={logo_Img} alt="Logo" className="h-14" />
+        <img src={logo_Img} alt="Logo" className="h-12" />
         <nav>
           <ul className="flex space-x-8">
             <li>

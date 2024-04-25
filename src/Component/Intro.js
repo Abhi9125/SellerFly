@@ -15,8 +15,8 @@ const Intro = () => {
         </div>
         <div className="max-w-4xl mx-auto text-center text-xl text-gray-600">
           <p className="mb-8">
-            Seller Rocket is a technology company specializing in helping SME’s
-            and brands set up and grow their business online through innovative
+            SellerFly is a technology company specializing in helping SME’s and
+            brands set up and grow their business online through innovative
             e-commerce solutions and services.
           </p>
           <div className="flex justify-center items-center flex-col sm:flex-row">
@@ -26,7 +26,7 @@ const Intro = () => {
               className="w-48 h-48 mb-8 sm:mb-0 sm:mr-8 rounded-full"
             />
             <p>
-              Founded in 2017 under the leadership of ex-employees of Amazon,
+              Founded in 2022 under the leadership of ex-employees of Amazon,
               Flipkart, and Myntra, with branches in Bangalore, Thanjavur, and
               Tiruppur, we operate under a culture of expertise, excellence,
               innovation, and entrepreneurship.
