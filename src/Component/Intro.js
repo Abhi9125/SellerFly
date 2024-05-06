@@ -26,10 +26,10 @@ const Intro = () => {
               className="w-48 h-48 mb-8 sm:mb-0 sm:mr-8 rounded-full"
             />
             <p>
-              Founded in 2022 under the leadership of ex-employees of Amazon,
-              Flipkart, and Myntra, with branches in Bangalore, Thanjavur, and
-              Tiruppur, we operate under a culture of expertise, excellence,
-              innovation, and entrepreneurship.
+              Founded in 2022 under the leadership of ex-employees of
+              Amazon,Google Flipkart, and Myntra, with branches in Bangalore,
+              Thanjavur, and Tiruppur, we operate under a culture of expertise,
+              excellence, innovation, and entrepreneurship.
             </p>
           </div>
         </div>
