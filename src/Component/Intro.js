@@ -27,8 +27,8 @@ const Intro = () => {
             />
             <p>
               Founded in 2022 under the leadership of ex-employees of
-              Amazon,Google Flipkart, and Myntra, with branches in Bangalore,
-              Thanjavur, and Tiruppur, we operate under a culture of expertise,
+              Amazon,Google Flipkart, and Myntra, with branches in Delhi,
+              Tripura, Coimbatore we operate under a culture of expertise,
               excellence, innovation, and entrepreneurship.
             </p>
           </div>

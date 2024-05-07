@@ -15,7 +15,7 @@ const SemiHeader = () => {
           <div className="flex items-center justify-evenly">
             <img src={locationIcon} alt="Location" className="h-6" />
             <span className="text-sm text-gray-600">
-              Delhi | Coimbatore | Bangalore
+              Delhi | Tripura | Coimbatore
             </span>
           </div>
 
@@ -25,7 +25,9 @@ const SemiHeader = () => {
           </div>
           <div className="flex items-center">
             <img src={emailIcon} alt="Email" className="h-6" />
-            <span className="text-sm text-gray-600">sellerfly@gmail.com</span>
+            <span className="text-sm text-gray-600">
+              sellerflyonline@gmail.com
+            </span>
           </div>
         </div>
 
