@@ -1,10 +1,11 @@
 import React from "react";
-import mainPageLogo from "../Images/mainPageLogo.png";
+import ImageSlider from "./ImageSlider";
+import { SlideData } from "./SliderData";
 
 const MainPage = () => {
   return (
     <div className="flex justify-center items-center bg-white h-screen mt-9">
-      <img src={mainPageLogo} alt="Wallpaper" className="max-w-full h-auto" />
+      <ImageSlider slides={SlideData} />
     </div>
   );
 };

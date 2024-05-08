@@ -19,18 +19,14 @@ const ConnectingBusiness = () => {
         <h1 className="text-3xl text-center text-gray-900 font-bold mb-8">
           We Connect Your Business With Potential Buyers!
         </h1>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-3 gap-4">
           <img src={Ajio} alt="Ajio" className="h-24 w-full object-contain" />
           <img
             src={Amazon}
             alt="Amazon"
             className="h-24 w-full object-contain"
           />
-          <img
-            src={BigBasket}
-            alt="BigBasket"
-            className="h-24 w-full object-contain"
-          />
+
           <img
             src={Flipkart}
             alt="Flipkart"
@@ -39,16 +35,6 @@ const ConnectingBusiness = () => {
           <img
             src={GlowRoad}
             alt="GlowRoad"
-            className="h-24 w-full object-contain"
-          />
-          <img
-            src={JioMart}
-            alt="JioMart"
-            className="h-24 w-full object-contain"
-          />
-          <img
-            src={Jumbotail}
-            alt="Jumbotail"
             className="h-24 w-full object-contain"
           />
           <img
@@ -67,7 +53,6 @@ const ConnectingBusiness = () => {
             alt="TataCliQ"
             className="h-24 w-full object-contain"
           />
-          <img src={Udaan} alt="Udaan" className="h-24 w-full object-contain" />
         </div>
       </div>
     </div>
