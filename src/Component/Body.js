@@ -1,13 +1,15 @@
 import React from "react";
 import MainPage from "./MainPage";
 import Intro from "./Intro";
-import ConnectingBusiness from "./ConnectingBusiness";
+
 import ContactPage from "./ContactPage";
 import WhyChooseUs from "./WhyChooseUs";
 import StrategySection from "./StrategySection";
 import AchivementComponent from "./AchivementComponent";
 
-// import OurServies from "./OurServies";
+import OurServies from "./OurServies";
+import ConnectingBusinessImageSlides from "./ConnectingBusinessImageSlides";
+import { SliderDataforConnectingBusinesses } from "./SliderData";
 // import SecondPage from "./Inro";
 
 const Body = () => {
@@ -15,8 +17,10 @@ const Body = () => {
     <div>
       <MainPage />
       <Intro />
-      {/* <OurServies /> */}
-      <ConnectingBusiness />
+      <ConnectingBusinessImageSlides
+        slides={SliderDataforConnectingBusinesses}
+      />
+      <OurServies />
       <ContactPage />
       <WhyChooseUs />
       <StrategySection />

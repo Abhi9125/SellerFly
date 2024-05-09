@@ -23,12 +23,39 @@
 
 export const SlideData = [
   {
-    image: "/Header/mainPageLogo.png",
+    image: "/Header/homepage_final.png ",
+  },
+  // {
+  //   image: "/Header/Seamless Account Management Solutions by SELLERFLY (1).png",
+  // },
+  {
+    image: "/Header/seo2.png",
+  },
+];
+
+export const SliderDataforConnectingBusinesses = [
+  {
+    image: "/Connection_Business_Img/Ajio.jpg",
   },
   {
-    image: "/Header/Seamless Account Management Solutions by SELLERFLY (1).png",
+    image: "/Connection_Business_Img/Amazon.jpg",
   },
   {
-    image: "/Header/upload 1.png",
+    image: "/Connection_Business_Img/Flipkart.jpg",
+  },
+  {
+    image: "/Connection_Business_Img/GlowRoad.jpg",
+  },
+  {
+    image: "/Connection_Business_Img/Meesho.jpg",
+  },
+  {
+    image: "/Connection_Business_Img/Myntra.jpg",
+  },
+  {
+    image: "/Connection_Business_Img/Nykaa.jpg",
+  },
+  {
+    image: "/Connection_Business_Img/TataCliQ.jpg",
   },
 ];
