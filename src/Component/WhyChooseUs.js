@@ -72,8 +72,8 @@ const WhyChooseUs = () => {
         <div className="flex items-center">
           <img src={saless} className="w-10 h-10 mr-4" />
           <div>
-            <h3 className="font-semibold">Sales Focused Services</h3>
-            <p>Solutions & services focused on growing sales and reach.</p>
+            <h3 className="font-semibold">Performance based services</h3>
+            <p>We charge you on performance based.</p>
           </div>
         </div>
         {/* Whatsapp, Email, and Support */}

@@ -26,10 +26,14 @@ const Intro = () => {
               className="w-48 h-48 mb-8 sm:mb-0 sm:mr-8 rounded-full"
             />
             <p>
-              Founded in 2022 under the leadership of ex-employees of
-              Amazon,Google Flipkart, and Myntra, with branches in Delhi,
-              Tirupur, Coimbatore we operate under a culture of expertise,
-              excellence, innovation, and entrepreneurship.
+              Started by the veterans of ecommerce in 2022, sellerfly team comes
+              with an experience of 10+ years in Indian ecommerce industry. We
+              are based out of Coimbatore and exclusively work with
+              manufacturers in Tirupur.
+              <br />
+              <br />
+              We bring growth to your business by fixing gaps in your products
+              catalog, optimising your ads and launcing you in new marketplaces.
             </p>
           </div>
         </div>
