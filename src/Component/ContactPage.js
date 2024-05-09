@@ -28,9 +28,9 @@ const ContactPage = () => {
           Is your online store a success or struggle?
         </h1>
         <p className="mb-4">Get your free Seller account audit today</p>
-        <button className="bg-white text-blue-600 font-semibold py-2 px-4 rounded hover:bg-gray-100">
+        {/* <button className="bg-white text-blue-600 font-semibold py-2 px-4 rounded hover:bg-gray-100">
           Enquiry Now!!
-        </button>
+        </button> */}
       </div>
       <div className="md:w-1/2 bg-white text-gray-700 rounded-lg p-4">
         <h2 className="text-xl font-semibold mb-4">Let's Talk</h2>
