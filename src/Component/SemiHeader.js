@@ -15,13 +15,13 @@ const SemiHeader = () => {
           <div className="flex items-center justify-evenly">
             <img src={locationIcon} alt="Location" className="h-6" />
             <span className="text-sm text-gray-600">
-              Delhi | Tripura | Coimbatore
+              Delhi | Tirupur | Coimbatore
             </span>
           </div>
 
           <div className="flex items-center px-4">
             <img src={telephoneIcon} alt="Telephone" className="h-6" />
-            <span className="text-sm text-gray-600">+91 9876543210</span>
+            <span className="text-sm text-gray-600">+91-6381780309</span>
           </div>
           <div className="flex items-center">
             <img src={emailIcon} alt="Email" className="h-6" />
@@ -32,16 +32,16 @@ const SemiHeader = () => {
         </div>
 
         <div className="flex items-center space-x-4">
-          <a href="https://facebook.com">
+          {/* <a href="https://facebook.com">
             <img src={facebook} alt="Facebook" className="h-6" />
-          </a>
-          <a href="https://instagram.com">
+          </a> */}
+          <a href="https://www.instagram.com/sellerfly1/">
             <img src={instagram} alt="Instagram" className="h-6" />
           </a>
-          <a href="https://twitter.com">
+          {/* <a href="https://twitter.com">
             <img src={twitter} alt="Twitter" className="h-6" />
-          </a>
-          <a href="https://linkedin.com">
+          </a> */}
+          <a href="https://www.linkedin.com/company/99096996/admin/feed/posts/">
             <img src={linkedIn} alt="LinkedIn" className="h-6" />
           </a>
         </div>

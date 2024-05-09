@@ -18,7 +18,7 @@ const WhyChooseUs = () => {
         <div className="flex items-center">
           <img src={clients} alt="clientIcon" className="w-10 h-10 mr-4" />
           <div>
-            <h3 className="font-semibold">200+ Happy Clients</h3>
+            <h3 className="font-semibold">100+ Happy Clients</h3>
             <p>Building and growing clients' businesses online.</p>
           </div>
         </div>
@@ -34,8 +34,11 @@ const WhyChooseUs = () => {
         <div className="flex items-center">
           <img src={expert} className="w-10 h-10 mr-4" />
           <div>
-            <h3 className="font-semibold">Expert Managers</h3>
-            <p>Trained in e-commerce, account, inventory, SEO, and PPC.</p>
+            <h3 className="font-semibold">Registered Partner</h3>
+            <p>
+              Sellerfly is registered partner in major marketplaces like Amazon
+              & Flipkart
+            </p>
           </div>
         </div>
         <div className="flex items-center">
@@ -48,15 +51,21 @@ const WhyChooseUs = () => {
         <div className="flex items-center">
           <img src={expert} className="w-10 h-10 mr-4" />
           <div>
-            <h3 className="font-semibold">Expert Managers</h3>
-            <p>Trained in e-commerce, account, inventory, SEO, and PPC.</p>
+            <h3 className="font-semibold">Daily/Weekly Reporting</h3>
+            <p>
+              Detailed reporting and tracking of your daily & weekly progress
+              reports
+            </p>
           </div>
         </div>
         <div className="flex items-center">
           <img src={expert} className="w-10 h-10 mr-4" />
           <div>
-            <h3 className="font-semibold">Expert Managers</h3>
-            <p>Trained in e-commerce, account, inventory, SEO, and PPC.</p>
+            <h3 className="font-semibold">Tailored Solutions</h3>
+            <p>
+              Meet your specific needs and goals with effective tailor made
+              strategies
+            </p>
           </div>
         </div>
         {/* Sales Focused Services */}

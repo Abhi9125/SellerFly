@@ -6,7 +6,7 @@ import ScrollTrigger from "react-scroll-trigger";
 const AchivementComponent = () => {
   const [counterState, setCounterState] = useState(false);
   return (
-    <div className="px-10 py-3">
+    <div className="px-10 py-3 bg-blue-500 rounded-lg font-bold">
       <ScrollTrigger
         onEnter={() => setCounterState(true)}
         onExit={() => setCounterState(false)}
@@ -14,22 +14,22 @@ const AchivementComponent = () => {
         <div className="grid grid-cols-4 text-center ">
           <div>
             <h2>
-              {counterState && <CountUp start={0} end={200} delay={0} />}+
+              {counterState && <CountUp start={0} end={100} delay={0} />}+
             </h2>
-            <p>Ecommerce Client</p>
+            <p>Accounts Managed</p>
           </div>
 
           <div>
             <h2>{counterState && <CountUp start={0} end={50} delay={0} />}+</h2>
-            <p>Website Developed</p>
+            <p>Website Launched</p>
           </div>
 
           <div>
             <h2>
               {counterState && <CountUp start={0} end={5} delay={0} />}
-              +Million
+              {" Cr+"}
             </h2>
-            <p>Revenue Generated</p>
+            <p>Monthly Revenue</p>
           </div>
           <div>
             <h2>

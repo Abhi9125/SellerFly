@@ -5,7 +5,7 @@ const StrategySection = () => {
     <div className="bg-white p-6 rounded-lg shadow-lg">
       <h2 className="text-3xl font-bold text-center mb-4">OUR STRATEGY</h2>
       <p className="text-xl text-center mb-8">
-        Boost Your Sales With Seller Rocket
+        Boost Your Sales With Sellerfly
       </p>
       <div className="flex flex-col md:flex-row justify-around items-start mb-8">
         <div className="flex items-center mb-6 md:mb-0">
