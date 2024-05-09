@@ -15,11 +15,11 @@ const ImageSlider = ({ slides }) => {
   return (
     <div className="relative flex justify-center items-center overflow-hidden">
       <FaArrowAltCircleLeft
-        className="absolute left-0 z-10 cursor-pointer select-none text-3xl text-black hover:text-gray-300 transition duration-300 ease-in-out ml-6"
+        className="absolute left-0 z-10 cursor-pointer select-none text-3xl text-gray-700 hover:text-gray-400 transition duration-300 ease-in-out ml-6"
         onClick={previousSlide}
       />
       <FaArrowAltCircleRight
-        className="absolute right-0 z-10 cursor-pointer select-none text-3xl text-black hover:text-gray-300 transition duration-300 ease-in-out mr-6"
+        className="absolute right-0 z-10 cursor-pointer select-none text-3xl text-gray-700 hover:text-gray-400 transition duration-300 ease-in-out mr-6"
         onClick={nextSlide}
       />
       {SlideData.map((slide, index) => {

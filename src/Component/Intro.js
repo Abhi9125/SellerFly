@@ -3,23 +3,23 @@ import introImage from "../Images/introImage.png";
 
 const Intro = () => {
   return (
-    <section className="bg-white py-12">
+    <section className="bg-gradient-to-r from-gray-50 to-gray-200 py-12">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h3 className="text-lg sm:text-xl text-indigo-600 font-bold tracking-wide uppercase">
+          <h3 className="text-lg sm:text-xl text-indigo-700 font-bold tracking-wide uppercase">
             Who We Are
           </h3>
-          <h1 className="mt-4 text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-gray-900">
+          <h1 className="mt-4 text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-gray-800">
             Unlock Limitless Growth and Build Truly Online Business
           </h1>
         </div>
-        <div className="flex flex-col lg:flex-row items-center justify-center gap-8">
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-10">
           <img
             src={introImage}
             alt="Intro"
-            className="w-48 h-48 lg:w-64 lg:h-64"
+            className="w-56 h-56 lg:w-72 lg:h-72 rounded-full shadow-xl"
           />
-          <div className="text-lg text-gray-600 max-w-2xl">
+          <div className="text-lg text-gray-700 max-w-3xl">
             <p className="mb-4">
               SellerFly is a technology company specializing in helping SME’s
               and brands set up and grow their business online through

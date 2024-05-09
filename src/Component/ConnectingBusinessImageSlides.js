@@ -14,34 +14,38 @@ const ConnectingBusinessImageSlides = ({ slides }) => {
   const nextSlide = () => setCurrent(current === length - 1 ? 0 : current + 1);
 
   return (
-    <div className="relative flex justify-center items-center overflow-hidden">
-      <FaArrowAltCircleLeft
-        className="absolute left-0 z-10 cursor-pointer select-none text-3xl text-black hover:text-gray-300 transition duration-300 ease-in-out ml-6"
-        onClick={previousSlide}
-      />
-      <FaArrowAltCircleRight
-        className="absolute right-0 z-10 cursor-pointer select-none text-3xl text-black hover:text-gray-300 transition duration-300 ease-in-out mr-6"
-        onClick={nextSlide}
-      />
-      {SliderDataforConnectingBusinesses.map((slide, index) => {
-        return (
-          <div
-            className={`${
-              index === current ? "opacity-100 scale-100" : "opacity-0 scale-95"
-            } transition duration-1000 ease-in-out transform`}
-            key={index}
-          >
-            {index === current && (
-              <img
-                src={slide.image}
-                alt={slide.title}
-                className="w-full h-auto block"
-              />
-            )}
-          </div>
-        );
-      })}
-    </div>
+    <section className="bg-gray-100 py-12">
+      <div className="relative flex justify-center items-center overflow-hidden">
+        <FaArrowAltCircleLeft
+          className="absolute left-0 z-10 cursor-pointer select-none text-3xl text-white hover:text-blue-400 transition duration-300 ease-in-out ml-6"
+          onClick={previousSlide}
+        />
+        <FaArrowAltCircleRight
+          className="absolute right-0 z-10 cursor-pointer select-none text-3xl text-white hover:text-blue-400 transition duration-300 ease-in-out mr-6"
+          onClick={nextSlide}
+        />
+        {SliderDataforConnectingBusinesses.map((slide, index) => {
+          return (
+            <div
+              className={`${
+                index === current
+                  ? "opacity-100 scale-100"
+                  : "opacity-0 scale-95"
+              } transition duration-1000 ease-in-out transform`}
+              key={index}
+            >
+              {index === current && (
+                <img
+                  src={slide.image}
+                  alt={slide.title}
+                  className="w-full h-auto block"
+                />
+              )}
+            </div>
+          );
+        })}
+      </div>
+    </section>
   );
 };
 
