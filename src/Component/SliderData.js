@@ -31,6 +31,12 @@ export const SlideData = [
   {
     image: "/Header/seo2.png",
   },
+  {
+    image: "/Header/account.png",
+  },
+  {
+    image: "/Header/socialmedia.png",
+  },
 ];
 
 export const SliderDataforConnectingBusinesses = [

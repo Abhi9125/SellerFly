@@ -8,7 +8,7 @@ const MainBanner = () => {
       <div className="flex justify-center items-center bg-gradient-to-r from-white to-white h-screen">
         <ImageSlider slides={SlideData} />
       </div>
-      <div className="absolute inset-0 bg-white opacity-25"></div>
+      <div className="absolute inset-0 bg-white opacity-20"></div>
     </section>
   );
 };

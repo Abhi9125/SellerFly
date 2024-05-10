@@ -17,7 +17,7 @@ const Intro = () => {
           <img
             src={introImage}
             alt="Intro"
-            className="w-56 h-56 lg:w-72 lg:h-72 rounded-full shadow-xl"
+            className="w-56 h-56 lg:w-72 lg:h-72"
           />
           <div className="text-lg text-gray-700 max-w-3xl">
             <p className="mb-4">

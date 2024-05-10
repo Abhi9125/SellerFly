@@ -132,7 +132,7 @@ const OurServices = () => {
                 "We provide top-tier photography services for your products, which include model photoshoots to cater to your business growth.",
             },
             {
-              title: "TRADEMART CERTIFICATE(BRAND REGISTRATION)",
+              title: "TRADEMART CERTIFICATE (BRAND REGISTRATION)",
               description:
                 "We provide trademark & brand registration services for your brand.",
             },
@@ -153,7 +153,7 @@ const OurServices = () => {
               key={index}
               className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out"
             >
-              <h3 className="font-semibold text-xl mb-2">{service.title}</h3>
+              <h3 className="font-semibold text-base mb-2">{service.title}</h3>
               <p>{service.description}</p>
             </div>
           ))}
