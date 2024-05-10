@@ -1,10 +1,18 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { SlideData } from "./SliderData";
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
 
 const ImageSlider = ({ slides }) => {
   const [current, setCurrent] = useState(0);
   const length = slides.length;
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrent((current) => (current === length - 1 ? 0 : current + 1));
+    }, 3000); // Change image every 3 seconds
+
+    return () => clearInterval(interval);
+  }, [length]);
 
   if (!Array.isArray(slides) || length === 0) return null;
 
@@ -15,11 +23,11 @@ const ImageSlider = ({ slides }) => {
   return (
     <div className="relative flex justify-center items-center overflow-hidden">
       <FaArrowAltCircleLeft
-        className="absolute left-0 z-10 cursor-pointer select-none text-3xl text-gray-700 hover:text-gray-400 transition duration-300 ease-in-out ml-6"
+        className="absolute left-0 z-10 cursor-pointer select-none text-3xl text-gray-300 hover:text-gray-400 transition duration-300 ease-in-out ml-6"
         onClick={previousSlide}
       />
       <FaArrowAltCircleRight
-        className="absolute right-0 z-10 cursor-pointer select-none text-3xl text-gray-700 hover:text-gray-400 transition duration-300 ease-in-out mr-6"
+        className="absolute right-0 z-10 cursor-pointer select-none text-3xl text-gray-300 hover:text-gray-400 transition duration-300 ease-in-out mr-6"
         onClick={nextSlide}
       />
       {SlideData.map((slide, index) => {

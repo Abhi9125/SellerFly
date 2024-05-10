@@ -1,3 +1,4 @@
+import { Outlet } from "react-router-dom";
 import Body from "./Component/Body";
 import Header from "./Component/Header";
 import SemiHeader from "./Component/SemiHeader";
@@ -7,7 +8,8 @@ function App() {
     <div className="App">
       <SemiHeader />
       <Header />
-      <Body />
+      <Outlet />
+      {/* <Body /> */}
     </div>
   );
 }

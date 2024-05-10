@@ -15,7 +15,7 @@ const ContactPage = () => {
         email: email,
         number: number,
       });
-      console.log("Enquiry form submitted", docRef.id);
+      alert("Enquiry form submitted", docRef.id);
     } catch (e) {
       console.error("Error adding document: ", e);
     }

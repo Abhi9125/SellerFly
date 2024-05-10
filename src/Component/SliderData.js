@@ -37,6 +37,12 @@ export const SlideData = [
   {
     image: "/Header/socialmedia.png",
   },
+  // {
+  //   image: "/Header/photo.png",
+  // },
+  // {
+  //   image: "/Header/premium_photo.png",
+  // },
 ];
 
 export const SliderDataforConnectingBusinesses = [
