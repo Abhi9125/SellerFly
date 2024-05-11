@@ -9,7 +9,7 @@ const ImageSlider = ({ slides }) => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((current) => (current === length - 1 ? 0 : current + 1));
-    }, 3000); // Change image every 3 seconds
+    }, 8000); // Change image every 3 seconds
 
     return () => clearInterval(interval);
   }, [length]);

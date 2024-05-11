@@ -25,9 +25,6 @@ export const SlideData = [
   {
     image: "/Header/homepage_final.png ",
   },
-  // {
-  //   image: "/Header/Seamless Account Management Solutions by SELLERFLY (1).png",
-  // },
   {
     image: "/Header/seo2.png",
   },
@@ -38,7 +35,7 @@ export const SlideData = [
     image: "/Header/socialmedia.png",
   },
   // {
-  //   image: "/Header/photo.png",
+  //   image: "/Header/Untitled design (2).png",
   // },
   // {
   //   image: "/Header/premium_photo.png",
