@@ -39,9 +39,9 @@ export const SlideData = [
 ];
 
 export const SliderDataforConnectingBusinesses = [
-  // {
-  //   image: "/Connection_Business_Img/ajio-logo.png",
-  // },
+  {
+    image: "/Connection_Business_Img/ajio-logo.png",
+  },
   {
     image: "/Connection_Business_Img/amazon-logo.png",
   },
