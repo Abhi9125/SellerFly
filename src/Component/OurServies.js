@@ -90,7 +90,7 @@ import React from "react";
 
 const OurServices = () => {
   return (
-    <section className="bg-gradient-to-r from-gray-100 to-gray-300 text-gray-800 py-12">
+    <section className="bg-gradient-to-r from-gray-100 to-gray-300 text-gray-800 py-12 rounded-lg mt-1">
       <div className="container mx-auto p-8 rounded-lg shadow-lg">
         <h2 className="text-3xl font-bold text-center mb-8 text-gray-800">
           Our Services

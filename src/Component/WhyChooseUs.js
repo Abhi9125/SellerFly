@@ -112,7 +112,7 @@ import spn from "../Images/WhyChooseUsImg/spn.gif";
 
 const WhyChooseUs = () => {
   return (
-    <section className="bg-gradient-to-r from-gray-100 to-gray-300 text-gray-800 py-12 px-8 rounded-lg shadow-xl">
+    <section className="bg-gradient-to-r from-gray-200 to-gray-300 text-gray-800 py-12 px-8 rounded-lg shadow-xl">
       <div className="container mx-auto">
         <h2 className="text-3xl font-extrabold text-center mb-10">
           Why Choose Us

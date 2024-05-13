@@ -23,10 +23,10 @@
 
 export const SlideData = [
   {
-    image: "/Header/homepage_final.png ",
+    image: "/Header/homepage_banner.png ",
   },
   {
-    image: "/Header/seo2.png",
+    image: "/Header/seo.png",
   },
   {
     image: "/Header/account.png",
@@ -36,35 +36,37 @@ export const SlideData = [
   },
   // {
   //   image: "/Header/Untitled design (2).png",
-  // },
-  // {
-  //   image: "/Header/premium_photo.png",
-  // },
 ];
 
 export const SliderDataforConnectingBusinesses = [
   {
-    image: "/Connection_Business_Img/Ajio.jpg",
+    image: "/Connection_Business_Img/ajio-logo.png",
   },
   {
-    image: "/Connection_Business_Img/Amazon.jpg",
+    image: "/Connection_Business_Img/amazon-logo.png",
   },
   {
-    image: "/Connection_Business_Img/Flipkart.jpg",
+    image: "/Connection_Business_Img/Flipkart-logo.png",
   },
   {
-    image: "/Connection_Business_Img/GlowRoad.jpg",
+    image: "/Connection_Business_Img/glowRoad-logo.png",
   },
   {
-    image: "/Connection_Business_Img/Meesho.jpg",
+    image: "/Connection_Business_Img/meesho-logo.png",
   },
   {
-    image: "/Connection_Business_Img/Myntra.jpg",
+    image: "/Connection_Business_Img/myntra-logo.png",
   },
   {
-    image: "/Connection_Business_Img/Nykaa.jpg",
+    image: "/Connection_Business_Img/nykaa-logo.png",
   },
   {
-    image: "/Connection_Business_Img/TataCliQ.jpg",
+    image: "/Connection_Business_Img/tata_CliQ_logo.png",
   },
+  // {
+  //   image: "/Connection_Business_Img/myntra_logo.png",
+  // },
+  // {
+  //   image: "/Connection_Business_Img/Nykaa_New_Logo.svg.png",
+  // },
 ];

@@ -1,10 +1,10 @@
 import React from "react";
-import introImage from "../Images/introImage.png";
+import introImage from "../Images/IntroImage.jpg";
 
 const Intro = () => {
   return (
-    <section className="bg-gradient-to-r from-gray-50 to-gray-200 py-12">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="bg-gradient-to-r from-gray-100 to-gray-300 mt-12 py-16  rounded-xl">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 ">
         <div className="text-center mb-12">
           <h3 className="text-lg sm:text-xl text-indigo-700 font-bold tracking-wide uppercase">
             Who We Are
@@ -17,7 +17,7 @@ const Intro = () => {
           <img
             src={introImage}
             alt="Intro"
-            className="w-56 h-56 lg:w-72 lg:h-72"
+            className="w-56 h-56 lg:w-80 lg:h-72 rounded-lg"
           />
           <div className="text-lg text-gray-700 max-w-3xl">
             <p className="mb-4">

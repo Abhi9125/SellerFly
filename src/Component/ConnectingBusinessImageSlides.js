@@ -62,7 +62,7 @@ const ConnectingBusinessImageSlides = ({ slides }) => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((current) => (current === length - 1 ? 0 : current + 1));
-    }, 1500); // Change image every 3 seconds
+    }, 2500); // Change image every 3 seconds
 
     return () => clearInterval(interval);
   }, [length]);
@@ -101,7 +101,7 @@ const ConnectingBusinessImageSlides = ({ slides }) => {
                 <img
                   src={slide.image}
                   alt={slide.title}
-                  className="w-40 h-auto block"
+                  className="w-50 h-24 block"
                 />
               )}
             </div>

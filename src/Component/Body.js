@@ -22,10 +22,13 @@ const Body = () => {
       <ConnectingBusinessImageSlides
         slides={SliderDataforConnectingBusinesses}
       />{" "}
-      <WhyChooseUs />
-      <ContactPage />
-      <StrategySection />
       <AchivementComponent />
+      <StrategySection />
+      <WhyChooseUs />
+      {/* <WhyChooseUs /> */}
+      <ContactPage />
+      {/* <StrategySection /> */}
+      {/* <AchivementComponent /> */}
     </div>
   );
 };
