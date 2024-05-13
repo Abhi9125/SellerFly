@@ -3,7 +3,7 @@ import introImage from "../Images/IntroImage.jpg";
 
 const Intro = () => {
   return (
-    <section className="bg-gradient-to-r from-gray-100 to-gray-300 mt-12 py-16  rounded-xl">
+    <section className="bg-gradient-to-r from-gray-100 to-gray-100 mt-10 py-16  rounded-xl">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 ">
         <div className="text-center mb-12">
           <h3 className="text-lg sm:text-xl text-indigo-700 font-bold tracking-wide uppercase">

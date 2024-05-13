@@ -42,7 +42,7 @@ const ImageSlider = ({ slides }) => {
               <img
                 src={slide.image}
                 alt="travel image"
-                className="w-full h-auto block "
+                className="w-full h-full block"
               />
             )}
           </div>

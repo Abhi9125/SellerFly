@@ -31,7 +31,7 @@ const SemiHeader = () => {
 
         <div className="flex items-center space-x-4">
           <a
-            href="https://www.instagram.com/sellerfly1/"
+            href="https://www.instagram.com/sellerfly_business_solutions/"
             className="hover:opacity-75"
           >
             <img src={instagram} alt="Instagram" className="h-6" />
