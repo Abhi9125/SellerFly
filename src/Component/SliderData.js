@@ -63,10 +63,4 @@ export const SliderDataforConnectingBusinesses = [
   {
     image: "/Connection_Business_Img/tata_CliQ_logo.png",
   },
-  // {
-  //   image: "/Connection_Business_Img/myntra_logo.png",
-  // },
-  // {
-  //   image: "/Connection_Business_Img/Nykaa_New_Logo.svg.png",
-  // },
 ];
