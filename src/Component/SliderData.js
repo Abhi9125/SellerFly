@@ -38,15 +38,42 @@ export const SlideData = [
   //   image: "/Header/Untitled design (2).png",
 ];
 
+// export const SliderDataforConnectingBusinesses = [
+//   {
+//     image: "/Connection_Business_Img/ajio-logo.png",
+//   },
+//   {
+//     image: "/Connection_Business_Img/amazon-logo.png",
+//   },
+//   {
+//     image: "/Connection_Business_Img/Flipkart-logo.png",
+//   },
+// {
+//   image: "/Connection_Business_Img/glowRoad-logo.png",
+// },
+// {
+//   image: "/Connection_Business_Img/meesho-logo.png",
+// },
+// {
+//   image: "/Connection_Business_Img/myntra-logo.png",
+// },
+// {
+//   image: "/Connection_Business_Img/nykaa-logo.png",
+// },
+// {
+//   image: "/Connection_Business_Img/tata_CliQ_logo.png",
+// },
+// ];
+
 export const SliderDataforConnectingBusinesses = [
   {
-    image: "/Connection_Business_Img/ajio-logo.png",
+    image: "/Connection_Business_Img1/ajio.png",
   },
   {
-    image: "/Connection_Business_Img/amazon-logo.png",
+    image: "/Connection_Business_Img1/amazon.png",
   },
   {
-    image: "/Connection_Business_Img/Flipkart-logo.png",
+    image: "/Connection_Business_Img1/flipkart.png",
   },
   // {
   //   image: "/Connection_Business_Img/glowRoad-logo.png",
