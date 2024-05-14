@@ -1,26 +1,3 @@
-// export const SliderData = [
-//     {
-//       image:
-//         'https://images.unsplash.com/photo-1546768292-fb12f6c92568?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
-//     },
-//     {
-//       image:
-//         'https://images.unsplash.com/photo-1501446529957-6226bd447c46?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1489&q=80'
-//     },
-//     {
-//       image:
-//         'https://images.unsplash.com/photo-1483729558449-99ef09a8c325?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80'
-//     },
-//     {
-//       image:
-//         'https://images.unsplash.com/photo-1475189778702-5ec9941484ae?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1351&q=80'
-//     },
-//     {
-//       image:
-//         'https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80'
-//     }
-//   ];
-
 export const SlideData = [
   {
     image: "/Header/homepage_banner.png ",
@@ -34,36 +11,7 @@ export const SlideData = [
   {
     image: "/Header/socialmedia.png",
   },
-  // {
-  //   image: "/Header/Untitled design (2).png",
 ];
-
-// export const SliderDataforConnectingBusinesses = [
-//   {
-//     image: "/Connection_Business_Img/ajio-logo.png",
-//   },
-//   {
-//     image: "/Connection_Business_Img/amazon-logo.png",
-//   },
-//   {
-//     image: "/Connection_Business_Img/Flipkart-logo.png",
-//   },
-// {
-//   image: "/Connection_Business_Img/glowRoad-logo.png",
-// },
-// {
-//   image: "/Connection_Business_Img/meesho-logo.png",
-// },
-// {
-//   image: "/Connection_Business_Img/myntra-logo.png",
-// },
-// {
-//   image: "/Connection_Business_Img/nykaa-logo.png",
-// },
-// {
-//   image: "/Connection_Business_Img/tata_CliQ_logo.png",
-// },
-// ];
 
 export const SliderDataforConnectingBusinesses = [
   {
@@ -76,7 +24,7 @@ export const SliderDataforConnectingBusinesses = [
     image: "/Connection_Business_Img1/flipkart.png",
   },
   {
-    image: "/Connection_Business_Img1/glowRoad.png",
+    image: "/Connection_Business_Img1/glowroad.png",
   },
   {
     image: "/Connection_Business_Img1/meesho.png",
@@ -85,7 +33,7 @@ export const SliderDataforConnectingBusinesses = [
     image: "/Connection_Business_Img1/myntra.png",
   },
   {
-    image: "/Connection_Business_Img1/nykaa.png",
+    image: "/Connection_Business_Img1/Nykaa.png",
   },
   {
     image: "/Connection_Business_Img1/tata_CliQ.png",
