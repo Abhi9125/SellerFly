@@ -36,6 +36,6 @@ export const SliderDataforConnectingBusinesses = [
     image: "/Connection_Business_Img1/Nykaa.png",
   },
   {
-    image: "/Connection_Business_Img1/tata_CliQ.png",
+    image: "/Connection_Business_Img1/tata_Cliq.png",
   },
 ];
