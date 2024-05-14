@@ -75,19 +75,19 @@ export const SliderDataforConnectingBusinesses = [
   {
     image: "/Connection_Business_Img1/flipkart.png",
   },
-  // {
-  //   image: "/Connection_Business_Img/glowRoad-logo.png",
-  // },
-  // {
-  //   image: "/Connection_Business_Img/meesho-logo.png",
-  // },
-  // {
-  //   image: "/Connection_Business_Img/myntra-logo.png",
-  // },
-  // {
-  //   image: "/Connection_Business_Img/nykaa-logo.png",
-  // },
-  // {
-  //   image: "/Connection_Business_Img/tata_CliQ_logo.png",
-  // },
+  {
+    image: "/Connection_Business_Img1/glowRoad.png",
+  },
+  {
+    image: "/Connection_Business_Img1/meesho.png",
+  },
+  {
+    image: "/Connection_Business_Img1/myntra.png",
+  },
+  {
+    image: "/Connection_Business_Img1/nykaa.png",
+  },
+  {
+    image: "/Connection_Business_Img1/tata_CliQ.png",
+  },
 ];
