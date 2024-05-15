@@ -15,7 +15,12 @@ const ContactPage = () => {
         email: email,
         number: number,
       });
-      alert("Enquiry form submitted", docRef.id);
+      alert("Enquiry form submitted");
+      setName("");
+      setEmail("");
+      setNumber("");
+      // alert("Enquiry form submitted", docRef.id);
+      // console.log("submited1");
     } catch (e) {
       console.error("Error adding document: ", e);
     }
