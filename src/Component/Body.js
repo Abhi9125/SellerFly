@@ -7,7 +7,7 @@ import WhyChooseUs from "./WhyChooseUs";
 import StrategySection from "./StrategySection";
 import AchivementComponent from "./AchivementComponent";
 
-import OurServies from "./OurServies";
+import OurServices from "./OurServies";
 import ConnectingBusinessImageSlides from "./ConnectingBusinessImageSlides";
 import { SliderDataforConnectingBusinesses } from "./SliderData";
 
@@ -18,7 +18,7 @@ const Body = () => {
     <div>
       <MainBanner />
       <Intro />
-      <OurServies />
+      <OurServices />
       <ConnectingBusinessImageSlides
         slides={SliderDataforConnectingBusinesses}
       />{" "}

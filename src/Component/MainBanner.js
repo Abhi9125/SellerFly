@@ -18,7 +18,7 @@ const MainBanner = () => {
 
       <a href="https://wa.me/+918438080309?text=urlencodedtext">
         <img
-          className="fixed  bottom-10 right-10 w-14 h-14"
+          className="fixed  bottom-5 right-4 w-14 h-14"
           src={whatsapp}
           alt="whatsApp_image"
         />
