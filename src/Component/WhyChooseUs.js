@@ -99,6 +99,102 @@
 
 // export default WhyChooseUs;
 
+// import React from "react";
+// import clients from "../Images/WhyChooseUsImg/clients.gif";
+// import retention from "../Images/WhyChooseUsImg/retention.gif";
+// import expert from "../Images/WhyChooseUsImg/expert.gif";
+// import saless from "../Images/WhyChooseUsImg/saless.gif";
+// import support from "../Images/WhyChooseUsImg/support.gif";
+// import account from "../Images/WhyChooseUsImg/account.gif";
+// import market from "../Images/WhyChooseUsImg/market.gif";
+// import experience from "../Images/WhyChooseUsImg/experience.gif";
+// import spn from "../Images/WhyChooseUsImg/spn.gif";
+
+// const WhyChooseUs = () => {
+//   return (
+//     <section className="bg-gradient-to-r from-gray-200 to-gray-300 text-gray-800 py-12 px-8 rounded-lg shadow-xl">
+//       <div className="container mx-auto">
+//         <h2 className="text-3xl font-extrabold text-center mb-10">
+//           Why Choose Us
+//         </h2>
+//         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+//           {/* Service Icons and Descriptions */}
+//           {[
+//             {
+//               icon: clients,
+//               title: "100+ Happy Clients",
+//               description: "Building and growing clients' businesses online.",
+//             },
+//             {
+//               icon: retention,
+//               title: "91% Client Retention",
+//               description: "Consistently achieved year on year basis.",
+//             },
+//             {
+//               icon: expert,
+//               title: "Registered Partner",
+//               description:
+//                 " Sellerfly is registered partner in major marketplaces like Amazon & Flipkart",
+//             },
+//             {
+//               icon: saless,
+//               title: "Expert Managers",
+//               description:
+//                 "Trained in e-commerce, account, inventory, SEO, and PPC.",
+//             },
+//             {
+//               icon: support,
+//               title: "Daily/Weekly Reporting",
+//               description:
+//                 "Detailed reporting and tracking of your daily & weekly progress reports.",
+//             },
+//             {
+//               icon: account,
+//               title: "Tailored Solutions",
+//               description:
+//                 "Meet your specific needs and goals with effective tailor made strategies",
+//             },
+//             {
+//               icon: market,
+//               title: "Performance based services",
+//               description: "We charge you on performance based.",
+//             },
+//             {
+//               icon: experience,
+//               title: "Whatsapp, Email, and Support",
+//               description:
+//                 "Personalized WhatsApp group for faster communication.",
+//             },
+//             {
+//               icon: spn,
+//               title: "Dedicated Account Manager",
+//               description: "Helps to improve product ranking in the long term.",
+//             },
+//             // ... other services
+//           ].map((item, index) => (
+//             <div
+//               key={index}
+//               className="flex items-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out"
+//             >
+//               <img
+//                 src={item.icon}
+//                 alt="service icon"
+//                 className="w-12 h-12 mr-4"
+//               />
+//               <div>
+//                 <h3 className="font-semibold text-lg">{item.title}</h3>
+//                 <p>{item.description}</p>
+//               </div>
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default WhyChooseUs;
+
 import React from "react";
 import clients from "../Images/WhyChooseUsImg/clients.gif";
 import retention from "../Images/WhyChooseUsImg/retention.gif";
@@ -112,13 +208,12 @@ import spn from "../Images/WhyChooseUsImg/spn.gif";
 
 const WhyChooseUs = () => {
   return (
-    <section className="bg-gradient-to-r from-gray-200 to-gray-300 text-gray-800 py-12 px-8 rounded-lg shadow-xl">
+    <section className="bg-white text-gray-800 py-12 px-8 rounded-lg shadow-xl">
       <div className="container mx-auto">
-        <h2 className="text-3xl font-extrabold text-center mb-10">
+        <h2 className="text-3xl font-extrabold text-center text-red-600 mb-10">
           Why Choose Us
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {/* Service Icons and Descriptions */}
           {[
             {
               icon: clients,
@@ -134,7 +229,7 @@ const WhyChooseUs = () => {
               icon: expert,
               title: "Registered Partner",
               description:
-                " Sellerfly is registered partner in major marketplaces like Amazon & Flipkart",
+                "Sellerfly is a registered partner in major marketplaces like Amazon & Flipkart.",
             },
             {
               icon: saless,
@@ -152,12 +247,12 @@ const WhyChooseUs = () => {
               icon: account,
               title: "Tailored Solutions",
               description:
-                "Meet your specific needs and goals with effective tailor made strategies",
+                "Meet your specific needs and goals with tailor-made strategies.",
             },
             {
               icon: market,
-              title: "Performance based services",
-              description: "We charge you on performance based.",
+              title: "Performance Based Services",
+              description: "We charge you based on performance.",
             },
             {
               icon: experience,
@@ -170,11 +265,10 @@ const WhyChooseUs = () => {
               title: "Dedicated Account Manager",
               description: "Helps to improve product ranking in the long term.",
             },
-            // ... other services
           ].map((item, index) => (
             <div
               key={index}
-              className="flex items-center p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 ease-in-out"
+              className="flex items-center p-4 bg-white rounded-lg shadow-md hover:bg-red-50 hover:shadow-lg transition-shadow duration-300 ease-in-out"
             >
               <img
                 src={item.icon}
@@ -182,8 +276,10 @@ const WhyChooseUs = () => {
                 className="w-12 h-12 mr-4"
               />
               <div>
-                <h3 className="font-semibold text-lg">{item.title}</h3>
-                <p>{item.description}</p>
+                <h3 className="font-semibold text-lg text-black">
+                  {item.title}
+                </h3>
+                <p className="text-gray-700">{item.description}</p>
               </div>
             </div>
           ))}
