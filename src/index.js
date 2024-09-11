@@ -10,6 +10,10 @@ import OurServices from "./Component/OurServies";
 import ContactPage from "./Component/ContactPage";
 import Error from "./Component/Error";
 import Body from "./Component/Body";
+import Aboutus from "./Component/Aboutus";
+import Rout_Services from "./Component/Rout_Services";
+import GrowWithUsPage from "./Component/GrowWithUsPage";
+// import AboutUs from "./Component/AboutUs";
 
 const appRouter = createBrowserRouter([
   {
@@ -23,11 +27,16 @@ const appRouter = createBrowserRouter([
       },
       {
         path: "/about-us",
-        element: <Intro />,
+        // element: <Intro />,
+        element: <Aboutus />,
       },
       {
         path: "/services",
-        element: <OurServices />,
+        element: <Rout_Services />,
+      },
+      {
+        path: "/GROW WITH US",
+        element: <GrowWithUsPage />,
       },
       {
         path: "/contact-us",
