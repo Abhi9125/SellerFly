@@ -13,6 +13,7 @@ import Body from "./Component/Body";
 import Aboutus from "./Component/Aboutus";
 import Rout_Services from "./Component/Rout_Services";
 import GrowWithUsPage from "./Component/GrowWithUsPage";
+import ModalComponent from "./Component/ModalComponent";
 // import AboutUs from "./Component/AboutUs";
 
 const appRouter = createBrowserRouter([
