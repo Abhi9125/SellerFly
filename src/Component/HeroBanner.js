@@ -22,7 +22,7 @@ const HeroBanner = () => {
   return (
     <div
       className="h-72 mb-2 bg-cover bg-center relative"
-      style={{ backgroundImage: `url(${bgImage})` }}
+      style={{ backgroundImage: `url(/Rout_Banner/contact-us.png)` }}
     >
       <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
         <h1 className="text-white text-4xl font-bold">{title}</h1>

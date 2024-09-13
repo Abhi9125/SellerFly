@@ -61,42 +61,13 @@ const Rout_Services = () => {
       {/* Hero Section */}
       <div
         className="h-80 bg-cover bg-center relative"
-        style={{ backgroundImage: `url(${bgImage})` }}
+        style={{ backgroundImage: `url(/Rout_Banner/services.png)` }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-          <h1 className="text-white text-4xl font-bold">About Us</h1>
+          <h1 className="text-white text-4xl font-bold">Services</h1>
         </div>
       </div>
       <section className="bg-gray-100 py-16">
-        {/* <div className="container mx-auto px-4"> */}
-        {/* Section Title */}
-        {/* <div className="text-center mb-12">
-            <h2 className="text-4xl font-extrabold mb-4 text-gray-800">
-              Our Services
-            </h2>
-            <p className="text-lg text-gray-600">
-              Personalized solutions and services to boost your online business.
-            </p>
-          </div> */}
-
-        {/* Services Grid */}
-        {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.map((service, index) => (
-              <div
-                key={index}
-                className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
-              >
-                <div className="flex justify-center mb-6">{service.icon}</div>
-                <h3 className="text-xl font-bold text-gray-800 mb-4 text-center">
-                  {service.title}
-                </h3>
-                <p className="text-gray-600 text-center">
-                  {service.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div> */}
         <OurServices />
       </section>
     </div>
