@@ -44,7 +44,9 @@ const MainBanner = () => {
           SERVICES
         </h1>
         <p className="text-sm sm:text-lg lg:text-2xl max-w-xl mb-6 leading-relaxed">
-          GROW YOUR BUSINESS 10X WITH INDIA’S BEST E-COMMERCE MARKETING AGENCY
+          GROW YOUR BUSINESS 10X WITH INDIA’S BEST{" "}
+          <span style={{ whiteSpace: "nowrap" }}>E-COMMERCE</span> MARKETING
+          AGENCY
         </p>
 
         {/* Call to Action */}
