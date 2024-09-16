@@ -8,7 +8,7 @@ const HeroBanner = () => {
   let title = "";
   //   const bgImage = "https://example.com/your-banner-image.jpg"; // Replace with your banner image URL
 
-  if (location.pathname === "/CONTACT-US") {
+  if (location.pathname === "/contact-us") {
     title = "Contact Us";
   } else if (location.pathname === "/book-appointment") {
     title = "Book an Appointment";

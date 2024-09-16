@@ -14,6 +14,9 @@ import Aboutus from "./Component/Aboutus";
 import Rout_Services from "./Component/Rout_Services";
 import GrowWithUsPage from "./Component/GrowWithUsPage";
 import ModalComponent from "./Component/ModalComponent";
+import EcommerceSellerAccountManagement from "./Component/EcommerceSellerAccountManagement";
+import WebsiteDevelopmentServices from "./Component/WebsiteDevelopmentServices";
+import DigitalMarketing from "./Component/DigitalMarketing";
 // import AboutUs from "./Component/AboutUs";
 
 const appRouter = createBrowserRouter([
@@ -36,7 +39,23 @@ const appRouter = createBrowserRouter([
         element: <Rout_Services />,
       },
       {
-        path: "/GROW WITH US",
+        path: "/E-commerce-management",
+        element: <EcommerceSellerAccountManagement />,
+      },
+      {
+        path: "/WebsiteDevelopmentService",
+        element: <WebsiteDevelopmentServices />,
+      },
+      {
+        path: "/Digital-Marketing",
+        element: <DigitalMarketing />,
+      },
+      {
+        path: "/Other-Services",
+        element: <EcommerceSellerAccountManagement />,
+      },
+      {
+        path: "/grow-with-us",
         element: <GrowWithUsPage />,
       },
       {

@@ -123,7 +123,7 @@ const ModalComponent = ({ closeModal }) => {
             <label className="block font-semibold text-gray-700">
               Language *
             </label>
-            <div className="flex space-x-4">
+            <div className="flex space-x-4 text-gray-700">
               {["English", "Hindi", "Tamil"].map((lang) => (
                 <label key={lang}>
                   <input
@@ -143,7 +143,7 @@ const ModalComponent = ({ closeModal }) => {
             <label className="block font-semibold text-gray-700">
               Services *
             </label>
-            <div className="space-y-2">
+            <div className="space-y-2 text-gray-700">
               {[
                 "Website Development",
                 "Seller Account Management",
@@ -164,7 +164,7 @@ const ModalComponent = ({ closeModal }) => {
           </div>
 
           {/* Submit Button */}
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center text-gray-700">
             <label>
               <input type="checkbox" required /> I'm not a robot
             </label>
