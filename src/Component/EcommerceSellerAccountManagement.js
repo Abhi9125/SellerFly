@@ -941,15 +941,16 @@ import "aos/dist/aos.css";
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
 
 // Import images for each platform
-import AmazonImage from "../Images/logo-main.png"; // Replace with actual image path
-import FlipkartImage from "../Images/logo-main.png"; // Replace with actual image path
-import MeeshoImage from "../Images/logo-main.png"; // Replace with actual image path
-import MyntraImage from "../Images/logo-main.png"; // Replace with actual image path
-import AjioImage from "../Images/logo-main.png"; // Replace with actual image path
-import GlowroadImage from "../Images/logo-main.png"; // Replace with actual image path
-import JioMartImage from "../Images/logo-main.png"; // Replace with actual image path
-import BigBasketImage from "../Images/logo-main.png"; // Replace with actual image path
-import UdaanImage from "../Images/logo-main.png"; // Replace with actual image path
+import AmazonImage from "../Images/E-commerece platform_logo/gif_amazon.gif"; // Replace with actual image path
+import FlipkartImage from "../Images/E-commerece platform_logo/gif_flipkart.gif"; // Replace with actual image path
+import MeeshoImage from "../Images/E-commerece platform_logo/gif_meesho.gif"; // Replace with actual image path
+import MyntraImage from "../Images/E-commerece platform_logo/gif_myntra.gif"; // Replace with actual image path
+import AjioImage from "../Images/E-commerece platform_logo/gif_ajio.gif"; // Replace with actual image path
+import GlowroadImage from "../Images/E-commerece platform_logo/gif_glowroad.gif"; // Replace with actual image path
+import JioMartImage from "../Images/E-commerece platform_logo/gif_jiomart.gif"; // Replace with actual image path
+import BigBasketImage from "../Images/E-commerece platform_logo/gif_bigbasket.gif"; // Replace with actual image path
+import UdaanImage from "../Images/E-commerece platform_logo/gif_udaan.gif"; // Replace with actual image path
+import Rout_Banner_AccountManagement from "../Images/Rout_Banner/ACCOUNT-MANAGMENT-HEADER.png";
 import ModalComponent from "./ModalComponent";
 
 const successStories = [
@@ -1073,12 +1074,12 @@ const EcommerceSellerAccountManagement = () => {
       {/* Hero Section */}
       <div
         className="h-80 bg-cover bg-center relative"
-        style={{ backgroundImage: `url(/Rout_Banner/services.png)` }}
+        style={{ backgroundImage: `url(${Rout_Banner_AccountManagement})` }}
         data-aos="fade-in"
       >
         <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
           <h1 className="text-white text-4xl font-bold">
-            E-Commerce Management Services
+            E-Commerce Account Management Services
           </h1>
         </div>
       </div>
