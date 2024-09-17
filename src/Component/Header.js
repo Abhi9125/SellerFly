@@ -290,7 +290,7 @@ const Header = () => {
                 onClick={toggleMenu}
                 className={`${
                   isScrolled ? "text-black" : "text-black"
-                } hover:text-red-600 font-bold transition duration-300`}
+                } hover:text-red-600 font-semibold transition duration-300`}
               >
                 HOME
               </Link>
