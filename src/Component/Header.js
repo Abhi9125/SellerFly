@@ -290,7 +290,7 @@ const Header = () => {
                 onClick={toggleMenu}
                 className={`${
                   isScrolled ? "text-black" : "text-black"
-                } hover:text-red-600 font-semibold transition duration-300`}
+                } hover:text-red-600 font-bold transition duration-300`}
               >
                 HOME
               </Link>
@@ -301,7 +301,7 @@ const Header = () => {
                 onClick={toggleMenu}
                 className={`${
                   isScrolled ? "text-black" : "text-black"
-                } hover:text-red-600 font-semibold transition duration-300`}
+                } hover:text-red-600 font-bold transition duration-300`}
               >
                 ABOUT US
               </Link>
@@ -318,7 +318,7 @@ const Header = () => {
                 onClick={toggleMenu}
                 className={`${
                   isScrolled ? "text-black" : "text-black"
-                } hover:text-red-600 font-semibold transition duration-300`}
+                } hover:text-red-600 font-bold transition duration-300`}
               >
                 SERVICES
               </Link>
@@ -329,7 +329,7 @@ const Header = () => {
                   <ul>
                     <li className="hover:bg-gray-100 hover:text-red-600 p-2 rounded transition duration-300">
                       <Link to="/E-commerce-management">
-                        E-commerce Management
+                        E-commerce Account Management
                       </Link>
                     </li>
                     <li className="hover:bg-gray-100 hover:text-red-600 p-2 rounded transition duration-300">
@@ -351,7 +351,7 @@ const Header = () => {
                 onClick={toggleMenu}
                 className={`${
                   isScrolled ? "text-black" : "text-black"
-                } hover:text-red-600 font-semibold transition duration-300`}
+                } hover:text-red-600 font-bold transition duration-300`}
               >
                 GROW WITH US
               </Link>
@@ -362,7 +362,7 @@ const Header = () => {
                 onClick={toggleMenu}
                 className={`${
                   isScrolled ? "text-black" : "text-black"
-                } hover:text-red-600 font-semibold transition duration-300`}
+                } hover:text-red-600 font-bold transition duration-300`}
               >
                 CONTACT US
               </Link>
