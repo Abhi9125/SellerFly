@@ -362,12 +362,12 @@ const MainBanner = () => {
 
             {/* Overlay Content */}
             <div
-              className="absolute inset-0 bg-black bg-opacity-0 flex flex-col mb-32  justify-center items-center text-center px-4 sm:px-6 lg:px-8"
+              className="absolute inset-0 bg-black bg-opacity-5 flex flex-col justify-center items-center text-center px-4 sm:px-6 lg:px-8"
               aria-hidden="true" // Hide from screen readers if purely decorative
             >
               {/* Title with AOS Animation */}
               <h2
-                className="text-red-600 text-7xl md:text-6xl font-extrabold mb-6 drop-shadow-lg"
+                className="text-red-800 text-3xl md:text-5xl font-extrabold mb-4 drop-shadow-lg"
                 data-aos={banner.animation}
               >
                 {banner.title}
@@ -375,7 +375,7 @@ const MainBanner = () => {
 
               {/* Description with AOS Animation and Delay */}
               <p
-                className="text-black font-extrabold text-xl md:text-lg max-w-2xl mb-6 mt-6 drop-shadow-lg"
+                className="text-black font-bold text-md md:text-lg max-w-2xl mb-6 drop-shadow-lg"
                 data-aos="fade-up"
                 data-aos-delay="200"
               >
