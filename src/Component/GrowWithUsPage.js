@@ -164,6 +164,7 @@ import "aos/dist/aos.css";
 import bgImage from "../Images/new_img.png"; // Replace with your actual image
 import ModalComponent from "./ModalComponent";
 import OurSuccessStory from "./OurSucessStory";
+import Grow_Banner from "../Images/Rout_Banner/grow.png";
 
 // Stats Data
 const stats = [
@@ -238,7 +239,7 @@ const GrowWithUsPage = () => {
       {/* Hero Section */}
       <div
         className="h-80 bg-cover bg-center relative"
-        style={{ backgroundImage: `url(/Rout_Banner/grow.png)` }}
+        style={{ backgroundImage: `url(${Grow_Banner})` }}
         data-aos="fade-in"
       >
         <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">

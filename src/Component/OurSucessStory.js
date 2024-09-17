@@ -373,26 +373,33 @@ import React, { useState, useEffect } from "react";
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Flipkart_Business from "../Images/SuccessStory/Flipkart_Business.png";
+import Flipkart_logo from "../Images/SuccessStory/flipkart.png";
+import GlowRoad_Business from "../Images/SuccessStory/GlowRoad_Business.png";
+import GrowRoad_logo from "../Images/SuccessStory/glowroad.png";
+import Meesho_Business from "../Images/SuccessStory/Meesho_Business.png";
+import Meesho_logo from "../Images/SuccessStory/meesho.png";
+import Shop101_Business from "../Images/SuccessStory/Shop101_Business.png";
 
 const successStories = [
   {
-    image1: `${process.env.PUBLIC_URL}/SuccessStory/glowroad.png`,
-    image2: `${process.env.PUBLIC_URL}/SuccessStory/GlowRoad_Business.png`,
+    image1: GrowRoad_logo,
+    image2: GlowRoad_Business,
     description: "GENERATED 6.7+ SALES ORGANICALLY IN JUST 3 MONTHS",
   },
   {
-    image1: `${process.env.PUBLIC_URL}/SuccessStory/GlowRoad_Business.png`,
-    image2: `${process.env.PUBLIC_URL}/SuccessStory/Shop101_Business.png`,
+    image1: Flipkart_logo,
+    image2: Shop101_Business,
     description: "GENERATED 1.5 CRORE+ SALES ORGANICALLY IN JUST 1 MONTH",
   },
   {
-    image1: `${process.env.PUBLIC_URL}/SuccessStory/meesho.png`,
-    image2: `${process.env.PUBLIC_URL}/SuccessStory/Meesho_Business.png`,
+    image1: Meesho_logo,
+    image2: Meesho_Business,
     description: "GENERATED 30+ LAKHS SALES ORGANICALLY IN JUST 3 MONTHS",
   },
   {
-    image1: `${process.env.PUBLIC_URL}/SuccessStory/flipkart.png`,
-    image2: `${process.env.PUBLIC_URL}/SuccessStory/Flipkart_Business.png`,
+    image1: Flipkart_logo,
+    image2: Flipkart_Business,
     description: "GENERATED 27.7+ LAKHS SALES ORGANICALLY IN JUST 5 MONTHS",
   },
 ];
@@ -413,7 +420,7 @@ const OurSuccessStory = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev === length - 1 ? 0 : prev + 1));
-    }, 4000); // Change slide every 4 seconds
+    }, 5000); // Change slide every 4 seconds
 
     return () => clearInterval(interval); // Cleanup on unmount
   }, [length]);

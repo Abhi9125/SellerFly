@@ -172,6 +172,7 @@ import React, { useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Animation on Scroll
 import ModalComponent from "./ModalComponent";
+import Service_Banner from "../Images/Rout_Banner/services.png";
 
 const Rout_Services = () => {
   const [isModalOpen, setModalOpen] = useState(false);
@@ -188,7 +189,7 @@ const Rout_Services = () => {
       {/* Hero Section */}
       <div
         className="h-80 bg-cover bg-center relative"
-        style={{ backgroundImage: `url(/Rout_Banner/services.png)` }}
+        style={{ backgroundImage: `url(${Service_Banner})` }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
           <h1 className="text-white text-4xl font-bold" data-aos="fade-up">
