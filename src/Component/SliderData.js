@@ -1,3 +1,12 @@
+import Ajio from "../Images/Connect_Business/Ajio.png";
+import Amazon from "../Images/Connect_Business/Amazon.png";
+import Flipkart from "../Images/Connect_Business/Flipkart.png";
+import GlowRoad from "../Images/Connect_Business/GlowRoad.png";
+import Meesho from "../Images/Connect_Business/Meesho.png";
+import Myntra from "../Images/Connect_Business/Myntra.png";
+import Nykaa from "../Images/Connect_Business/Nykaa.png";
+import TataCliQ from "../Images/Connect_Business/TataCliQ.png";
+
 export const SlideData = [
   {
     image: "/Header/homepage_banner.png ",
@@ -47,27 +56,27 @@ export const SlideData = [
 // ];
 export const SliderDataforConnectingBusinesses = [
   {
-    image: `${process.env.PUBLIC_URL}/Connection_Business_Img1/Ajio.png`,
+    image: Ajio,
   },
   {
-    image: `${process.env.PUBLIC_URL}/Connection_Business_Img1/Amazon.png`,
+    image: Amazon,
   },
   {
-    image: `${process.env.PUBLIC_URL}/Connection_Business_Img1/Flipkart.png`,
+    image: Flipkart,
   },
   {
-    image: `${process.env.PUBLIC_URL}/Connection_Business_Img1/GlowRoad.png`,
+    image: GlowRoad,
   },
   {
-    image: `${process.env.PUBLIC_URL}/Connection_Business_Img1/Meesho.png`,
+    image: Meesho,
   },
   {
-    image: `${process.env.PUBLIC_URL}/Connection_Business_Img1/Myntra.png`,
+    image: Myntra,
   },
   {
-    image: `${process.env.PUBLIC_URL}/Connection_Business_Img1/Nykaa.png`,
+    image: Nykaa,
   },
   {
-    image: `${process.env.PUBLIC_URL}/Connection_Business_Img1/TataCliQ.png`,
+    image: TataCliQ,
   },
 ];
