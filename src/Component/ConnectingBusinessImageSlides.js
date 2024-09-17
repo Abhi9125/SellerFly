@@ -136,7 +136,7 @@ const ConnectingBusinessImageSlides = () => {
           {/* First loop of slides */}
           {SliderDataforConnectingBusinesses.map((slide, index) => (
             <div
-              className="min-w-[300px] sm:min-w-[400px] lg:min-w-[500px] h-[200px] object-contain flex-shrink-0"
+              className="min-w-[300px] sm:min-w-[400px] lg:min-w-[500px] h-[150px] object-contain flex-shrink-0"
               key={index}
               data-aos="fade-up"
               data-aos-delay={index * 100}
@@ -152,7 +152,7 @@ const ConnectingBusinessImageSlides = () => {
           {/* Duplicate loop of slides to create seamless transition */}
           {SliderDataforConnectingBusinesses.map((slide, index) => (
             <div
-              className="min-w-[300px] sm:min-w-[400px] lg:min-w-[500px] h-[200px] object-contain flex-shrink-0"
+              className="min-w-[300px] sm:min-w-[400px] lg:min-w-[500px] h-[150px] object-contain flex-shrink-0"
               key={`duplicate-${index}`}
               data-aos="fade-up"
               data-aos-delay={index * 100 + 500} // Additional delay for duplicates

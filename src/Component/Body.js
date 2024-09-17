@@ -14,6 +14,7 @@ import Footer from "./Footer";
 import OurSucessStory from "./OurSucessStory";
 import OurClients from "./OurClients";
 import BoostSection from "./BootsSection";
+import SemiHeader from "./SemiHeader";
 
 // import SecondPage from "./Inro";
 

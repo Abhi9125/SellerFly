@@ -47,27 +47,27 @@ export const SlideData = [
 // ];
 export const SliderDataforConnectingBusinesses = [
   {
-    image: `${process.env.PUBLIC_URL}/Connection_Business_Img1/ajio.png`,
+    image: `${process.env.PUBLIC_URL}/Connection_Business_Img1/Ajio.png`,
   },
   {
-    image: `${process.env.PUBLIC_URL}/Connection_Business_Img1/amazon.png`,
+    image: `${process.env.PUBLIC_URL}/Connection_Business_Img1/Amazon.png`,
   },
   {
-    image: `${process.env.PUBLIC_URL}/Connection_Business_Img1/flipkart.png`,
+    image: `${process.env.PUBLIC_URL}/Connection_Business_Img1/Flipkart.png`,
   },
   {
-    image: `${process.env.PUBLIC_URL}/Connection_Business_Img1/glowroad.png`,
+    image: `${process.env.PUBLIC_URL}/Connection_Business_Img1/GlowRoad.png`,
   },
   {
-    image: `${process.env.PUBLIC_URL}/Connection_Business_Img1/meesho.png`,
+    image: `${process.env.PUBLIC_URL}/Connection_Business_Img1/Meesho.png`,
   },
   {
-    image: `${process.env.PUBLIC_URL}/Connection_Business_Img1/myntra.png`,
+    image: `${process.env.PUBLIC_URL}/Connection_Business_Img1/Myntra.png`,
   },
   {
     image: `${process.env.PUBLIC_URL}/Connection_Business_Img1/Nykaa.png`,
   },
   {
-    image: `${process.env.PUBLIC_URL}/Connection_Business_Img1/tata_Cliq.png`,
+    image: `${process.env.PUBLIC_URL}/Connection_Business_Img1/TataCliQ.png`,
   },
 ];
