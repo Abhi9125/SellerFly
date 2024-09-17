@@ -362,7 +362,7 @@ const MainBanner = () => {
 
             {/* Overlay Content */}
             <div
-              className="absolute inset-0 bg-black bg-opacity-5 flex flex-col justify-center items-center text-center px-4 sm:px-6 lg:px-8"
+              className="absolute inset-0 bg-black bg-opacity-0 flex flex-col justify-center items-center text-center px-4 sm:px-6 lg:px-8"
               aria-hidden="true" // Hide from screen readers if purely decorative
             >
               {/* Title with AOS Animation */}
