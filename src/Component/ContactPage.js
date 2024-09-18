@@ -10,13 +10,47 @@ const ContactPage = () => {
   const [requirements, setRequirements] = useState(""); // New state for requirements
   const [language, setLanguage] = useState(""); // New state for language
   const [formStatus, setFormStatus] = useState(null); // Added status for form submission
+  const [errors, setErrors] = useState({}); // State for input errors
+
+  const validate = () => {
+    const newErrors = {};
+
+    // Name validation
+    if (!name.trim()) {
+      newErrors.name = "Name is required";
+    }
+
+    // Email validation using regex
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!email.trim()) {
+      newErrors.email = "Email is required";
+    } else if (!emailPattern.test(email)) {
+      newErrors.email = "Please enter a valid email address";
+    }
+
+    // Phone number validation
+    if (!number.trim()) {
+      newErrors.number = "Phone number is required";
+    } else if (!/^\d{10}$/.test(number)) {
+      newErrors.number = "Phone number must be 10 digits";
+    }
+
+    // Language validation
+    if (!language) {
+      newErrors.language = "Please select a preferred language";
+    }
+
+    setErrors(newErrors);
+
+    return Object.keys(newErrors).length === 0;
+  };
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    if (!name || !email || !number || !language) {
-      setFormStatus("Please fill out all required fields");
+    if (!validate()) {
       return;
     }
+
     try {
       await addDoc(collection(db, "contactData"), {
         name,
@@ -31,6 +65,7 @@ const ContactPage = () => {
       setNumber("");
       setRequirements(""); // Reset requirements
       setLanguage(""); // Reset language
+      setErrors({});
     } catch (e) {
       console.error("Error adding document: ", e);
       setFormStatus("Error submitting form, please try again later");
@@ -54,30 +89,44 @@ const ContactPage = () => {
           <div className="md:w-1/2 bg-white text-gray-800 rounded-lg p-6 shadow-lg">
             <h2 className="text-2xl font-bold mb-6">Let's Talk</h2>
             <form className="flex flex-col space-y-4" onSubmit={handleSubmit}>
-              <input
-                className="appearance-none block w-full bg-gray-100 border border-gray-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-red-600"
-                type="text"
-                placeholder="Name"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                required
-              />
-              <input
-                className="appearance-none block w-full bg-gray-100 border border-gray-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-red-600"
-                type="number"
-                placeholder="Phone no"
-                value={number}
-                onChange={(e) => setNumber(e.target.value)}
-                required
-              />
-              <input
-                className="appearance-none block w-full bg-gray-100 border border-gray-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-red-600"
-                type="email"
-                placeholder="Email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-              />
+              <div>
+                <input
+                  className="appearance-none block w-full bg-gray-100 border border-gray-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-red-600"
+                  type="text"
+                  placeholder="Name"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                />
+                {errors.name && (
+                  <p className="text-red-600 text-sm">{errors.name}</p>
+                )}
+              </div>
+
+              <div>
+                <input
+                  className="appearance-none block w-full bg-gray-100 border border-gray-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-red-600"
+                  type="number"
+                  placeholder="Phone no"
+                  value={number}
+                  onChange={(e) => setNumber(e.target.value)}
+                />
+                {errors.number && (
+                  <p className="text-red-600 text-sm">{errors.number}</p>
+                )}
+              </div>
+
+              <div>
+                <input
+                  className="appearance-none block w-full bg-gray-100 border border-gray-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-red-600"
+                  type="email"
+                  placeholder="Email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+                {errors.email && (
+                  <p className="text-red-600 text-sm">{errors.email}</p>
+                )}
+              </div>
 
               {/* Requirements field */}
               <textarea
@@ -99,7 +148,6 @@ const ContactPage = () => {
                       name="language"
                       value="English"
                       onChange={(e) => setLanguage(e.target.value)}
-                      required
                     />{" "}
                     English
                   </label>
@@ -122,6 +170,9 @@ const ContactPage = () => {
                     Tamil
                   </label>
                 </div>
+                {errors.language && (
+                  <p className="text-red-600 text-sm">{errors.language}</p>
+                )}
               </div>
 
               <button

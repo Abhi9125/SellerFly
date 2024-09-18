@@ -12,6 +12,45 @@ const ModalComponent = ({ closeModal }) => {
     service: "",
   });
   const [formStatus, setFormStatus] = useState(null); // Status message for form submission
+  const [errors, setErrors] = useState({}); // Track form field errors
+
+  // Validation function to check all inputs
+  const validate = () => {
+    const newErrors = {};
+
+    if (!formData.name.trim()) {
+      newErrors.name = "Name is required";
+    }
+
+    // Email validation
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!formData.email.trim()) {
+      newErrors.email = "Email is required";
+    } else if (!emailPattern.test(formData.email)) {
+      newErrors.email = "Please enter a valid email address";
+    }
+
+    // Phone number validation
+    const phonePattern = /^\d{10}$/;
+    if (!formData.phone.trim()) {
+      newErrors.phone = "Phone number is required";
+    } else if (!phonePattern.test(formData.phone)) {
+      newErrors.phone = "Phone number must be 10 digits";
+    }
+
+    if (!formData.language) {
+      newErrors.language = "Please select a preferred language";
+    }
+
+    if (!formData.service) {
+      newErrors.service = "Please select a service";
+    }
+
+    setErrors(newErrors);
+
+    // Returns true if no errors
+    return Object.keys(newErrors).length === 0;
+  };
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -19,6 +58,10 @@ const ModalComponent = ({ closeModal }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    // Validate form before submission
+    if (!validate()) return;
+
     try {
       await addDoc(collection(db, "ServicesRequirment"), {
         name: formData.name,
@@ -30,7 +73,6 @@ const ModalComponent = ({ closeModal }) => {
       });
 
       setFormStatus("Your form has been submitted successfully!");
-      console.log("Form data sent to Firebase");
 
       // Reset the form after submission
       setFormData({
@@ -78,6 +120,9 @@ const ModalComponent = ({ closeModal }) => {
               className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-red-500"
               placeholder="Type your name"
             />
+            {errors.name && (
+              <p className="text-red-600 text-sm">{errors.name}</p>
+            )}
           </div>
 
           <div>
@@ -91,6 +136,9 @@ const ModalComponent = ({ closeModal }) => {
               className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-red-500"
               placeholder="Type your email"
             />
+            {errors.email && (
+              <p className="text-red-600 text-sm">{errors.email}</p>
+            )}
           </div>
 
           <div>
@@ -102,8 +150,11 @@ const ModalComponent = ({ closeModal }) => {
               onChange={handleChange}
               required
               className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-red-500"
-              placeholder="Type your phone no"
+              placeholder="Type your phone number"
             />
+            {errors.phone && (
+              <p className="text-red-600 text-sm">{errors.phone}</p>
+            )}
           </div>
 
           <div>
@@ -137,6 +188,9 @@ const ModalComponent = ({ closeModal }) => {
                 </label>
               ))}
             </div>
+            {errors.language && (
+              <p className="text-red-600 text-sm">{errors.language}</p>
+            )}
           </div>
 
           <div>
@@ -161,6 +215,9 @@ const ModalComponent = ({ closeModal }) => {
                 </label>
               ))}
             </div>
+            {errors.service && (
+              <p className="text-red-600 text-sm">{errors.service}</p>
+            )}
           </div>
 
           {/* Submit Button */}
