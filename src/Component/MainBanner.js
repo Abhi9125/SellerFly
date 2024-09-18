@@ -287,7 +287,7 @@ const MainBanner = () => {
     slidesToShow: 1, // Number of slides to show at once
     slidesToScroll: 1, // Number of slides to scroll on navigation
     autoplay: true, // Enable autoplay
-    autoplaySpeed: 4000, // Autoplay speed in ms
+    autoplaySpeed: 7000, // Autoplay speed in ms
     arrows: true, // Show next and previous arrows
     pauseOnHover: false, // Pause autoplay on hover
     adaptiveHeight: true, // Adjust slide height based on content
@@ -383,7 +383,7 @@ const MainBanner = () => {
               </p>
 
               {/* CTA Button with AOS Animation and Hover Effect */}
-              <a
+              {/* <a
                 href="#"
                 className="bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-6 rounded-lg shadow-md transition transform hover:scale-105 duration-300 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50"
                 aria-label={banner.buttonText}
@@ -391,7 +391,7 @@ const MainBanner = () => {
                 data-aos-delay="400"
               >
                 {banner.buttonText}
-              </a>
+              </a> */}
             </div>
           </div>
         ))}

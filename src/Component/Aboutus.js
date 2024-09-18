@@ -130,7 +130,7 @@ const AboutUs = () => {
           >
             SellerFly is an innovative e-commerce technology company focused on
             helping SMEs and brands establish and grow their online businesses.
-            Founded in 2017, our leadership team comprises former employees from
+            Founded in 2020, our leadership team comprises former employees from
             industry giants.
           </p>
           <div className="flex flex-col md:flex-row items-center gap-8">
@@ -143,7 +143,7 @@ const AboutUs = () => {
             </div>
             <div className="w-full md:w-1/2" data-aos="fade-left">
               <p className="text-lg text-gray-700 leading-relaxed">
-                With offices located in Bangalore, Thanjavur, and Tiruppur, we
+                With offices located in Bangalore, Chennai, and Tiruppur, we
                 operate on the pillars of innovation, excellence,
                 entrepreneurship, and creativity to drive your business forward.
               </p>
@@ -153,7 +153,7 @@ const AboutUs = () => {
       </section>
 
       {/* Our Services Section */}
-      <section className="py-16 bg-white">
+      {/* <section className="py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <h2
             className="text-3xl font-bold text-red-600 text-center mb-12"
@@ -242,7 +242,7 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Call to Action */}
       <section

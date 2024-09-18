@@ -257,12 +257,12 @@ const Header = () => {
           : "relative bg-transparent"
       }`}
     >
-      <div className="container mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8 py-4">
+      <div className="container mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-6 py-4">
         <Link to="/">
           <img
             src={logo_Img}
             alt="Logo"
-            className="h-12 sm:h-10 lg:w-28 lg:h-10 rounded-sm"
+            className="h-16 sm:h-10 lg:w-28 lg:h-14 rounded-sm"
           />
         </Link>
 
