@@ -15,6 +15,7 @@ import BigBasketImage from "../Images/E-commerece platform_logo/gif_bigbasket.gi
 import UdaanImage from "../Images/E-commerece platform_logo/gif_udaan.gif"; // Replace with actual image path
 import Rout_Banner_AccountManagement from "../Images/Rout_Banner/ACCOUNT-MANAGMENT-HEADER.png";
 import ModalComponent from "./ModalComponent";
+import OurSuccessStory from "./OurSucessStory";
 
 const successStories = [
   {
@@ -192,110 +193,9 @@ const EcommerceSellerAccountManagement = () => {
       </section>
 
       {/* Success Stories Slideshow */}
-      <section
-        className="bg-white text-gray-800 py-12 relative"
-        data-aos="fade-up"
-      >
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Section Title */}
-          <div className="text-center mb-12" data-aos="fade-down">
-            <h3 className="text-3xl sm:text-4xl font-bold text-red-600 uppercase mb-4">
-              Our Success Stories
-            </h3>
-            <p className="text-gray-700">
-              Celebrating our clients' achievements and milestones.
-            </p>
-          </div>
 
-          {/* Success Stories Slideshow */}
-          <div className="relative flex justify-center items-center">
-            {/* Left Arrow */}
-            <FaArrowAltCircleLeft
-              onClick={prevSlide}
-              className="absolute left-2 sm:left-8 text-3xl sm:text-4xl text-gray-600 cursor-pointer hover:text-red-600 z-10 transition-transform transform hover:scale-110 focus:outline-none"
-              aria-label="Previous Slide"
-              role="button"
-              tabIndex={0}
-              onKeyDown={(e) => {
-                if (e.key === "Enter") prevSlide();
-              }}
-              data-aos="fade-right"
-              data-aos-delay="500"
-            />
-
-            {/* Slides */}
-            {successStories.map((story, index) => (
-              <div
-                key={index}
-                className={
-                  index === currentSlide
-                    ? "opacity-100 scale-100 transition-opacity duration-1000 ease-in-out transform"
-                    : "opacity-0 scale-95 transition-opacity duration-1000 ease-in-out transform absolute"
-                }
-                data-aos="zoom-in"
-                data-aos-delay={index * 100}
-              >
-                {index === currentSlide && (
-                  <div className="flex flex-col items-center bg-gray-100 p-6 rounded-lg shadow-lg w-full lg:w-full xl:w-full">
-                    {/* Large Image */}
-                    <div className="mb-4">
-                      <img
-                        src={story.image2}
-                        alt={`Success Story ${index + 1}`}
-                        className="w-full h-48 object-cover rounded-lg mb-2"
-                        loading="lazy"
-                      />
-                    </div>
-
-                    {/* Small Logo */}
-                    <div className="flex justify-center mb-4">
-                      <img
-                        src={story.image1}
-                        alt={`Success Story Logo ${index + 1}`}
-                        className="w-24 h-24 object-contain"
-                        loading="lazy"
-                      />
-                    </div>
-
-                    {/* Description */}
-                    <p className="text-center font-semibold text-gray-700">
-                      {story.description}
-                    </p>
-                  </div>
-                )}
-              </div>
-            ))}
-
-            {/* Right Arrow */}
-            <FaArrowAltCircleRight
-              onClick={nextSlide}
-              className="absolute right-2 sm:right-8 text-3xl sm:text-4xl text-gray-600 cursor-pointer hover:text-red-600 z-10 transition-transform transform hover:scale-110 focus:outline-none"
-              aria-label="Next Slide"
-              role="button"
-              tabIndex={0}
-              onKeyDown={(e) => {
-                if (e.key === "Enter") nextSlide();
-              }}
-              data-aos="fade-left"
-              data-aos-delay="500"
-            />
-
-            {/* Dots Navigation */}
-            <div className="absolute bottom-4 flex justify-center space-x-2">
-              {successStories.map((_, idx) => (
-                <button
-                  key={idx}
-                  onClick={() => goToSlide(idx)}
-                  className={`w-3 h-3 rounded-full ${
-                    idx === currentSlide ? "bg-red-600" : "bg-gray-400"
-                  } transition-colors duration-300 focus:outline-none`}
-                  aria-label={`Go to slide ${idx + 1}`}
-                ></button>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Success Stories Slideshow */}
+      <OurSuccessStory />
 
       {/* Why Partner with SellerFly */}
       <section className="py-16 bg-white text-center" data-aos="fade-up">

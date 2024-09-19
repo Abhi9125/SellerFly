@@ -117,7 +117,7 @@ const ModalComponent = ({ closeModal }) => {
               value={formData.name}
               onChange={handleChange}
               required
-              className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-red-500"
+              className="w-full p-2 border text-gray-900 border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-red-500"
               placeholder="Type your name"
             />
             {errors.name && (
@@ -133,7 +133,7 @@ const ModalComponent = ({ closeModal }) => {
               value={formData.email}
               onChange={handleChange}
               required
-              className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-red-500"
+              className="w-full p-2 border border-gray-300 text-gray-900 rounded focus:outline-none focus:ring-2 focus:ring-red-500"
               placeholder="Type your email"
             />
             {errors.email && (
@@ -149,7 +149,7 @@ const ModalComponent = ({ closeModal }) => {
               value={formData.phone}
               onChange={handleChange}
               required
-              className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-red-500"
+              className="w-full p-2 border border-gray-300 rounded text-gray-900 focus:outline-none focus:ring-2 focus:ring-red-500"
               placeholder="Type your phone number"
             />
             {errors.phone && (
@@ -165,7 +165,7 @@ const ModalComponent = ({ closeModal }) => {
               name="requirements"
               value={formData.requirements}
               onChange={handleChange}
-              className="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-red-500"
+              className="w-full p-2 border border-gray-300 rounded text-gray-900 focus:outline-none focus:ring-2 focus:ring-red-500"
               placeholder="Type your message"
             />
           </div>

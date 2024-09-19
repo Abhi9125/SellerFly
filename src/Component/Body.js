@@ -32,6 +32,7 @@ const Body = () => {
       <WhyChooseUs />
       <StrategySection />
       <AchivementComponent />
+      <OurClients />
       <OurSucessStory />
       <ContactPage />
     </div>

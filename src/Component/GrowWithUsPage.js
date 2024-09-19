@@ -13,6 +13,7 @@ import bgImage from "../Images/new_img.png"; // Replace with your actual image
 import ModalComponent from "./ModalComponent";
 import OurSuccessStory from "./OurSucessStory";
 import Grow_Banner from "../Images/Rout_Banner/grow.png";
+import OurClients from "./OurClients";
 
 // Stats Data
 const stats = [
@@ -163,7 +164,7 @@ const GrowWithUsPage = () => {
             ))}
           </div>
         </div>
-
+        <OurClients />
         <OurSuccessStory />
 
         {/* Call to Action Section */}

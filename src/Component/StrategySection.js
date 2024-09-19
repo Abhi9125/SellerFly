@@ -84,7 +84,7 @@ const StrategySection = () => {
         </div>
 
         {/* Call to Action */}
-        <div className="flex justify-center mt-12">
+        {/* <div className="flex justify-center mt-12">
           <a
             href="#contact"
             className="bg-red-600 hover:bg-red-700 text-white py-3 px-8 rounded-full font-bold transition-transform transform hover:scale-105 duration-300"
@@ -93,7 +93,7 @@ const StrategySection = () => {
           >
             Book Now
           </a>
-        </div>
+        </div> */}
       </div>
     </section>
   );
