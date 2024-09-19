@@ -67,7 +67,7 @@ const ContactPage = () => {
       setLanguage(""); // Reset language
       setErrors({});
     } catch (e) {
-      console.error("Error adding document: ", e);
+      // console.error("Error adding document: ", e);
       setFormStatus("Error submitting form, please try again later");
     }
   };

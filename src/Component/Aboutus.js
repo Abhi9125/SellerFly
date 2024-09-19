@@ -143,7 +143,7 @@ const AboutUs = () => {
             </div>
             <div className="w-full md:w-1/2" data-aos="fade-left">
               <p className="text-lg text-gray-700 leading-relaxed">
-                With offices located in Bangalore, Chennai, and Tiruppur, we
+                With offices located in Coimbatore, Chennai, and Tiruppur, we
                 operate on the pillars of innovation, excellence,
                 entrepreneurship, and creativity to drive your business forward.
               </p>

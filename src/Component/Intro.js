@@ -2,8 +2,6 @@ import React, { useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import introImage from "../Images/IntroImage.jpg"; // Replace with your actual image path
-import Mission from "../Images/Mission.jpg";
-import Vision from "../Images/Vision.jpg";
 
 const Intro = () => {
   const [currentText, setCurrentText] = useState("SME'S");
