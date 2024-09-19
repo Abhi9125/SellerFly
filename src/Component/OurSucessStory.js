@@ -40,8 +40,8 @@ const OurSuccessStory = () => {
   // Initialize AOS
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animation duration in milliseconds
-      once: true, // Whether animation should happen only once
+      duration: 1000,
+      once: true, // Only animate once
     });
   }, []);
 
@@ -49,13 +49,12 @@ const OurSuccessStory = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev === length - 1 ? 0 : prev + 1));
-    }, 5000); // Change slide every 4 seconds
+    }, 5000); // Auto-slide every 5 seconds
 
     return () => clearInterval(interval); // Cleanup on unmount
   }, [length]);
 
-  // Prevent unnecessary re-renders by not including currentSlide in dependency array
-
+  // Handlers for next and previous slide
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev === length - 1 ? 0 : prev + 1));
   };
@@ -69,10 +68,7 @@ const OurSuccessStory = () => {
   };
 
   return (
-    <section
-      className="bg-white text-gray-800 py-12 relative"
-      data-aos="fade-up"
-    >
+    <section className="bg-white text-gray-800 py-12 relative">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Title */}
         <div className="text-center mb-12" data-aos="fade-down">
@@ -91,53 +87,44 @@ const OurSuccessStory = () => {
             onClick={prevSlide}
             className="absolute left-2 sm:left-8 text-3xl sm:text-4xl text-gray-600 cursor-pointer hover:text-red-600 z-10 transition-transform transform hover:scale-110 focus:outline-none"
             aria-label="Previous Slide"
-            role="button"
             tabIndex={0}
-            onKeyDown={(e) => {
-              if (e.key === "Enter") prevSlide();
-            }}
-            data-aos="fade-right"
-            data-aos-delay="500"
           />
 
           {/* Slides */}
           {successStories.map((story, index) => (
             <div
               key={index}
-              className={
+              className={`transition-opacity duration-1000 ease-in-out transform ${
                 index === currentSlide
-                  ? "opacity-100 scale-100 transition-opacity duration-1000 ease-in-out transform"
-                  : "opacity-0 scale-95 transition-opacity duration-1000 ease-in-out transform absolute"
-              }
-              data-aos="zoom-in"
-              data-aos-delay={index * 100}
+                  ? "opacity-100 scale-100"
+                  : "opacity-0 scale-95"
+              }`}
+              style={{ display: index === currentSlide ? "block" : "none" }}
             >
-              {index === currentSlide && (
-                <div className="flex flex-col items-center bg-gray-100 p-6 rounded-lg shadow-lg w-full lg:w-full xl:w-full">
-                  {/* Large Image */}
-                  <div className="mb-4">
-                    <img
-                      src={story.image2}
-                      alt={`Success Story ${index + 1}`}
-                      className="w-full h-48 object-cover rounded-lg mb-2"
-                    />
-                  </div>
-
-                  {/* Small Logo */}
-                  <div className="flex justify-center mb-4">
-                    <img
-                      src={story.image1}
-                      alt={`Success Story Logo ${index + 1}`}
-                      className="w-24 h-24 object-contain"
-                    />
-                  </div>
-
-                  {/* Description */}
-                  <p className="text-center font-semibold text-gray-700">
-                    {story.description}
-                  </p>
+              <div className="flex flex-col items-center bg-gray-100 p-6 rounded-lg shadow-lg w-full">
+                {/* Large Image */}
+                <div className="mb-4">
+                  <img
+                    src={story.image2}
+                    alt={`Success Story ${index + 1}`}
+                    className="w-full h-48 object-cover rounded-lg mb-2"
+                  />
                 </div>
-              )}
+
+                {/* Small Logo */}
+                <div className="flex justify-center mb-4">
+                  <img
+                    src={story.image1}
+                    alt={`Success Story Logo ${index + 1}`}
+                    className="w-24 h-24 object-contain"
+                  />
+                </div>
+
+                {/* Description */}
+                <p className="text-center font-semibold text-gray-700">
+                  {story.description}
+                </p>
+              </div>
             </div>
           ))}
 
@@ -146,13 +133,7 @@ const OurSuccessStory = () => {
             onClick={nextSlide}
             className="absolute right-2 sm:right-8 text-3xl sm:text-4xl text-gray-600 cursor-pointer hover:text-red-600 z-10 transition-transform transform hover:scale-110 focus:outline-none"
             aria-label="Next Slide"
-            role="button"
             tabIndex={0}
-            onKeyDown={(e) => {
-              if (e.key === "Enter") nextSlide();
-            }}
-            data-aos="fade-left"
-            data-aos-delay="500"
           />
 
           {/* Dots Navigation */}

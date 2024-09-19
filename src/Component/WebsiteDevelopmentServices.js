@@ -4,7 +4,7 @@ import "aos/dist/aos.css";
 import ModalComponent from "./ModalComponent";
 import MainBannerimageforWebdevelopment from "../Images/webDevelopment1.jpg";
 import SempleClientWebsite from "../Images/WebdevelopmentClient2.jpg";
-import Heading_Banner from "../Images/Rout_Banner/services.png";
+import Heading_Banner from "../Images/Rout_Banner/Web_development.png";
 const WebsiteDevelopmentServices = () => {
   const [isModalOpen, setModalOpen] = useState(false);
 

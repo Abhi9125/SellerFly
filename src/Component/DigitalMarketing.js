@@ -9,6 +9,7 @@ import linkedinImage from "../Images/DigitalMarketing/Linkedin.png";
 import productPhotoImage from "../Images/DigitalMarketing/Photoshoot.png";
 import leadGenImage from "../Images/DigitalMarketing/Leadgen.png";
 import brandingImage from "../Images/DigitalMarketing/BrandingImg.png";
+import Heading_Banner from "../Images/Rout_Banner/DiditalMarketing.png";
 import ModalComponent from "./ModalComponent";
 
 const DigitalMarketing = () => {
@@ -31,7 +32,7 @@ const DigitalMarketing = () => {
       {/* Hero Section */}
       <section
         className="h-80 bg-cover bg-center relative"
-        style={{ backgroundImage: `url(/Rout_Banner/services.png)` }}
+        style={{ backgroundImage: `url(${Heading_Banner})` }}
         data-aos="fade-in"
       >
         <div
