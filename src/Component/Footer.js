@@ -48,7 +48,7 @@ const Footer = () => {
                 to="/contact-us"
                 className="text-gray-400 hover:text-red-600 transition-colors duration-300"
               >
-                Contact
+                Contact Us
               </Link>
             </li>
             <li>
