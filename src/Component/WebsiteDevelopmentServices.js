@@ -2,8 +2,10 @@ import React, { useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import ModalComponent from "./ModalComponent";
-import MainBannerimageforWebdevelopment from "../Images/webDevelopment1.jpg";
-import SempleClientWebsite from "../Images/WebdevelopmentClient2.jpg";
+import MainBannerimageforWebdevelopment from "../Images/webDevelopment1.png";
+import ZerotoOneSampleWebsite from "../Images/our_clients_Website_Images/0to1website.png";
+import PallavanoilSampleWebsite from "../Images/our_clients_Website_Images/PallavanOil_Website.png";
+import SellerflySampleWebsite from "../Images/our_clients_Website_Images/Sellerfly_Website.png";
 import Heading_Banner from "../Images/Rout_Banner/Web_development.png";
 const WebsiteDevelopmentServices = () => {
   const [isModalOpen, setModalOpen] = useState(false);
@@ -172,7 +174,58 @@ const WebsiteDevelopmentServices = () => {
 
       {/* Services Section */}
       <section className="py-16 bg-gray-100" data-aos="fade-up">
+        {/* Client Website Image */}
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <h2
+            className="text-3xl font-bold text-red-600 mb-6 text-center"
+            data-aos="flip-up"
+          >
+            Our Successful Projects
+          </h2>
+          <div
+            className="container mx-auto mt-12 px-4 sm:px-6 lg:px-8"
+            data-aos="fade-up"
+          >
+            <a href="https://0to1store.com/">
+              {" "}
+              <img
+                src={ZerotoOneSampleWebsite}
+                alt="Client Website Demo"
+                className="w-full h-auto rounded-lg shadow-lg"
+                loading="lazy"
+              />
+            </a>
+          </div>
+          <div
+            className="container mx-auto mt-12 px-4 sm:px-6 lg:px-8"
+            data-aos="fade-up"
+          >
+            <a href="https://pallavanoil.in/">
+              {" "}
+              <img
+                src={PallavanoilSampleWebsite}
+                alt="Client Website Demo"
+                className="w-full h-auto rounded-lg shadow-lg"
+                loading="lazy"
+              />
+            </a>
+          </div>
+          <div
+            className="container mx-auto mt-12 px-4 sm:px-6 lg:px-8"
+            data-aos="fade-up"
+          >
+            <a href="https://sellerfly.in/">
+              {" "}
+              <img
+                src={SellerflySampleWebsite}
+                alt="Client Website Demo"
+                className="w-full h-auto rounded-lg shadow-lg"
+                loading="lazy"
+              />
+            </a>
+          </div>
+        </div>
+        <div className="mt-7 container mx-auto px-4 sm:px-6 lg:px-8">
           <h2
             className="text-3xl font-bold text-red-600 mb-6 text-center"
             data-aos="flip-up"
@@ -317,18 +370,6 @@ const WebsiteDevelopmentServices = () => {
               </p>
             </div>
           </div>
-        </div>
-        {/* Client Website Image */}
-        <div
-          className="container mx-auto mt-12 px-4 sm:px-6 lg:px-8"
-          data-aos="fade-up"
-        >
-          <img
-            src={SempleClientWebsite}
-            alt="Client Website Demo"
-            className="w-full h-auto rounded-lg shadow-lg"
-            loading="lazy"
-          />
         </div>
       </section>
 
