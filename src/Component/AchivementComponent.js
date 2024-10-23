@@ -16,7 +16,7 @@ const AchievementComponent = () => {
   }, []);
 
   return (
-    <section className="bg-black py-16 px-10">
+    <section className="bg-white py-16 px-10">
       <ScrollTrigger
         onEnter={() => setCounterState(true)}
         onExit={() => setCounterState(false)}
@@ -24,7 +24,7 @@ const AchievementComponent = () => {
         <div className="container mx-auto">
           {/* Section Title */}
           <div className="text-center mb-12" data-aos="fade-down">
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-red-700 mb-2">
               Our Achievements
             </h2>
             <p className="text-gray-400 text-lg">
@@ -33,10 +33,10 @@ const AchievementComponent = () => {
           </div>
 
           {/* Achievement Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {/* Counter 1 */}
             <div
-              className="flex flex-col items-center justify-center p-6 bg-gray-800 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl"
+              className="flex flex-col items-center justify-center p-4 bg-gray-800 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl"
               data-aos="fade-up"
               data-aos-delay="100"
             >
@@ -63,7 +63,7 @@ const AchievementComponent = () => {
 
             {/* Counter 2 */}
             <div
-              className="flex flex-col items-center justify-center p-6 bg-gray-800 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl"
+              className="flex flex-col items-center justify-center p-4 bg-gray-800 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl"
               data-aos="fade-up"
               data-aos-delay="200"
             >
@@ -90,7 +90,7 @@ const AchievementComponent = () => {
 
             {/* Counter 3 */}
             <div
-              className="flex flex-col items-center justify-center p-6 bg-gray-800 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl"
+              className="flex flex-col items-center justify-center p-4 bg-gray-800 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl"
               data-aos="fade-up"
               data-aos-delay="300"
             >
@@ -117,7 +117,7 @@ const AchievementComponent = () => {
 
             {/* Counter 4 */}
             <div
-              className="flex flex-col items-center justify-center p-6 bg-gray-800 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl"
+              className="flex flex-col items-center justify-center p-4 bg-gray-800 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl"
               data-aos="fade-up"
               data-aos-delay="400"
             >

@@ -25,7 +25,7 @@ const Intro = () => {
   }, []);
 
   return (
-    <section className="font-body bg-white py-16 px-4 sm:px-6 lg:px-8 rounded-xl shadow-md">
+    <section className="font-body bg-white py-6 px-4 sm:px-6 lg:px-6 rounded-xl shadow-md">
       <div className="container mx-auto">
         {/* Section Title */}
         <div className="text-center mb-12" data-aos="fade-up">
