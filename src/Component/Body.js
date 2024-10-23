@@ -23,10 +23,10 @@ const Body = () => {
     <div>
       <MainBanner />
       <Intro />
+      <OurServices />
       <ConnectingBusinessImageSlides
         slides={SliderDataforConnectingBusinesses}
       />
-      <OurServices />
       <BoostSection />
       {/* <OurClients /> */}
       <WhyChooseUs />

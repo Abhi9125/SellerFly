@@ -8,7 +8,7 @@ const BoostSection = () => {
   const closeModal = () => setModalOpen(false);
 
   return (
-    <section className="bg-gradient-to-r from-black to-red-600 py-16 px-8 rounded-tl-[50px] rounded-tr-[50px]">
+    <section className="bg-gradient-to-r from-black to-red-600 mt-5 py-16 px-8 rounded-tl-[50px] rounded-tr-[50px]">
       <div className="container mx-auto text-center">
         <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6 animate-fade-in">
           Does your Online business need a boost?
