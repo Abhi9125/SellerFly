@@ -186,7 +186,11 @@ const WebsiteDevelopmentServices = () => {
             className="container mx-auto mt-12 px-4 sm:px-6 lg:px-8"
             data-aos="fade-up"
           >
-            <a href="https://0to1store.com/">
+            <a
+              href="https://0to1store.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {" "}
               <img
                 src={ZerotoOneSampleWebsite}
@@ -200,7 +204,11 @@ const WebsiteDevelopmentServices = () => {
             className="container mx-auto mt-12 px-4 sm:px-6 lg:px-8"
             data-aos="fade-up"
           >
-            <a href="https://pallavanoil.in/">
+            <a
+              href="https://pallavanoil.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {" "}
               <img
                 src={PallavanoilSampleWebsite}
@@ -214,7 +222,11 @@ const WebsiteDevelopmentServices = () => {
             className="container mx-auto mt-12 px-4 sm:px-6 lg:px-8"
             data-aos="fade-up"
           >
-            <a href="https://sellerfly.in/">
+            <a
+              href="https://sellerfly.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {" "}
               <img
                 src={SellerflySampleWebsite}
