@@ -306,7 +306,8 @@ const ContactPage = () => {
             {/* Social Links */}
             <div className="mt-4 space-x-4 flex">
               <a
-                href="#"
+                href="https://www.instagram.com/sellerfly/profilecard/?igsh=MWdyZmV2OHRqY2V3cg=="
+                target="_blank"
                 className="text-white text-lg hover:text-red-600 transition duration-300"
               >
                 <FaInstagram />

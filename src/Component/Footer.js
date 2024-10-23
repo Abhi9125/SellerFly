@@ -70,7 +70,7 @@ const Footer = () => {
           <h3 className="text-xl font-bold mb-4 text-red-600">Follow Us</h3>
           <div className="flex space-x-4">
             <a
-              href="https://www.facebook.com"
+              href="https://www.facebook.com/profile.php?id=61562528217228"
               className="text-gray-400 hover:text-red-600 transition-colors duration-300"
               target="_blank"
               rel="noopener noreferrer"
@@ -79,7 +79,7 @@ const Footer = () => {
               <FaFacebookF size={20} />
             </a>
             <a
-              href="https://www.instagram.com"
+              href="https://www.instagram.com/sellerfly/profilecard/?igsh=MWdyZmV2OHRqY2V3cg=="
               className="text-gray-400 hover:text-red-600 transition-colors duration-300"
               target="_blank"
               rel="noopener noreferrer"
