@@ -203,6 +203,7 @@ import HeroBanner from "./HeroBanner";
 import {
   FaPhoneAlt,
   FaEnvelope,
+  FaFacebookF,
   FaInstagram,
   FaLinkedin,
 } from "react-icons/fa";
@@ -306,18 +307,27 @@ const ContactPage = () => {
             {/* Social Links */}
             <div className="mt-4 space-x-4 flex">
               <a
-                href="https://www.instagram.com/sellerfly/profilecard/?igsh=MWdyZmV2OHRqY2V3cg=="
+                href="https://www.facebook.com/profile.php?id=61562528217228"
+                className="text-gray-400 hover:text-red-600 transition-colors duration-300"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+              >
+                <FaFacebookF />
+              </a>
+              <a
+                href="https://www.instagram.com/_sellerfly_/"
                 target="_blank"
                 className="text-white text-lg hover:text-red-600 transition duration-300"
               >
                 <FaInstagram />
               </a>
-              <a
+              {/* <a
                 href="#"
                 className="text-white text-lg hover:text-red-600 transition duration-300"
               >
                 <FaLinkedin />
-              </a>
+              </a> */}
             </div>
           </div>
 

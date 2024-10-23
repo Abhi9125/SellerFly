@@ -79,7 +79,7 @@ const Footer = () => {
               <FaFacebookF size={20} />
             </a>
             <a
-              href="https://www.instagram.com/sellerfly/profilecard/?igsh=MWdyZmV2OHRqY2V3cg=="
+              href="https://www.instagram.com/_sellerfly_/"
               className="text-gray-400 hover:text-red-600 transition-colors duration-300"
               target="_blank"
               rel="noopener noreferrer"
