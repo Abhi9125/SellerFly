@@ -182,7 +182,7 @@ const Header = () => {
           onClick={openModal}
           className="hidden sm:block bg-red-600 hover:bg-red-700 text-white py-2 px-6 rounded-lg font-bold transition duration-300"
         >
-          Book an Appointment
+          GET FREE CONSULTATION!!
         </button>
         {isModalOpen && <ModalComponent closeModal={closeModal} />}
       </div>
