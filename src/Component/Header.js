@@ -86,7 +86,7 @@ const Header = () => {
 
         {/* Navigation Links */}
         <nav
-          className={`fixed top-0 left-0 w-full h-full bg-white sm:ml-4 sm:hover:text-red-600 sm:bg-white sm:static sm:flex justify-center items-center sm:w-auto z-40 transition-all duration-300 ease-in-out ${
+          className={`fixed top-0 left-0 w-full h-full bg-white sm:ml-4 sm:hover:text-yellow-600 sm:bg-white sm:static sm:flex justify-center items-center sm:w-auto z-40 transition-all duration-300 ease-in-out ${
             isOpen ? "translate-x-0" : "-translate-x-full"
           } sm:translate-x-0`}
         >
@@ -97,7 +97,7 @@ const Header = () => {
                 onClick={toggleMenu}
                 className={`${
                   isScrolled ? "text-black" : "text-black"
-                } hover:text-red-600 font-bold transition duration-300`}
+                } hover:text-yellow-600 font-bold transition duration-300`}
               >
                 HOME
               </Link>
@@ -108,7 +108,7 @@ const Header = () => {
                 onClick={toggleMenu}
                 className={`${
                   isScrolled ? "text-black" : "text-black"
-                } hover:text-red-600 font-bold transition duration-300`}
+                } hover:text-yellow-600 font-bold transition duration-300`}
               >
                 ABOUT US
               </Link>
@@ -125,7 +125,7 @@ const Header = () => {
                 onClick={toggleMenu}
                 className={`${
                   isScrolled ? "text-black" : "text-black"
-                } hover:text-red-600 font-bold transition duration-300`}
+                } hover:text-yellow-600 font-bold transition duration-300`}
               >
                 SERVICES
               </Link>
@@ -134,17 +134,17 @@ const Header = () => {
               {isDropdownOpen && (
                 <div className="absolute top-full left-0 mt-2 w-48 bg-white text-black shadow-lg rounded-lg p-4 transform scale-95 group-hover:scale-100 transition-transform duration-300 ease-in-out">
                   <ul>
-                    <li className="hover:bg-gray-100 hover:text-red-600 p-2 rounded transition duration-300">
+                    <li className="hover:bg-gray-100 hover:text-yellow-600 p-2 rounded transition duration-300">
                       <Link to="/E-commerce-management">
                         E-commerce Account Management
                       </Link>
                     </li>
-                    <li className="hover:bg-gray-100 hover:text-red-600 p-2 rounded transition duration-300">
+                    <li className="hover:bg-gray-100 hover:text-yellow-600 p-2 rounded transition duration-300">
                       <Link to="/WebsiteDevelopmentService">
                         Website Development
                       </Link>
                     </li>
-                    <li className="hover:bg-gray-100 hover:text-red-600 p-2 rounded transition duration-300">
+                    <li className="hover:bg-gray-100 hover:text-yellow-600 p-2 rounded transition duration-300">
                       <Link to="/Digital-Marketing">Digital Marketing</Link>
                     </li>
                   </ul>
@@ -158,7 +158,7 @@ const Header = () => {
                 onClick={toggleMenu}
                 className={`${
                   isScrolled ? "text-black" : "text-black"
-                } hover:text-red-600 font-bold transition duration-300`}
+                } hover:text-yellow-600 font-bold transition duration-300`}
               >
                 GROW WITH US
               </Link>
@@ -169,7 +169,7 @@ const Header = () => {
                 onClick={toggleMenu}
                 className={`${
                   isScrolled ? "text-black" : "text-black"
-                } hover:text-red-600 font-bold transition duration-300`}
+                } hover:text-yellow-600 font-bold transition duration-300`}
               >
                 CONTACT US
               </Link>
@@ -180,7 +180,7 @@ const Header = () => {
         {/* CTA Button - Only show on desktop */}
         <button
           onClick={openModal}
-          className="hidden sm:block bg-red-600 hover:bg-red-700 text-white py-2 px-6 rounded-lg font-bold transition duration-300"
+          className="hidden sm:block bg-yellow-600 hover:bg-yellow-700 text-white py-2 px-6 rounded-lg font-bold transition duration-300"
         >
           GET FREE CONSULTATION!!
         </button>

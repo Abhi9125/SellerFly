@@ -5,6 +5,8 @@ import ModalComponent from "./ModalComponent";
 import MainBannerimageforWebdevelopment from "../Images/webDevelopment1.png";
 import ZerotoOneSampleWebsite from "../Images/our_clients_Website_Images/0to1website.png";
 import PallavanoilSampleWebsite from "../Images/our_clients_Website_Images/PallavanOil_Website.png";
+import DerkleySampleWebsite from "../Images/our_clients_Website_Images/derkley_Website.png";
+import SmileyButtonsSampleWebsite from "../Images/our_clients_Website_Images/smileybuttons_Website.png";
 import SellerflySampleWebsite from "../Images/our_clients_Website_Images/Sellerfly_Website.png";
 import Heading_Banner from "../Images/Rout_Banner/Web_development.png";
 const WebsiteDevelopmentServices = () => {
@@ -212,6 +214,42 @@ const WebsiteDevelopmentServices = () => {
               {" "}
               <img
                 src={PallavanoilSampleWebsite}
+                alt="Client Website Demo"
+                className="w-full h-auto rounded-lg shadow-lg"
+                loading="lazy"
+              />
+            </a>
+          </div>
+          <div
+            className="container mx-auto mt-12 px-4 sm:px-6 lg:px-8"
+            data-aos="fade-up"
+          >
+            <a
+              href="https://derkley.in/?srsltid=AfmBOoobi1ea-C7AYxFOW9aHeIKZXNIQfKfpkmMvIOf8xRu5JN2p_J9T"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {" "}
+              <img
+                src={DerkleySampleWebsite}
+                alt="Client Website Demo"
+                className="w-full h-auto rounded-lg shadow-lg"
+                loading="lazy"
+              />
+            </a>
+          </div>
+          <div
+            className="container mx-auto mt-12 px-4 sm:px-6 lg:px-8"
+            data-aos="fade-up"
+          >
+            <a
+              href="https://pallavanoil.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {" "}
+              <img
+                src={SmileyButtonsSampleWebsite}
                 alt="Client Website Demo"
                 className="w-full h-auto rounded-lg shadow-lg"
                 loading="lazy"
