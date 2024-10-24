@@ -243,7 +243,7 @@ const WebsiteDevelopmentServices = () => {
             data-aos="fade-up"
           >
             <a
-              href="https://pallavanoil.in/"
+              href="https://www.smileybuttons.in/"
               target="_blank"
               rel="noopener noreferrer"
             >
