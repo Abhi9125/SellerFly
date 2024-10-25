@@ -63,13 +63,13 @@ const DigitalMarketing = () => {
             comprehensive digital marketing solutions tailored to your business
             goals, ensuring growth and visibility across all platforms.
           </p>
-          <img
+          {/* <img
             src={marketingImage}
             alt="Digital Marketing Overview"
             className="w-full h-auto mt-8 rounded-lg shadow-lg transition-transform transform hover:scale-105 duration-300"
             data-aos="zoom-in"
             loading="lazy"
-          />
+          /> */}
         </div>
       </section>
 
