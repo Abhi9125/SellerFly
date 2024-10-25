@@ -168,12 +168,14 @@ const DigitalMarketing = () => {
           {/* Content */}
           <div className="lg:w-1/2" data-aos="fade-left" data-aos-delay="200">
             <h2 className="text-3xl font-bold text-red-600 mb-4">
-              LinkedIn Account Management
+              Social Media Account Management
             </h2>
             <p className="text-gray-700 leading-relaxed">
-              Optimize your LinkedIn presence with our comprehensive management
-              services. From profile enhancements to content creation, we ensure
-              your professional network thrives.
+              Social media account management helps grow a brand by creating,
+              scheduling, and analyzing content to engage audiences and build a
+              loyal community. It strengthens brand presence and supports
+              business goals through consistent, strategic posts and
+              audience interaction.
             </p>
           </div>
         </div>
