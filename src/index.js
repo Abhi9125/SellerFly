@@ -17,6 +17,7 @@ import ModalComponent from "./Component/ModalComponent";
 import EcommerceSellerAccountManagement from "./Component/EcommerceSellerAccountManagement";
 import WebsiteDevelopmentServices from "./Component/WebsiteDevelopmentServices";
 import DigitalMarketing from "./Component/DigitalMarketing";
+import DigitalServices from "./Component/DigitalServices";
 // import AboutUs from "./Component/AboutUs";
 
 const appRouter = createBrowserRouter([
@@ -49,6 +50,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/Digital-Marketing",
         element: <DigitalMarketing />,
+      },
+      {
+        path: "/Digital-services",
+        element: <DigitalServices />,
       },
       {
         path: "/Other-Services",

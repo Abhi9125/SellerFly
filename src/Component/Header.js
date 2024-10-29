@@ -344,6 +344,9 @@ const Header = () => {
                       <Link to="/Digital-Marketing">Digital Marketing</Link>
                     </li>
                     <li className="hover:bg-gray-100 hover:text-red-600 p-2 rounded transition duration-300">
+                      <Link to="/Digital-services">Digital Services</Link>
+                    </li>
+                    <li className="hover:bg-gray-100 hover:text-red-600 p-2 rounded transition duration-300">
                       <Link to="/Digital-Marketing">Photo Shoot</Link>
                     </li>
                   </ul>
@@ -369,6 +372,11 @@ const Header = () => {
                     <li className="hover:bg-gray-100 hover:text-red-600 p-2 rounded transition duration-300">
                       <Link to="/Digital-Marketing" onClick={toggleMenu}>
                         Digital Marketing
+                      </Link>
+                    </li>
+                    <li className="hover:bg-gray-100 hover:text-red-600 p-2 rounded transition duration-300">
+                      <Link to="/Digital-services" onClick={toggleMenu}>
+                        Digital Services
                       </Link>
                     </li>
                     <li className="hover:bg-gray-100 hover:text-red-600 p-2 rounded transition duration-300">
