@@ -162,9 +162,9 @@ import "aos/dist/aos.css";
 import whatsappIcon from "../Images/whatsapp.png"; // Ensure the correct path to your WhatsApp icon
 
 // Import banner images
-import banner1 from "../Images/Main-Banner/banner sellerfly-9.png";
-import banner2 from "../Images/Main-Banner/banner sellerfly-10.png";
-import banner3 from "../Images/Main-Banner/banner sellerfly-11.png";
+import banner1 from "../Images/Main-Banner/banner sellerfly-9.jpg";
+import banner2 from "../Images/Main-Banner/banner sellerfly-10.jpg";
+import banner3 from "../Images/Main-Banner/banner sellerfly-11.jpg";
 import { Link } from "react-router-dom";
 
 // Custom Arrow Component
