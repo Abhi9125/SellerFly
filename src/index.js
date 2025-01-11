@@ -19,6 +19,7 @@ import WebsiteDevelopmentServices from "./Component/WebsiteDevelopmentServices";
 import DigitalMarketing from "./Component/DigitalMarketing";
 // import DigitalServices from "./Component/DigitalServices";
 import DigitalServices from "./Component/DigitalServices";
+import Blog from "./Component/Blog";
 // import AboutUs from "./Component/AboutUs";
 
 const appRouter = createBrowserRouter([
@@ -59,6 +60,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/grow-with-us",
         element: <GrowWithUsPage />,
+      },
+      {
+        path: "/blog",
+        element: <Blog />,
       },
       {
         path: "/contact-us",

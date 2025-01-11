@@ -207,7 +207,7 @@ const Header = () => {
             </li>
             <li>
               <Link
-                to="/grow-with-us"
+                to="/blog"
                 onClick={toggleMenu}
                 className={`${
                   isScrolled ? "text-black" : "text-black"
