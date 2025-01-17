@@ -9,7 +9,7 @@ import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import bgImage from "../Images/new_img.png"; // Replace with your actual image
+import bgImage from "../Images/new_img.png";
 import ModalComponent from "./ModalComponent";
 import OurSuccessStory from "./OurSucessStory";
 import Grow_Banner from "../Images/Rout_Banner/grow.png";

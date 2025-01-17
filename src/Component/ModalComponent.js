@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { db } from "../firebaseConfig"; // Ensure firebaseConfig is correctly imported
+import { db } from "../firebaseConfig";
 import { collection, addDoc } from "firebase/firestore";
 
 const ModalComponent = ({ closeModal }) => {

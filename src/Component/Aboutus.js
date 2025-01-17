@@ -167,7 +167,7 @@ const AboutUs = () => {
           </p>
           <button
             className="bg-white text-red-600 font-bold py-2 px-8 rounded-lg hover:bg-gray-100 hover:text-red-700 transition duration-300"
-            onClick={openModal} // Update with actual contact section ID or link
+            onClick={openModal}
           >
             Contact Us Today
           </button>

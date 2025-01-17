@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import AOS from "aos";
-import "aos/dist/aos.css"; // Animation on Scroll
+import "aos/dist/aos.css";
 import ModalComponent from "./ModalComponent";
 import Service_Banner from "../Images/Rout_Banner/services.png";
 

@@ -14,10 +14,10 @@ const ContactPage = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [number, setNumber] = useState("");
-  const [requirements, setRequirements] = useState(""); // New state for requirements
-  const [language, setLanguage] = useState(""); // New state for language
-  const [formStatus, setFormStatus] = useState(null); // Added status for form submission
-  const [errors, setErrors] = useState({}); // State for input errors
+  const [requirements, setRequirements] = useState("");
+  const [language, setLanguage] = useState("");
+  const [formStatus, setFormStatus] = useState(null);
+  const [errors, setErrors] = useState({});
 
   const validate = () => {
     const newErrors = {};

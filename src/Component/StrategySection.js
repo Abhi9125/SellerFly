@@ -37,8 +37,8 @@ const strategiesData = [
 const StrategySection = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animation duration in milliseconds
-      once: true, // Whether animation should happen only once
+      duration: 1000,
+      once: true,
     });
   }, []);
 
@@ -51,7 +51,7 @@ const StrategySection = () => {
         {/* Section Title */}
         <div className="text-center mb-12" data-aos="fade-up">
           <h2 className="text-3xl font-bold text-red-600 mb-4">Our Strategy</h2>
-          <p className="text-gray-700">Boost Your Sales With Seller Rocket</p>
+          <p className="text-gray-700">Boost Your Sales With Sellerfly</p>
         </div>
 
         {/* Strategy Cards */}

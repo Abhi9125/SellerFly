@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import ModalComponent from "./ModalComponent";
-import logo_Img from "../Images/logo-main.png"; // Replace with your logo path
+import logo_Img from "../Images/logo-main.png";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -53,7 +53,7 @@ const Header = () => {
 
   const scrollToSectionWithOffset = (sectionId) => {
     const element = document.getElementById(sectionId);
-    const yOffset = -80; // Adjust this value based on your header height
+    const yOffset = -80;
     const y =
       element.getBoundingClientRect().top + window.pageYOffset + yOffset;
 

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import introImage from "../Images/IntroImage.jpg"; // Replace with your actual image path
+import introImage from "../Images/IntroImage.jpg";
 
 const Intro = () => {
   const [currentText, setCurrentText] = useState("SME'S");
@@ -9,7 +9,7 @@ const Intro = () => {
   const textArray = ["SME'S", "MANUFACTURERS", "BRANDS"];
 
   useEffect(() => {
-    AOS.init({ duration: 1000, once: true }); // Initialize AOS animations
+    AOS.init({ duration: 1000, once: true });
   }, []);
 
   useEffect(() => {

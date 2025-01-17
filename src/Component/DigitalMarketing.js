@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import marketingImage from "../Images/DigitalMarketing/Main_Banner.png"; // Replace with actual image paths
+import marketingImage from "../Images/DigitalMarketing/Main_Banner.png";
 import seoImage from "../Images/DigitalMarketing/Seo.png";
 import ppcImage from "../Images/DigitalMarketing/Pay-per-click.png";
 import socialMediaImage from "../Images/DigitalMarketing/SocialMediaMarketing.png";
@@ -21,9 +21,9 @@ const DigitalMarketing = () => {
   // Initialize AOS
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animation duration in milliseconds
-      once: true, // Whether animation should happen only once
-      easing: "ease-in-out", // Easing function for smoother animations
+      duration: 1000,
+      once: true,
+      easing: "ease-in-out",
     });
   }, []);
 
