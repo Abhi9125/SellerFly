@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import ModalComponent from "./ModalComponent";
-import logo_Img from "../Images/logo-main.png";
+import logo_Img from "../Images/Logo.jpg";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -73,7 +73,7 @@ const Header = () => {
           <img
             src={logo_Img}
             alt="Logo"
-            className="h-16 sm:h-10 lg:w-28 lg:h-24 rounded-sm"
+            className="h-20 sm:h-16 lg:w-36 lg:h-32 rounded-sm"
           />
         </Link>
 
