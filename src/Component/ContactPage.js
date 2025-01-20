@@ -8,6 +8,7 @@ import {
   FaFacebookF,
   FaInstagram,
   FaLinkedin,
+  FaMapMarkerAlt,
 } from "react-icons/fa";
 
 const ContactPage = () => {
@@ -99,6 +100,12 @@ const ContactPage = () => {
               <div className="flex items-center">
                 <FaPhoneAlt className="mr-2 text-red-500" />
                 <p className="text-white">Phone: +91-6381780309</p>
+              </div>
+              <div className="flex items-center">
+                <FaMapMarkerAlt className="mr-2 text-red-500" />
+                <p className="text-white">
+                  964, Chettukarar street, Ellappalayam, Tamil Nadu, 641697
+                </p>
               </div>
               <div className="flex items-center">
                 <FaEnvelope className="mr-2 text-red-500" />
