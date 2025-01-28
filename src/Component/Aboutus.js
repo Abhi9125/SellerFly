@@ -3,6 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css"; // AOS animation styles
 import Aboutus from "../Images/Rout_Banner/About-us.png";
 import ModalComponent from "./ModalComponent";
+import AboutSection_logo from "../Images/Logo.jpg";
 const AboutUs = () => {
   const [isModalOpen, setModalOpen] = useState(false);
   const openModal = () => setModalOpen(true);
@@ -85,7 +86,7 @@ const AboutUs = () => {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-16 bg-white">
+      <section className="py-2 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2
             className="text-3xl font-bold text-red-600 mb-12"
@@ -115,7 +116,7 @@ const AboutUs = () => {
       </section>
 
       {/* About Us Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-4 bg-gray-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <h2
             className="text-3xl font-bold text-red-600 text-center mb-12"
@@ -136,7 +137,7 @@ const AboutUs = () => {
           <div className="flex flex-col md:flex-row items-center gap-8">
             <div className="w-full md:w-1/2" data-aos="fade-right">
               <img
-                src="logo-main.png"
+                src={AboutSection_logo}
                 alt="SellerFly Team"
                 className="rounded-lg shadow-lg w-full object-cover"
               />
@@ -154,7 +155,7 @@ const AboutUs = () => {
 
       {/* Call to Action */}
       <section
-        className="py-16 bg-red-600 text-center text-white"
+        className="py-16 my-4 bg-red-600 text-center text-white"
         data-aos="fade-up"
       >
         <div className="container mx-auto">

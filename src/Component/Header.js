@@ -68,12 +68,12 @@ const Header = () => {
           : "relative bg-transparent"
       }`}
     >
-      <div className="container mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-6 py-4">
+      <div className="container mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-6 py-3">
         <Link to="/">
           <img
             src={logo_Img}
             alt="Logo"
-            className="h-20 sm:h-16 lg:w-36 lg:h-32 rounded-sm"
+            className="h-20 w-44 sm:h-20 lg:w-44 lg:h-20 lg:py-2 rounded-sm"
           />
         </Link>
 
@@ -94,7 +94,7 @@ const Header = () => {
             isOpen ? "translate-x-0" : "-translate-x-full"
           } sm:translate-x-0`}
         >
-          <ul className="flex flex-col sm:flex-row sm:space-x-8 lg:space-x-12 space-y-6 sm:space-y-0 mt-20 sm:mt-0 text-lg px-6">
+          <ul className="flex flex-col sm:flex-row sm:space-x-8 lg:space-x-7 space-y-6 sm:space-y-0 mt-10 sm:mt-0 text-lg px-6">
             {" "}
             {/* Added px-6 for padding */}
             <li>

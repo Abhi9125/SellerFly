@@ -81,13 +81,35 @@ const Intro = () => {
               100X in a short time. Our mission is to provide top-notch services
               to help businesses thrive in the competitive digital marketplace.
             </p>
-            {/* <a
-              href="#"
-              className="inline-block bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-6 rounded-lg shadow-md transition transform hover:scale-105 duration-300 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50"
-              aria-label="Learn More About Us"
-            >
-              Learn More
-            </a> */}
+          </div>
+        </div>
+
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-10 mb-12">
+          {/* Text Section */}
+          <div
+            className="text-lg text-gray-800 max-w-3xl text-center lg:text-left"
+            data-aos="fade-left"
+          >
+            <h3 className="text-2xl font-bold text-black mb-2">
+              Mr. Senthilkumar
+            </h3>
+            <p className="text-md font-semibold text-red-600 mb-4">
+              Co-Founder
+            </p>
+            <p className="mb-4 leading-relaxed text-gray-700">
+              We are a team of internationally certified E-Commerce & Digital
+              Experts with a vision to grow your e-commerce business from 10X to
+              100X in a short time. Our mission is to provide top-notch services
+              to help businesses thrive in the competitive digital marketplace.
+            </p>
+          </div>
+          {/* Image Section */}
+          <div className="flex-shrink-0" data-aos="zoom-in">
+            <img
+              src={introImage}
+              alt="Intro"
+              className="w-56 h-56 lg:w-80 lg:h-80 rounded-lg object-cover shadow-xl transform hover:scale-105 transition-transform duration-500 ease-in-out"
+            />
           </div>
         </div>
       </div>
