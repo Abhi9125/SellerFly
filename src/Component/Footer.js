@@ -233,14 +233,22 @@ const Footer = () => {
             <FaEnvelope className="mr-2 text-red-600" />{" "}
             sellerflyonline@gmail.com
           </p>
-          <p className="text-gray-400 mb-4 flex items-center">
+          <p className="text-gray-400 my-1 flex items-center font-bold">
+            {" "}
             <FaMapMarkerAlt className="mr-2 text-red-600" />
-            964, Chettukarar street, Ellappalayam, Tamil Nadu, 641697 SD-2 4TH
+            Registration Address
           </p>
           <p className="text-gray-400 mb-4 flex items-center">
+            964, Chettukarar street, Ellappalayam, Tamil Nadu, 641697
+          </p>
+          <p className="text-gray-400 my-1 flex items-center font-bold">
+            {" "}
             <FaMapMarkerAlt className="mr-2 text-red-600" />
-            Office Address - SD-2 4TH FLOOR ALAYAM IMPERIAL APARTMENT JP NAGAR
-            KUNIYAMUTHUR COIMBATORE -641008
+            Office Address
+          </p>
+          <p className="text-gray-400 mb-4 flex items-center">
+            SD-2 4TH FLOOR ALAYAM IMPERIAL APARTMENT JP NAGAR KUNIYAMUTHUR
+            COIMBATORE -641008
           </p>
         </div>
       </div>
