@@ -4,6 +4,9 @@ import "aos/dist/aos.css"; // AOS animation styles
 import Aboutus from "../Images/Rout_Banner/About-us.png";
 import ModalComponent from "./ModalComponent";
 import AboutSection_logo from "../Images/Logo.jpg";
+import certificates from "../Images/Certificates.jpg";
+import introImage from "../Images/IntroImage.jpg";
+
 const AboutUs = () => {
   const [isModalOpen, setModalOpen] = useState(false);
   const openModal = () => setModalOpen(true);
@@ -47,41 +50,11 @@ const AboutUs = () => {
           >
             At SellerFly, we empower SMEs and brands to expand their online
             presence through comprehensive e-commerce services and tailored
-            solutions.
+            solutions. SellerFly is an innovative e-commerce technology company
+            focused on helping SMEs and brands establish and grow their online
+            businesses. Founded in 2020, our leadership team comprises former
+            employees from industry giants.
           </p>
-        </div>
-      </section>
-
-      {/* Vision and Mission Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div
-              className="bg-white p-6 rounded-lg shadow-lg"
-              data-aos="fade-right"
-            >
-              <h3 className="text-2xl font-bold text-red-600 mb-4">
-                Our Vision
-              </h3>
-              <p className="text-lg text-gray-700">
-                To enable brands and SMEs to achieve significant growth and
-                success in the digital marketplace.
-              </p>
-            </div>
-            <div
-              className="bg-white p-6 rounded-lg shadow-lg"
-              data-aos="fade-left"
-            >
-              <h3 className="text-2xl font-bold text-red-600 mb-4">
-                Our Mission
-              </h3>
-              <p className="text-lg text-gray-700">
-                To deliver state-of-the-art e-commerce technologies and
-                solutions that simplify and accelerate the online growth of
-                businesses.
-              </p>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -115,40 +88,121 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* About Us Section */}
-      <section className="py-4 bg-gray-50">
+      {/* Vision and Mission Section */}
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div
+              className="bg-white p-6 rounded-lg shadow-lg"
+              data-aos="fade-right"
+            >
+              <h3 className="text-2xl font-bold text-red-600 mb-4">
+                Our Vision
+              </h3>
+              <p className="text-lg text-gray-700">
+                To enable brands and SMEs to achieve significant growth and
+                success in the digital marketplace.
+              </p>
+            </div>
+            <div
+              className="bg-white p-6 rounded-lg shadow-lg"
+              data-aos="fade-left"
+            >
+              <h3 className="text-2xl font-bold text-red-600 mb-4">
+                Our Mission
+              </h3>
+              <p className="text-lg text-gray-700">
+                To deliver state-of-the-art e-commerce technologies and
+                solutions that simplify and accelerate the online growth of
+                businesses.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Certification Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Certificates Section */}
           <h2
-            className="text-3xl font-bold text-red-600 text-center mb-12"
+            className="text-3xl font-bold text-red-600 text-center mb-4"
             data-aos="fade-up"
           >
-            About Us
+            Our Certificates
           </h2>
           <p
-            className="text-lg text-gray-700 leading-relaxed mb-12 text-center"
+            className="text-lg text-gray-700 text-center mb-8"
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            SellerFly is an innovative e-commerce technology company focused on
-            helping SMEs and brands establish and grow their online businesses.
-            Founded in 2020, our leadership team comprises former employees from
-            industry giants.
+            Write some content here to describe our certificates and
+            achievements. This section highlights our commitment to quality and
+            excellence.
           </p>
-          <div className="flex flex-col md:flex-row items-center gap-8">
-            <div className="w-full md:w-1/2" data-aos="fade-right">
+          <div
+            className="flex justify-center"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <img
+              src={certificates}
+              alt="Certificates"
+              className="w-full max-w-md rounded-lg shadow-lg object-cover"
+            />
+          </div>
+
+          {/* Spacing between the two parts */}
+          <div className="mt-10"></div>
+
+          {/* Additional Image & Paragraph Section */}
+          <h3
+            className="text-2xl font-bold text-red-600 text-center mb-4"
+            data-aos="fade-up"
+          >
+            Meet Our Founder
+          </h3>
+          <div className="flex flex-col lg:flex-row items-center justify-center gap-10 mb-12">
+            {/* Image Section */}
+            <div className="flex-shrink-0" data-aos="zoom-in">
               <img
-                src={AboutSection_logo}
-                alt="SellerFly Team"
-                className="rounded-lg shadow-lg w-full object-cover"
+                src={introImage}
+                alt="Intro"
+                className="w-56 h-56 lg:w-80 lg:h-80 rounded-lg object-cover shadow-xl transform hover:scale-105 transition-transform duration-500 ease-in-out"
               />
             </div>
-            <div className="w-full md:w-1/2" data-aos="fade-left">
-              <p className="text-lg text-gray-700 leading-relaxed">
-                With offices located in Coimbatore, Chennai, and Tiruppur, we
-                operate on the pillars of innovation, excellence,
-                entrepreneurship, and creativity to drive your business forward.
+
+            {/* Text Section */}
+            <div
+              className="text-lg text-gray-800 max-w-3xl text-center lg:text-left"
+              data-aos="fade-left"
+            >
+              <h3 className="text-2xl font-bold text-black mb-2">
+                Mr. Senthilkumar
+              </h3>
+              <p className="text-md font-semibold text-red-600 mb-4">
+                Founder &amp; CEO
+              </p>
+              <p className="mb-4 leading-relaxed text-gray-700">
+                We are a team of internationally certified E-Commerce &amp;
+                Digital Experts with a vision to grow your e-commerce business
+                from 10X to 100X in a short time. Our mission is to provide
+                top-notch services to help businesses thrive in the competitive
+                digital marketplace.
               </p>
             </div>
+          </div>
+
+          <div
+            className="flex justify-center"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <img
+              src={AboutSection_logo}
+              alt="SellerFly Team"
+              className="w-full max-w-md rounded-lg shadow-lg object-cover"
+            />
           </div>
         </div>
       </section>
