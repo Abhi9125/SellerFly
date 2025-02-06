@@ -136,9 +136,13 @@ const AboutUs = () => {
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            Write some content here to describe our certificates and
-            achievements. This section highlights our commitment to quality and
-            excellence.
+            At SellerFly, we take pride in our commitment to quality,
+            compliance, and excellence in the e-commerce industry. We are a
+            government-registered entity, ensuring reliability and
+            trustworthiness in all our business operations. We are officially
+            certified under the Limited Liability Partnership Act, 2008,
+            reinforcing our credibility as a legally recognized and compliant
+            business.
           </p>
           <div
             className="flex justify-center"
