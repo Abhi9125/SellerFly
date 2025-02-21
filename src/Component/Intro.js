@@ -21,27 +21,27 @@ const Intro = () => {
       });
     }, 3000); // Change text every 3 seconds
 
-    return () => clearInterval(intervalId); // Cleanup on unmount
+    return () => clearInterval(intervalId);
   }, []);
 
   return (
-    <section className="font-body bg-white py-6 px-4 sm:px-6 lg:px-6 rounded-xl shadow-md">
+    <section className="font-body bg-white py-8 px-4 sm:px-6 lg:px-8 rounded-xl shadow-md">
       <div className="container mx-auto">
         {/* Section Title */}
         <div className="text-center mb-12" data-aos="fade-up">
-          <h3 className="text-lg sm:text-xl text-red-600 font-bold tracking-wide uppercase">
+          <h3 className="text-lg sm:text-xl text-blue-950 font-bold tracking-wide uppercase">
             Who We Are
           </h3>
         </div>
 
         {/* Text Content */}
         <div
-          className="flex flex-col justify-center items-center h-full text-center text-black mb-12"
+          className="flex flex-col justify-center items-center text-center text-black mb-12"
           data-aos="fade-up"
         >
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 leading-tight">
             We Help{" "}
-            <span className="bg-red-600 text-white px-2 py-1 rounded-md">
+            <span className="bg-[#ab5836] text-white px-2 py-1 rounded-md">
               {currentText}
             </span>{" "}
             Grow Their Business Online
@@ -72,14 +72,15 @@ const Intro = () => {
             <h3 className="text-2xl font-bold text-black mb-2">
               Mr. Senthilkumar
             </h3>
-            <p className="text-md font-semibold text-red-600 mb-4">
-              Founder & CEO
+            <p className="text-md font-semibold text-[#ab5836] mb-4">
+              Founder &amp; CEO
             </p>
             <p className="mb-4 leading-relaxed text-gray-700">
-              We are a team of internationally certified E-Commerce & Digital
-              Experts with a vision to grow your e-commerce business from 10X to
-              100X in a short time. Our mission is to provide top-notch services
-              to help businesses thrive in the competitive digital marketplace.
+              We are a team of internationally certified E-Commerce &amp;
+              Digital Experts with a vision to grow your e-commerce business
+              from 10X to 100X in a short time. Our mission is to provide
+              top-notch services to help businesses thrive in the competitive
+              digital marketplace.
             </p>
           </div>
         </div>

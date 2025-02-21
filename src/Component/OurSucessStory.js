@@ -68,11 +68,11 @@ const OurSuccessStory = () => {
   };
 
   return (
-    <section className="bg-white text-gray-800 py-12 relative">
+    <section className="bg-white text-gray-800 py-8 relative">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Title */}
-        <div className="text-center mb-12" data-aos="fade-down">
-          <h3 className="text-3xl sm:text-4xl font-bold text-red-600 uppercase mb-4">
+        <div className="text-center mb-8" data-aos="fade-down">
+          <h3 className="text-3xl sm:text-4xl font-bold text-blue-950 uppercase mb-4">
             Our Success Stories
           </h3>
           <p className="text-gray-700">
@@ -85,7 +85,7 @@ const OurSuccessStory = () => {
           {/* Left Arrow */}
           <FaArrowAltCircleLeft
             onClick={prevSlide}
-            className="absolute left-2 sm:left-8 text-3xl sm:text-4xl text-gray-600 cursor-pointer hover:text-red-600 z-10 transition-transform transform hover:scale-110 focus:outline-none"
+            className="absolute left-2 sm:left-8 text-3xl sm:text-4xl text-gray-600 cursor-pointer hover:text-[#ab5836] z-10 transition-transform transform hover:scale-110 focus:outline-none"
             aria-label="Previous Slide"
             tabIndex={0}
           />
@@ -131,7 +131,7 @@ const OurSuccessStory = () => {
           {/* Right Arrow */}
           <FaArrowAltCircleRight
             onClick={nextSlide}
-            className="absolute right-2 sm:right-8 text-3xl sm:text-4xl text-gray-600 cursor-pointer hover:text-red-600 z-10 transition-transform transform hover:scale-110 focus:outline-none"
+            className="absolute right-2 sm:right-8 text-3xl sm:text-4xl text-gray-600 cursor-pointer hover:text-[#ab5836] z-10 transition-transform transform hover:scale-110 focus:outline-none"
             aria-label="Next Slide"
             tabIndex={0}
           />
@@ -143,7 +143,7 @@ const OurSuccessStory = () => {
                 key={idx}
                 onClick={() => goToSlide(idx)}
                 className={`w-3 h-3 rounded-full ${
-                  idx === currentSlide ? "bg-red-600" : "bg-gray-400"
+                  idx === currentSlide ? "bg-[#ab5836]" : "bg-gray-400"
                 } transition-colors duration-300 focus:outline-none`}
                 aria-label={`Go to slide ${idx + 1}`}
               ></button>

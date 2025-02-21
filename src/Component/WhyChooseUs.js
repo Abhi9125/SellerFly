@@ -66,16 +66,16 @@ const WhyChooseUs = () => {
   useEffect(() => {
     AOS.init({
       duration: 1000, // Animation duration in milliseconds
-      once: true, // Whether animation should happen only once
+      once: true, // Animation happens only once
     });
   }, []);
 
   return (
-    <section className="bg-gradient-to-r from-white to-gray-100 text-gray-800 py-12 px-8 rounded-lg shadow-xl">
+    <section className="bg-gradient-to-r from-white to-gray-100 text-gray-800 py-8 px-4 sm:px-6 lg:px-8 rounded-lg shadow-xl">
       <div className="container mx-auto">
         {/* Section Title */}
-        <div className="text-center mb-10" data-aos="fade-up">
-          <h2 className="text-3xl font-extrabold text-red-600 mb-4">
+        <div className="text-center mb-8" data-aos="fade-up">
+          <h2 className="text-3xl font-extrabold text-blue-950 mb-4">
             Why Choose Us
           </h2>
           <p className="text-lg text-gray-600">
@@ -89,7 +89,7 @@ const WhyChooseUs = () => {
           {servicesData.map((service, index) => (
             <div
               key={index}
-              className="flex items-start p-6 bg-white rounded-lg shadow-md hover:bg-red-50 hover:shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
+              className="flex items-start p-6 bg-white rounded-lg shadow-md hover:bg-[#ab5836]/10 hover:shadow-lg transition-transform duration-300 ease-in-out transform hover:scale-105"
               data-aos="fade-up"
               data-aos-delay={index * 100} // Staggered animation delay
             >

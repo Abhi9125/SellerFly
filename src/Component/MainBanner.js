@@ -7,20 +7,22 @@ import "aos/dist/aos.css";
 import whatsappIcon from "../Images/whatsapp.png"; // Ensure the correct path to your WhatsApp icon
 
 // Import banner images
-import banner1 from "../Images/Main-Banner/Banner_1.jpg";
-import banner2 from "../Images/Main-Banner/Banner_2.jpg";
-import banner3 from "../Images/Main-Banner/Banner_3.jpg";
+import banner1 from "../Images/Main-Banner/FontPage_Banner61.png";
+import banner2 from "../Images/Main-Banner/FrontPage_banner12.png";
+import banner3 from "../Images/Main-Banner/FrontPage_Banner43.png";
+import banner4 from "../Images/Main-Banner/FrontPage_banner34.png";
+import banner5 from "../Images/Main-Banner/FrontPage_Banner55.png";
 import { Link } from "react-router-dom";
 
-// Custom Arrow Component
+// Custom Arrow Components with updated color
 const CustomPrevArrow = (props) => {
   const { onClick } = props;
   return (
     <div
-      className="absolute left-4 top-1/2 transform -translate-y-1/2 text-3xl z-10 cursor-pointer text-red-700 hover:text-black"
+      className="absolute left-4 top-1/2 transform -translate-y-1/2 text-3xl z-10 cursor-pointer text-[#ab5836] hover:text-black"
       onClick={onClick}
     >
-      &#60; {/* Represents '<' */}
+      &#60;
     </div>
   );
 };
@@ -29,10 +31,10 @@ const CustomNextArrow = (props) => {
   const { onClick } = props;
   return (
     <div
-      className="absolute right-4 top-1/2 transform -translate-y-1/2 text-3xl z-10 cursor-pointer text-red-700 hover:text-black"
+      className="absolute right-4 top-1/2 transform -translate-y-1/2 text-3xl z-10 cursor-pointer text-[#ab5836] hover:text-black"
       onClick={onClick}
     >
-      &#62; {/* Represents '>' */}
+      &#62;
     </div>
   );
 };
@@ -107,6 +109,22 @@ const MainBanner = () => {
       imageUrl: banner3,
       animation: "fade-up",
     },
+    {
+      title: "Expand Your Reach Through Strategic Social Media Marketing",
+      description:
+        "Grow your business and engage a wider audience using our expert social media strategies tailored to maximize your brand’s impact.",
+      buttonText: "Get Started Today",
+      imageUrl: banner4,
+      animation: "fade-up",
+    },
+    {
+      title: "Expand Your Reach Through Strategic Social Media Marketing",
+      description:
+        "Grow your business and engage a wider audience using our expert social media strategies tailored to maximize your brand’s impact.",
+      buttonText: "Get Started Today",
+      imageUrl: banner5,
+      animation: "fade-up",
+    },
   ];
 
   return (
@@ -118,44 +136,47 @@ const MainBanner = () => {
             <img
               src={banner.imageUrl}
               alt={banner.title}
-              className="w-full h-full md:h-full object-cover"
+              className="w-full h-full rounded-2xl md:h-full object-cover"
               loading="lazy"
             />
 
             {/* Overlay Content */}
             <div
-              className="absolute inset-0 bg-black bg-opacity-0 flex flex-col justify-start items-center text-center px-4 sm:px-6 lg:px-8 pt-4 md:pt-20 sm:pt-4"
+              className="absolute inset-0 flex flex-col justify-center items-center text-center px-4 sm:px-6 lg:px-8"
               aria-hidden="true" // Hide from screen readers if purely decorative
             >
-              {/* Title with AOS Animation */}
               {/* Uncomment below lines to show title */}
-              {/* <h2
-                className="text-red-800 text-3xl md:text-7xl font-extrabold mb-4 drop-shadow-lg"
+              {/*
+              <h2
+                className="text-[#ab5836] text-3xl md:text-7xl font-extrabold mb-4 drop-shadow-lg"
                 data-aos={banner.animation}
               >
                 {banner.title}
-              </h2> */}
+              </h2>
+              */}
 
-              {/* Description with AOS Animation and Delay */}
               {/* Uncomment below lines to show description */}
-              {/* <p
+              {/*
+              <p
                 className="text-black font-bold text-2xl md:text-2xl max-w-2xl mb-6 drop-shadow-lg"
                 data-aos="fade-up"
                 data-aos-delay="200"
               >
                 {banner.description}
-              </p> */}
+              </p>
+              */}
 
-              {/* CTA Button with AOS Animation and Hover Effect */}
               {/* Uncomment below lines to show button */}
-              {/* <button
-                className="bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-6 rounded-lg shadow-md transition transform hover:scale-105 duration-300 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50"
+              {/*
+              <button
+                className="bg-[#ab5836] hover:bg-[#ab5836] text-white font-semibold py-2 px-6 rounded-lg shadow-md transition transform hover:scale-105 duration-300 focus:outline-none focus:ring-2 focus:ring-[#ab5836] focus:ring-opacity-50"
                 aria-label={banner.buttonText}
                 data-aos="fade-up"
                 data-aos-delay="400"
               >
                 <Link to="/contact-us">{banner.buttonText}</Link>
-              </button> */}
+              </button>
+              */}
             </div>
           </div>
         ))}

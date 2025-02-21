@@ -77,11 +77,11 @@ const OurServices = () => {
   }, []);
 
   return (
-    <section className="bg-gray-100 py-10">
-      <div className="container mx-auto px-4">
+    <section className="bg-gray-100 py-8">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Title */}
-        <div className="text-center mb-6" data-aos="fade-up">
-          <h2 className="text-4xl font-extrabold mb-4 text-red-600">
+        <div className="text-center mb-8" data-aos="fade-up">
+          <h2 className="text-4xl font-extrabold mb-4 text-blue-950">
             Our Services
           </h2>
           <p className="text-lg text-gray-600">
@@ -90,15 +90,15 @@ const OurServices = () => {
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-white p-4 rounded-lg shadow-lg h-48 flex flex-col items-center justify-center transform transition duration-500 hover:scale-105 hover:shadow-2xl"
+              className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center justify-center transform transition duration-500 hover:scale-105 hover:shadow-2xl"
               data-aos="zoom-in"
-              data-aos-delay={`${index * 100}`} // Delay for staggered animation
+              data-aos-delay={`${index * 100}`}
             >
-              <div className="flex items-center justify-center w-12 h-12 mb-4 bg-red-800 rounded-full animate-bounce">
+              <div className="flex items-center justify-center w-12 h-12 mb-4 bg-[#ab5836] rounded-full animate-bounce">
                 {service.icon}
               </div>
               <h3 className="text-lg font-semibold text-black mb-2">

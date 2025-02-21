@@ -44,13 +44,15 @@ const StrategySection = () => {
 
   return (
     <section
-      className="py-16 bg-gradient-to-r from-white to-gray-100"
+      className="py-8 bg-gradient-to-r from-white to-gray-100"
       data-aos="fade-up"
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Title */}
-        <div className="text-center mb-12" data-aos="fade-up">
-          <h2 className="text-3xl font-bold text-red-600 mb-4">Our Strategy</h2>
+        <div className="text-center mb-8" data-aos="fade-up">
+          <h2 className="text-3xl font-bold text-blue-950 mb-4">
+            Our Strategy
+          </h2>
           <p className="text-gray-700">Boost Your Sales With SellerFly</p>
         </div>
 
@@ -65,7 +67,7 @@ const StrategySection = () => {
             >
               {/* Numbered Circle */}
               <div className="flex justify-center items-center mb-6">
-                <div className="w-20 h-20 border-4 border-red-600 text-red-600 rounded-full flex items-center justify-center text-3xl font-bold transition-transform transform hover:scale-110 duration-300 ease-in-out">
+                <div className="w-20 h-20 border-4 border-[#ab5836] text-[#ab5836] rounded-full flex items-center justify-center text-3xl font-bold transition-transform transform hover:scale-110 duration-300 ease-in-out">
                   {strategy.number}
                 </div>
               </div>
@@ -83,17 +85,19 @@ const StrategySection = () => {
           ))}
         </div>
 
-        {/* Call to Action */}
-        {/* <div className="flex justify-center mt-12">
+        {/* Call to Action (Optional) */}
+        {/*
+        <div className="flex justify-center mt-12">
           <a
             href="#contact"
-            className="bg-red-600 hover:bg-red-700 text-white py-3 px-8 rounded-full font-bold transition-transform transform hover:scale-105 duration-300"
+            className="bg-[#ab5836] hover:bg-[#ab5836]/90 text-white py-3 px-8 rounded-full font-bold transition-transform transform hover:scale-105 duration-300"
             data-aos="fade-up"
             data-aos-delay="600"
           >
             Book Now
           </a>
-        </div> */}
+        </div>
+        */}
       </div>
     </section>
   );

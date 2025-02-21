@@ -16,24 +16,24 @@ const AchievementComponent = () => {
   }, []);
 
   return (
-    <section className="bg-white py-16 px-10">
+    <section className="bg-white py-8 px-4 sm:px-6 lg:px-8">
       <ScrollTrigger
         onEnter={() => setCounterState(true)}
         onExit={() => setCounterState(false)}
       >
         <div className="container mx-auto">
           {/* Section Title */}
-          <div className="text-center mb-12" data-aos="fade-down">
-            <h2 className="text-3xl sm:text-4xl font-bold text-red-700 mb-2">
+          <div className="text-center mb-8" data-aos="fade-down">
+            <h2 className="text-3xl sm:text-4xl font-bold text-blue-950 mb-2">
               Our Achievements
             </h2>
-            <p className="text-gray-400 text-lg">
+            <p className="text-gray-600 text-lg">
               Celebrating our milestones and successes
             </p>
           </div>
 
           {/* Achievement Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Counter 1 */}
             <div
               className="flex flex-col items-center justify-center p-4 bg-gray-800 rounded-lg shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-2xl"
@@ -41,7 +41,7 @@ const AchievementComponent = () => {
               data-aos-delay="100"
             >
               <FaUsers
-                className="text-6xl mb-4 text-red-600 animate-bounce"
+                className="text-6xl mb-4 text-[#ab5836] animate-bounce"
                 aria-hidden="true"
               />
               <h2 className="text-5xl font-bold text-white">
@@ -68,7 +68,7 @@ const AchievementComponent = () => {
               data-aos-delay="200"
             >
               <FaStar
-                className="text-6xl mb-4 text-red-600 animate-bounce"
+                className="text-6xl mb-4 text-[#ab5836] animate-bounce"
                 aria-hidden="true"
               />
               <h2 className="text-5xl font-bold text-white">
@@ -95,7 +95,7 @@ const AchievementComponent = () => {
               data-aos-delay="300"
             >
               <FaCoffee
-                className="text-6xl mb-4 text-red-600 animate-bounce"
+                className="text-6xl mb-4 text-[#ab5836] animate-bounce"
                 aria-hidden="true"
               />
               <h2 className="text-5xl font-bold text-white">
@@ -122,7 +122,7 @@ const AchievementComponent = () => {
               data-aos-delay="400"
             >
               <FaChartBar
-                className="text-6xl mb-4 text-red-600 animate-bounce"
+                className="text-6xl mb-4 text-[#ab5836] animate-bounce"
                 aria-hidden="true"
               />
               <h2 className="text-5xl font-bold text-white">
