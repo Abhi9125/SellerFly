@@ -96,19 +96,21 @@ const ContactPage = () => {
             </p>
 
             <div className="text-left text-lg space-y-2">
-              <h3 className="font-semibold text-red-600">Expertise Support:</h3>
+              <h3 className="font-semibold text-[#ab5836]">
+                Expertise Support:
+              </h3>
               <div className="flex items-center">
-                <FaPhoneAlt className="mr-2 text-red-500" />
+                <FaPhoneAlt className="mr-2 text-[#ab5836]" />
                 <p className="text-white">Phone: +91-6381780309</p>
               </div>
               <div className="flex items-center">
-                <FaMapMarkerAlt className="mr-2 text-red-500" />
+                <FaMapMarkerAlt className="mr-2 text-[#ab5836]" />
                 <p className="text-white">
                   964, Chettukarar street, Ellappalayam, Tamil Nadu, 641697
                 </p>
               </div>
               <div className="flex items-center">
-                <FaEnvelope className="mr-2 text-red-500" />
+                <FaEnvelope className="mr-2 text-[#ab5836]" />
                 <p className="text-white">Email: sellerflyonline@gmail.com</p>
               </div>
             </div>
@@ -117,7 +119,7 @@ const ContactPage = () => {
             <div className="mt-4 space-x-4 flex">
               <a
                 href="https://www.facebook.com/profile.php?id=61562528217228"
-                className="text-gray-400 hover:text-red-600 transition-colors duration-300"
+                className="text-gray-400 hover:text-[#ab5836] transition-colors duration-300"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook"
@@ -127,7 +129,7 @@ const ContactPage = () => {
               <a
                 href="https://www.instagram.com/_sellerfly_/"
                 target="_blank"
-                className="text-white text-lg hover:text-red-600 transition duration-300"
+                className="text-white text-lg hover:text-[#ab5836] transition duration-300"
               >
                 <FaInstagram />
               </a>
@@ -158,7 +160,7 @@ const ContactPage = () => {
 
               <div>
                 <input
-                  className="appearance-none block w-full bg-gray-100 border border-gray-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-red-600"
+                  className="appearance-none block w-full bg-gray-100 border border-gray-300 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-[#ab5836]"
                   type="number"
                   placeholder="Phone no"
                   value={number}

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import ECommerceCoimbatore from "../Images/Blog/E-Commerce Website Development.jpg";
@@ -6,8 +6,12 @@ import PremiumChennai from "../Images/Blog/Premium E-Commerce Solution.jpg";
 import DigitalMarketingChennai from "../Images/Blog/Digital Marketing Srategies.jpg";
 import LocalSEO from "../Images/Blog/Local Seo Optimization.jpg";
 import BlogBanner from "../Images/Blog/Blog_Sub_banner.jpg";
+import ModalComponent from "./ModalComponent";
 
 const Blog = () => {
+  const [isModalOpen, setModalOpen] = useState(false);
+  const openModal = () => setModalOpen(true);
+  const closeModal = () => setModalOpen(false);
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
   }, []);
@@ -30,12 +34,9 @@ const Blog = () => {
       </div>
 
       {/* Header Component */}
-      <div className="container mt-10 mx-auto px-4 sm:px-6 lg:px-8">
-        <section className="mb-6">
-          <h1
-            className="text-4xl font-bold text-red-600 text-center mb-6"
-            data-aos="fade-up"
-          >
+      <div className="container mx-auto mt-10 px-4 sm:px-6 lg:px-8">
+        <section className="mb-6" data-aos="fade-up">
+          <h1 className="text-4xl font-bold text-center mb-6 text-[#ab5836]">
             Transforming Tamil Nadu’s Digital Landscape with Sellerfly
           </h1>
           <p
@@ -48,11 +49,8 @@ const Blog = () => {
         </section>
 
         {/* Introduction Component */}
-        <section className="mb-16">
-          <p
-            className="text-lg text-gray-700 leading-relaxed mb-12 text-center"
-            data-aos="fade-up"
-          >
+        <section className="mb-16" data-aos="fade-up">
+          <p className="text-lg text-gray-700 leading-relaxed mb-12 text-center">
             In a world driven by digital innovation, businesses across Tamil
             Nadu – from Chennai to Coimbatore and Hosur – are embracing
             Sellerfly’s expertise to thrive online. Our e-commerce development
@@ -65,7 +63,7 @@ const Blog = () => {
         {/* Why Sellerfly Excels in E-Commerce Development Component */}
         <section className="mb-16">
           <h2
-            className="text-3xl font-bold text-red-600 mb-6"
+            className="text-3xl font-bold text-center mb-6 text-[#ab5836]"
             data-aos="fade-up"
           >
             Why Sellerfly Excels in E-Commerce Development
@@ -121,7 +119,7 @@ const Blog = () => {
         {/* E-Commerce Success Features Component */}
         <section className="mb-16">
           <h2
-            className="text-3xl font-bold text-red-600 mb-6 text-center"
+            className="text-3xl font-bold text-center mb-6 text-[#ab5836]"
             data-aos="fade-up"
           >
             E-Commerce Success Features
@@ -131,7 +129,7 @@ const Blog = () => {
               <img
                 src={DigitalMarketingChennai}
                 alt="SEO-optimized e-commerce website for Coimbatore businesses"
-                className="rounded-lg shadow-lg "
+                className="rounded-lg shadow-lg"
               />
             </div>
             <div data-aos="fade-left">
@@ -164,7 +162,7 @@ const Blog = () => {
         {/* Data-Driven Digital Marketing Component */}
         <section className="mb-16">
           <h2
-            className="text-3xl font-bold text-red-600 mb-6 text-center"
+            className="text-3xl font-bold text-center mb-6 text-[#ab5836]"
             data-aos="fade-up"
           >
             Data-Driven Digital Marketing for Tamil Nadu
@@ -206,7 +204,7 @@ const Blog = () => {
         {/* Multi-Platform E-Commerce Management Component */}
         <section className="mb-16">
           <h2
-            className="text-3xl font-bold text-red-600 mb-6 text-center"
+            className="text-3xl font-bold text-center mb-6 text-[#ab5836]"
             data-aos="fade-up"
           >
             Simplifying Multi-Platform E-Commerce Management
@@ -223,7 +221,7 @@ const Blog = () => {
         {/* SEO Strategies Component */}
         <section className="mb-16">
           <h2
-            className="text-3xl font-bold text-red-600 mb-6 text-center"
+            className="text-3xl font-bold text-center mb-6 text-[#ab5836]"
             data-aos="fade-up"
           >
             The Power of SEO with Sellerfly
@@ -261,7 +259,7 @@ const Blog = () => {
         {/* Analytics and Data Insights Component */}
         <section className="mb-16">
           <h2
-            className="text-3xl font-bold text-red-600 mb-6 text-center"
+            className="text-3xl font-bold text-center mb-6 text-[#ab5836]"
             data-aos="fade-up"
           >
             Advanced Analytics and Data-Driven Decisions
@@ -277,7 +275,7 @@ const Blog = () => {
         {/* Why Partner with Sellerfly Component */}
         <section className="mb-16">
           <h2
-            className="text-3xl font-bold text-red-600 mb-6 text-center"
+            className="text-3xl font-bold text-center mb-6 text-[#ab5836]"
             data-aos="fade-up"
           >
             Why Partner with Sellerfly?
@@ -301,8 +299,8 @@ const Blog = () => {
         </section>
 
         {/* Call-to-Action Component */}
-        <section
-          className="py-16 rounded-2xl bg-red-600 text-white text-center mt-16"
+        {/* <section
+          className="py-16 rounded-2xl bg-[#ab5836] text-white text-center mt-16"
           data-aos="fade-up"
         >
           <h2 className="text-2xl font-bold mb-4">
@@ -314,13 +312,35 @@ const Blog = () => {
           </p>
           <a
             href="https://sellerfly.in/"
-            className="bg-white text-red-600 font-bold py-2 px-8 rounded-lg hover:bg-gray-100 hover:text-red-700 transition duration-300"
+            className="bg-white text-[#ab5836] font-bold py-2 px-8 rounded-lg hover:bg-gray-100 hover:text-[#ab5836] transition duration-300"
           >
             Visit Us
           </a>
           <p className="mt-4">Call us at +916381780309 / +917815879870</p>
-        </section>
+        </section> */}
       </div>
+      {/* Call to Action */}
+      <section
+        className="py-16 my-4 bg-[#ab5836] text-center text-white"
+        data-aos="fade-up"
+      >
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-bold mb-4">
+            Ready to Scale Your E-Commerce Business?
+          </h2>
+          <p className="text-lg mb-6">
+            Join forces with SellerFly and unlock the full potential of major
+            e-commerce platforms.
+          </p>
+          <button
+            className="bg-white text-[#ab5836] font-bold py-2 px-8 rounded-lg hover:bg-gray-100 hover:text-[#ab5836] transition duration-300"
+            onClick={openModal}
+          >
+            Contact Us Today
+          </button>
+          {isModalOpen && <ModalComponent closeModal={closeModal} />}
+        </div>
+      </section>
     </div>
   );
 };

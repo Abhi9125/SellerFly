@@ -42,7 +42,7 @@ const phases = [
     details:
       "Registration portals: Amazon, Flipkart, Glowroad, Meesho, Shop101, Ajio, Solv, Limeroad. TAT: 2 days for some platforms, and 7-14 days for others. GST verification, E-signature, and brand approval start immediately after registration.",
     icon: <FaUserCheck />,
-    color: "#f56565", // Red
+    color: "#f56565", // Red remains as provided for phase 1
   },
   {
     title: "PHASE - 2",
@@ -100,7 +100,7 @@ const RoadmapTimeline = () => {
           </h1>
         </div>
       </div>
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Top GIF Images Section */}
         <section className="py-8 bg-gray-100" data-aos="fade-up">
           <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-12">
@@ -124,7 +124,7 @@ const RoadmapTimeline = () => {
 
         {/* Title for the Roadmap */}
         <h2
-          className="text-3xl font-bold text-center mb-12 text-red-600"
+          className="text-3xl font-bold text-center mb-12 text-[#ab5836]"
           data-aos="fade-up"
         >
           SELLERFLY WORKING PROCESS AND PROGRESS
@@ -136,11 +136,12 @@ const RoadmapTimeline = () => {
             <VerticalTimelineElement
               key={index}
               contentStyle={{ background: phase.color, color: "#fff" }}
-              contentArrowStyle={{ borderRight: `7px solid ${phase.color}` }}
+              contentArrowStyle={{
+                borderRight: `7px solid ${phase.color}`,
+              }}
               date={phase.title}
               iconStyle={{ background: phase.color, color: "#fff" }}
               icon={phase.icon}
-              // AOS animation for each phase
               data-aos="fade-up"
               data-aos-delay={index * 200}
             >
@@ -151,12 +152,14 @@ const RoadmapTimeline = () => {
           ))}
         </VerticalTimeline>
       </div>
+
       {/* Success Stories Slideshow */}
       <OurSuccessStory />
-      // {/* Why Partner with SellerFly */}
+
+      {/* Why Partner with SellerFly Section */}
       <section className="py-16 bg-white text-center" data-aos="fade-up">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-red-600 mb-6">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-[#ab5836] mb-6">
             Why Partner with SellerFly?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -186,12 +189,13 @@ const RoadmapTimeline = () => {
           </div>
         </div>
       </section>
+
       {/* Call to Action */}
       <section
-        className="py-16 bg-red-600 text-center text-white"
+        className="py-16 bg-[#ab5836] text-center text-white"
         data-aos="fade-up"
       >
-        <div className="container mx-auto">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold mb-4">
             Ready to Scale Your E-Commerce Business?
           </h2>
@@ -200,8 +204,8 @@ const RoadmapTimeline = () => {
             e-commerce platforms.
           </p>
           <button
-            className="bg-white text-red-600 font-bold py-2 px-8 rounded-lg hover:bg-gray-100 hover:text-red-700 transition duration-300"
-            onClick={openModal} // Update with actual contact section ID or link
+            className="bg-white text-[#ab5836] font-bold py-2 px-8 rounded-lg hover:bg-gray-100 hover:text-[#ab5836] transition duration-300"
+            onClick={openModal}
           >
             Contact Us Today
           </button>

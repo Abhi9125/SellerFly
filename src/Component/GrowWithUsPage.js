@@ -18,23 +18,23 @@ import OurClients from "./OurClients";
 // Stats Data
 const stats = [
   {
-    icon: <FaShoppingCart className="text-red-600 text-4xl" />,
+    icon: <FaShoppingCart className="text-[#ab5836] text-4xl" />,
     title: "E-Commerce Accounts Managed",
     count: 350,
   },
   {
-    icon: <FaBullhorn className="text-red-600 text-4xl" />,
+    icon: <FaBullhorn className="text-[#ab5836] text-4xl" />,
     title: "Websites Developed",
     count: 150,
   },
   {
-    icon: <FaChartLine className="text-red-600 text-4xl" />,
+    icon: <FaChartLine className="text-[#ab5836] text-4xl" />,
     title: "Revenue Generated",
     count: 50,
     suffix: "M+",
   },
   {
-    icon: <FaRocket className="text-red-600 text-4xl" />,
+    icon: <FaRocket className="text-[#ab5836] text-4xl" />,
     title: "Years of Experience",
     count: 14,
   },
@@ -43,25 +43,25 @@ const stats = [
 // Services Data
 const services = [
   {
-    icon: <FaRocket className="text-4xl text-red-600" />,
+    icon: <FaRocket className="text-4xl text-[#ab5836]" />,
     title: "Grow Your Online Store",
     description:
       "We help you optimize your store, increase traffic, and maximize conversion rates.",
   },
   {
-    icon: <FaBullhorn className="text-4xl text-red-600" />,
+    icon: <FaBullhorn className="text-4xl text-[#ab5836]" />,
     title: "Targeted Digital Marketing",
     description:
       "Boost your sales with targeted marketing strategies tailored to your business goals.",
   },
   {
-    icon: <FaShoppingCart className="text-4xl text-red-600" />,
+    icon: <FaShoppingCart className="text-4xl text-[#ab5836]" />,
     title: "E-Commerce Expertise",
     description:
       "Leverage our experience in managing online marketplaces to scale your business.",
   },
   {
-    icon: <FaChartLine className="text-4xl text-red-600" />,
+    icon: <FaChartLine className="text-4xl text-[#ab5836]" />,
     title: "Lead Generation",
     description:
       "Our lead generation strategies drive growth and help you find potential buyers.",
@@ -79,7 +79,7 @@ const GrowWithUsPage = () => {
   useEffect(() => {
     AOS.init({
       duration: 1000, // Animation duration in milliseconds
-      once: true, // Whether animation should happen only once
+      once: true, // Animate only once
     });
   }, []);
 
@@ -117,7 +117,7 @@ const GrowWithUsPage = () => {
           onExit={() => setCounterOn(false)}
         >
           <div
-            className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-4"
+            className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-4 sm:px-6 lg:px-8"
             data-aos="fade-up"
           >
             {stats.map((stat, index) => (
@@ -143,7 +143,10 @@ const GrowWithUsPage = () => {
         </ScrollTrigger>
 
         {/* Services Section */}
-        <div className="container mx-auto mt-16 px-4" data-aos="fade-up">
+        <div
+          className="container mx-auto mt-16 px-4 sm:px-6 lg:px-8"
+          data-aos="fade-up"
+        >
           <h2 className="text-3xl font-bold text-center text-gray-800 mb-10">
             How We Help You Grow
           </h2>
@@ -155,7 +158,7 @@ const GrowWithUsPage = () => {
                 data-aos="zoom-in"
                 data-aos-delay={index * 100}
               >
-                <div className="mb-6">{service.icon}</div>
+                <div className="ml-24 mb-6">{service.icon}</div>
                 <h3 className="text-xl font-semibold text-gray-800 mb-4">
                   {service.title}
                 </h3>
@@ -168,10 +171,13 @@ const GrowWithUsPage = () => {
         <OurSuccessStory />
 
         {/* Call to Action Section */}
-        <div className="text-center mt-16" data-aos="fade-up">
+        <div
+          className="container mx-auto mt-16 px-4 sm:px-6 lg:px-8 text-center"
+          data-aos="fade-up"
+        >
           <button
             onClick={openModal}
-            className="bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-8 rounded-full transition duration-300 inline-block"
+            className="bg-[#ab5836] hover:bg-[#ab5836]/90 text-white font-bold py-4 px-8 rounded-full transition duration-300 inline-block"
             aria-label="Start Growing with Us Today"
           >
             Start Growing with Us Today

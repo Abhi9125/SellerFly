@@ -38,7 +38,7 @@ const AboutUs = () => {
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2
-            className="text-3xl font-bold text-red-600 mb-6"
+            className="text-3xl font-bold text-[#ab5836] mb-6"
             data-aos="fade-up"
           >
             Innovate. Build. Grow.
@@ -62,7 +62,7 @@ const AboutUs = () => {
       <section className="py-2 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2
-            className="text-3xl font-bold text-red-600 mb-12"
+            className="text-3xl font-bold text-[#ab5836] mb-12"
             data-aos="fade-up"
           >
             Why Choose SellerFly
@@ -96,7 +96,7 @@ const AboutUs = () => {
               className="bg-white p-6 rounded-lg shadow-lg"
               data-aos="fade-right"
             >
-              <h3 className="text-2xl font-bold text-red-600 mb-4">
+              <h3 className="text-2xl font-bold text-[#ab5836] mb-4">
                 Our Vision
               </h3>
               <p className="text-lg text-gray-700">
@@ -108,7 +108,7 @@ const AboutUs = () => {
               className="bg-white p-6 rounded-lg shadow-lg"
               data-aos="fade-left"
             >
-              <h3 className="text-2xl font-bold text-red-600 mb-4">
+              <h3 className="text-2xl font-bold text-[#ab5836] mb-4">
                 Our Mission
               </h3>
               <p className="text-lg text-gray-700">
@@ -126,7 +126,7 @@ const AboutUs = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           {/* Certificates Section */}
           <h2
-            className="text-3xl font-bold text-red-600 text-center mb-4"
+            className="text-3xl font-bold text-[#ab5836] text-center mb-4"
             data-aos="fade-up"
           >
             Our Certificates
@@ -161,7 +161,7 @@ const AboutUs = () => {
 
           {/* Additional Image & Paragraph Section */}
           <h3
-            className="text-2xl font-bold text-red-600 text-center mb-4"
+            className="text-2xl font-bold text-[#ab5836] text-center mb-4"
             data-aos="fade-up"
           >
             Meet Our Founder
@@ -184,7 +184,7 @@ const AboutUs = () => {
               <h3 className="text-2xl font-bold text-black mb-2">
                 Mr. Senthilkumar
               </h3>
-              <p className="text-md font-semibold text-red-600 mb-4">
+              <p className="text-md font-semibold text-[#ab5836] mb-4">
                 Founder &amp; CEO
               </p>
               <p className="mb-4 leading-relaxed text-gray-700">
@@ -213,10 +213,10 @@ const AboutUs = () => {
 
       {/* Call to Action */}
       <section
-        className="py-16 my-4 bg-red-600 text-center text-white"
+        className="py-16 my-4 bg-[#ab5836] text-center text-white"
         data-aos="fade-up"
       >
-        <div className="container mx-auto">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold mb-4">
             Ready to Scale Your E-Commerce Business?
           </h2>
@@ -225,7 +225,7 @@ const AboutUs = () => {
             e-commerce platforms.
           </p>
           <button
-            className="bg-white text-red-600 font-bold py-2 px-8 rounded-lg hover:bg-gray-100 hover:text-red-700 transition duration-300"
+            className="bg-white text-[#ab5836] font-bold py-2 px-8 rounded-lg hover:bg-gray-100 hover:text-[#ab5836] transition duration-300"
             onClick={openModal}
           >
             Contact Us Today

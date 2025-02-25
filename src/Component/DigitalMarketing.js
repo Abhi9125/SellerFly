@@ -49,7 +49,7 @@ const DigitalMarketing = () => {
       <section className="py-16 bg-white" data-aos="fade-up">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <h2
-            className="text-3xl font-bold text-red-700 mb-6"
+            className="text-3xl font-bold text-[#ab5836] mb-6"
             data-aos="fade-right"
           >
             Why Your Business Needs Professional Digital Marketing
@@ -63,13 +63,6 @@ const DigitalMarketing = () => {
             comprehensive digital marketing solutions tailored to your business
             goals, ensuring growth and visibility across all platforms.
           </p>
-          {/* <img
-            src={marketingImage}
-            alt="Digital Marketing Overview"
-            className="w-full h-auto mt-8 rounded-lg shadow-lg transition-transform transform hover:scale-105 duration-300"
-            data-aos="zoom-in"
-            loading="lazy"
-          /> */}
         </div>
       </section>
 
@@ -78,7 +71,7 @@ const DigitalMarketing = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center gap-8">
           {/* Content */}
           <div className="lg:w-1/2" data-aos="fade-right" data-aos-delay="100">
-            <h2 className="text-3xl font-bold text-red-600 mb-4">
+            <h2 className="text-3xl font-bold text-[#ab5836] mb-4">
               Search Engine Optimization (SEO)
             </h2>
             <p className="text-gray-700 leading-relaxed">
@@ -114,7 +107,7 @@ const DigitalMarketing = () => {
           </div>
           {/* Content */}
           <div className="lg:w-1/2" data-aos="fade-left" data-aos-delay="200">
-            <h2 className="text-3xl font-bold text-red-600 mb-4">
+            <h2 className="text-3xl font-bold text-[#ab5836] mb-4">
               Pay-Per-Click (PPC) Advertising
             </h2>
             <p className="text-gray-700 leading-relaxed">
@@ -131,7 +124,7 @@ const DigitalMarketing = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center gap-8">
           {/* Content */}
           <div className="lg:w-1/2" data-aos="fade-right" data-aos-delay="100">
-            <h2 className="text-3xl font-bold text-red-600 mb-4">
+            <h2 className="text-3xl font-bold text-[#ab5836] mb-4">
               Social Media Marketing
             </h2>
             <p className="text-gray-700 leading-relaxed">
@@ -167,15 +160,15 @@ const DigitalMarketing = () => {
           </div>
           {/* Content */}
           <div className="lg:w-1/2" data-aos="fade-left" data-aos-delay="200">
-            <h2 className="text-3xl font-bold text-red-600 mb-4">
+            <h2 className="text-3xl font-bold text-[#ab5836] mb-4">
               Social Media Account Management
             </h2>
             <p className="text-gray-700 leading-relaxed">
               Social media account management helps grow a brand by creating,
               scheduling, and analyzing content to engage audiences and build a
               loyal community. It strengthens brand presence and supports
-              business goals through consistent, strategic posts and
-              audience interaction.
+              business goals through consistent, strategic posts and audience
+              interaction.
             </p>
           </div>
         </div>
@@ -186,7 +179,7 @@ const DigitalMarketing = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center gap-8">
           {/* Content */}
           <div className="lg:w-1/2" data-aos="fade-right" data-aos-delay="100">
-            <h2 className="text-3xl font-bold text-red-600 mb-4">
+            <h2 className="text-3xl font-bold text-[#ab5836] mb-4">
               Product Photoshoot
             </h2>
             <p className="text-gray-700 leading-relaxed">
@@ -221,7 +214,7 @@ const DigitalMarketing = () => {
           </div>
           {/* Content */}
           <div className="lg:w-1/2" data-aos="fade-left" data-aos-delay="200">
-            <h2 className="text-3xl font-bold text-red-600 mb-4">
+            <h2 className="text-3xl font-bold text-[#ab5836] mb-4">
               Lead Generation
             </h2>
             <p className="text-gray-700 leading-relaxed">
@@ -238,7 +231,7 @@ const DigitalMarketing = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center gap-8">
           {/* Content */}
           <div className="lg:w-1/2" data-aos="fade-right" data-aos-delay="100">
-            <h2 className="text-3xl font-bold text-red-600 mb-4">Branding</h2>
+            <h2 className="text-3xl font-bold text-[#ab5836] mb-4">Branding</h2>
             <p className="text-gray-700 leading-relaxed">
               Develop a strong and memorable brand identity with our
               comprehensive branding strategies. We help enhance your brand
@@ -259,10 +252,10 @@ const DigitalMarketing = () => {
 
       {/* Call to Action */}
       <section
-        className="py-16 bg-red-600 text-white text-center"
+        className="py-16 bg-[#ab5836] text-white text-center"
         data-aos="fade-up"
       >
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold mb-4">
             Ready to Elevate Your Digital Presence?
           </h2>
@@ -272,7 +265,7 @@ const DigitalMarketing = () => {
           </p>
           <button
             onClick={openModal}
-            className="bg-white text-red-600 font-bold py-2 px-8 rounded-lg hover:bg-gray-100 hover:text-red-700 transition duration-300 transform hover:scale-105"
+            className="bg-white text-[#ab5836] font-bold py-2 px-8 rounded-lg hover:bg-gray-100 hover:text-[#ab5836] transition duration-300 transform hover:scale-105"
             aria-label="Contact Us Now"
           >
             Contact Us Now
