@@ -48,7 +48,7 @@ const AchievementComponent = () => {
                 {counterState && (
                   <CountUp
                     start={0}
-                    end={50}
+                    end={300}
                     delay={0}
                     duration={3}
                     separator=","
@@ -75,7 +75,7 @@ const AchievementComponent = () => {
                 {counterState && (
                   <CountUp
                     start={0}
-                    end={10}
+                    end={150}
                     delay={0}
                     duration={3}
                     separator=","
@@ -129,7 +129,7 @@ const AchievementComponent = () => {
                 {counterState && (
                   <CountUp
                     start={0}
-                    end={14}
+                    end={15}
                     delay={0}
                     duration={3}
                     separator=","

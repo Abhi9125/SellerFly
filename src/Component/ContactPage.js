@@ -7,7 +7,8 @@ import {
   FaEnvelope,
   FaFacebookF,
   FaInstagram,
-  FaLinkedin,
+  FaLinkedinIn,
+  FaYoutube,
   FaMapMarkerAlt,
 } from "react-icons/fa";
 
@@ -133,12 +134,20 @@ const ContactPage = () => {
               >
                 <FaInstagram />
               </a>
-              {/* <a
-                href="#"
-                className="text-white text-lg hover:text-red-600 transition duration-300"
+              <a
+                href="https://www.linkedin.com"
+                target="_blank"
+                className="text-white text-lg hover:text-[#ab5836] transition duration-300"
               >
-                <FaLinkedin />
-              </a> */}
+                <FaLinkedinIn />
+              </a>
+              <a
+                href="https://www.youtube.com/@SKSYSELLERFLYONLINESOLUTIONS"
+                target="_blank"
+                className="text-white text-lg hover:text-[#ab5836] transition duration-300"
+              >
+                <FaYoutube />
+              </a>
             </div>
           </div>
 
@@ -232,7 +241,7 @@ const ContactPage = () => {
               </div>
 
               <button
-                className="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition duration-300"
+                className="bg-blue-950 hover:bg-[#ab5836] text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition duration-300"
                 type="submit"
               >
                 Submit
