@@ -7,11 +7,17 @@ import "aos/dist/aos.css";
 import whatsappIcon from "../Images/whatsapp.png"; // Ensure the correct path to your WhatsApp icon
 
 // Import banner images
-import banner1 from "../Images/Main-Banner/FontPage_Banner61.png";
-import banner2 from "../Images/Main-Banner/FrontPage_banner12.png";
-import banner3 from "../Images/Main-Banner/FrontPage_Banner43.png";
-import banner4 from "../Images/Main-Banner/FrontPage_banner34.png";
-import banner5 from "../Images/Main-Banner/FrontPage_Banner55.png";
+// import banner1 from "../Images/Main-Banner/FontPage_Banner61.png";
+// import banner2 from "../Images/Main-Banner/FrontPage_banner12.png";
+// import banner3 from "../Images/Main-Banner/FrontPage_Banner43.png";
+// import banner4 from "../Images/Main-Banner/FrontPage_banner34.png";
+// import banner5 from "../Images/Main-Banner/FrontPage_Banner55.png";
+
+import banner1 from "../Images/Main-Banner/BannerImages/FontPage_Banner61.jpg";
+import banner2 from "../Images/Main-Banner/BannerImages/FrontPage_banner12.jpg";
+import banner3 from "../Images/Main-Banner/BannerImages/FrontPage_Banner43.jpg";
+import banner4 from "../Images/Main-Banner/BannerImages/FrontPage_banner34.jpg";
+import banner5 from "../Images/Main-Banner/BannerImages/FrontPage_Banner55.jpg";
 import { Link } from "react-router-dom";
 
 // Custom Arrow Components with updated color
