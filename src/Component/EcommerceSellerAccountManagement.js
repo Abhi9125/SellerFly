@@ -7,6 +7,7 @@ import "react-vertical-timeline-component/style.min.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { FaUserCheck, FaFileAlt, FaStore, FaChartLine } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 // Import images for each platform
 import AmazonImage from "../Images/E-commerece platform_logo/gif_amazon.gif";
@@ -88,18 +89,28 @@ const RoadmapTimeline = () => {
 
   return (
     <div className="mb-6 bg-gray-50">
-      {/* Hero Section */}
       <div
-        className="h-80 bg-cover bg-center relative"
+        className="relative h-40 bg-cover bg-center flex items-center justify-center"
         style={{ backgroundImage: `url(${Rout_Banner_AccountManagement})` }}
-        data-aos="fade-in"
       >
-        <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-          <h1 className="text-white text-4xl font-bold">
-            E-Commerce Account Management Services
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-black bg-opacity-50" />
+
+        {/* Hero content */}
+        <div className="relative z-10 text-center text-white">
+          <p className="text-sm uppercase tracking-wider mb-2">
+            <Link to="/" className="hover:underline">
+              HOME
+            </Link>
+            <span className="mx-2">{">"}</span>
+            PAGES
+          </p>
+          <h1 className="text-4xl sm:text-5xl font-bold">
+            Ecommerce Management
           </h1>
         </div>
       </div>
+
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Top GIF Images Section */}
         <section className="py-8 bg-gray-100" data-aos="fade-up">

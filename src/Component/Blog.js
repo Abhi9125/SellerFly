@@ -7,6 +7,7 @@ import DigitalMarketingChennai from "../Images/Blog/Digital Marketing Srategies.
 import LocalSEO from "../Images/Blog/Local Seo Optimization.jpg";
 import BlogBanner from "../Images/Blog/Blog_Sub_banner.jpg";
 import ModalComponent from "./ModalComponent";
+import { Link } from "react-router-dom";
 
 const Blog = () => {
   const [isModalOpen, setModalOpen] = useState(false);
@@ -18,18 +19,24 @@ const Blog = () => {
 
   return (
     <div className="mb-10">
-      {/* Breadcrumb Section */}
+      {/* Hero Section */}
       <div
-        className="h-80 bg-cover bg-center relative"
+        className="relative h-40 bg-cover bg-center flex items-center justify-center"
         style={{ backgroundImage: `url(${BlogBanner})` }}
       >
-        <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-          <h1
-            className="text-white text-5xl font-bold tracking-wide"
-            data-aos="fade-up"
-          >
-            Blogs
-          </h1>
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-black bg-opacity-50" />
+
+        {/* Hero content */}
+        <div className="relative z-10 text-center text-white">
+          <p className="text-sm uppercase tracking-wider mb-2">
+            <Link to="/" className="hover:underline">
+              HOME
+            </Link>
+            <span className="mx-2">{">"}</span>
+            PAGES
+          </p>
+          <h1 className="text-4xl sm:text-5xl font-bold">Blog</h1>
         </div>
       </div>
 

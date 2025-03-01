@@ -14,6 +14,7 @@ import ModalComponent from "./ModalComponent";
 import OurSuccessStory from "./OurSucessStory";
 import Grow_Banner from "../Images/Rout_Banner/grow.png";
 import OurClients from "./OurClients";
+import { Link } from "react-router-dom";
 
 // Stats Data
 const stats = [
@@ -87,12 +88,22 @@ const GrowWithUsPage = () => {
     <div>
       {/* Hero Section */}
       <div
-        className="h-80 bg-cover bg-center relative"
-        style={{ backgroundImage: `url(${Grow_Banner})` }}
-        data-aos="fade-in"
+        className="relative h-40 bg-cover bg-center flex items-center justify-center"
+        style={{ backgroundImage: `url(${bgImage})` }}
       >
-        <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-          <h1 className="text-white text-4xl font-bold">Grow With Us</h1>
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-black bg-opacity-50" />
+
+        {/* Hero content */}
+        <div className="relative z-10 text-center text-white">
+          <p className="text-sm uppercase tracking-wider mb-2">
+            <Link to="/" className="hover:underline">
+              HOME
+            </Link>
+            <span className="mx-2">{">"}</span>
+            PAGES
+          </p>
+          <h1 className="text-4xl sm:text-5xl font-bold">Grow With Us</h1>
         </div>
       </div>
 

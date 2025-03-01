@@ -221,7 +221,7 @@ const Header = () => {
         {/* CTA Button - Desktop Only */}
         <button
           onClick={openModal}
-          className="hidden sm:block bg-[#ab5836] hover:bg-[#ab5836] text-white py-2 px-6 rounded-lg font-medium transition duration-300"
+          className="hidden sm:block bg-[#ab5836] hover:bg-blue-950 text-white py-2 px-6 rounded-lg font-medium transition duration-300"
         >
           GET FREE CONSULTATION!!
         </button>

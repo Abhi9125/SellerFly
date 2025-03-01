@@ -11,6 +11,7 @@ import leadGenImage from "../Images/DigitalMarketing/Leadgen.png";
 import brandingImage from "../Images/DigitalMarketing/BrandingImg.png";
 import Heading_Banner from "../Images/Rout_Banner/DiditalMarketing.png";
 import ModalComponent from "./ModalComponent";
+import { Link } from "react-router-dom";
 
 const DigitalMarketing = () => {
   const [isModalOpen, setModalOpen] = useState(false);
@@ -30,21 +31,25 @@ const DigitalMarketing = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section
-        className="h-80 bg-cover bg-center relative"
-        style={{ backgroundImage: `url(${Heading_Banner})` }}
-        data-aos="fade-in"
+      <div
+        className="relative h-40 bg-cover bg-center flex items-center justify-center"
+        style={{ backgroundImage: `url(${marketingImage})` }}
       >
-        <div
-          className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center"
-          data-aos="fade-zoom-in"
-        >
-          <h1 className="text-white text-4xl font-bold" data-aos="fade-down">
-            Digital Marketing
-          </h1>
-        </div>
-      </section>
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-black bg-opacity-50" />
 
+        {/* Hero content */}
+        <div className="relative z-10 text-center text-white">
+          <p className="text-sm uppercase tracking-wider mb-2">
+            <Link to="/" className="hover:underline">
+              HOME
+            </Link>
+            <span className="mx-2">{">"}</span>
+            PAGES
+          </p>
+          <h1 className="text-4xl sm:text-5xl font-bold">Digital Services</h1>
+        </div>
+      </div>
       {/* Why Digital Marketing Section */}
       <section className="py-16 bg-white" data-aos="fade-up">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">

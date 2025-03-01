@@ -103,7 +103,7 @@ const ModalComponent = ({ closeModal }) => {
           &times;
         </button>
 
-        <h2 className="text-xl font-bold text-red-600 text-center mb-6">
+        <h2 className="text-xl font-bold text-blue-950 text-center mb-6">
           GET FREE CONSULTATION!
         </h2>
 
@@ -227,7 +227,7 @@ const ModalComponent = ({ closeModal }) => {
             </label>
             <button
               type="submit"
-              className="bg-red-500 text-white py-2 px-4 rounded hover:bg-red-600 transition duration-300"
+              className="bg-blue-950 text-white py-2 px-4 rounded hover:bg-red-600 transition duration-300"
             >
               Submit
             </button>

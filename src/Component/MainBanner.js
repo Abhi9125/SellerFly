@@ -137,7 +137,7 @@ const MainBanner = () => {
               src={banner.imageUrl}
               alt={banner.title}
               className="w-full h-full md:h-full object-cover"
-              // loading="lazy"
+              loading="eager"
             />
 
             {/* Overlay Content */}

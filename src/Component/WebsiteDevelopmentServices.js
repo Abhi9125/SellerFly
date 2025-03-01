@@ -9,6 +9,7 @@ import DerkleySampleWebsite from "../Images/our_clients_Website_Images/derkley_W
 import SmileyButtonsSampleWebsite from "../Images/our_clients_Website_Images/smileybuttons_Website.png";
 import SellerflySampleWebsite from "../Images/our_clients_Website_Images/Sellerfly_Website.png";
 import Heading_Banner from "../Images/Rout_Banner/Web_development.png";
+import { Link } from "react-router-dom";
 
 const WebsiteDevelopmentServices = () => {
   const [isModalOpen, setModalOpen] = useState(false);
@@ -26,24 +27,27 @@ const WebsiteDevelopmentServices = () => {
 
   return (
     <div>
-      {/* Hero Section */}
-      <section
-        className="h-80 bg-cover bg-center relative"
+      <div
+        className="relative h-40 bg-cover bg-center flex items-center justify-center"
         style={{ backgroundImage: `url(${Heading_Banner})` }}
-        data-aos="fade-in"
       >
-        <div
-          className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center"
-          data-aos="fade-zoom-in"
-        >
-          <h1
-            className="text-white text-5xl font-extrabold tracking-wide"
-            data-aos="fade-down"
-          >
-            Website Development Services
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-black bg-opacity-50" />
+
+        {/* Hero content */}
+        <div className="relative z-10 text-center text-white">
+          <p className="text-sm uppercase tracking-wider mb-2">
+            <Link to="/" className="hover:underline">
+              HOME
+            </Link>
+            <span className="mx-2">{">"}</span>
+            PAGES
+          </p>
+          <h1 className="text-4xl sm:text-5xl font-bold">
+            Website Development
           </h1>
         </div>
-      </section>
+      </div>
 
       {/* Why Your Business Needs a Professional Website Section */}
       <section className="py-16 bg-white" data-aos="fade-up">
