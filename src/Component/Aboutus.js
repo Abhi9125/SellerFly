@@ -7,6 +7,10 @@ import AboutSection_logo from "../Images/Logo.jpg";
 import certificates from "../Images/Certificates.jpg";
 import introImage from "../Images/IntroImage.jpg";
 import AchievementComponent from "./AchivementComponent";
+import Expertise_and_Experience from "../Images/AboutUs/Expertise and Experience.png";
+import Scalability_Growth from "../Images/AboutUs/Scalability & Growth.png";
+import Data_Driven_Approach from "../Images/AboutUs/Data-Driven Approach.png";
+import Dedicated_Support from "../Images/AboutUs/Dedicated Support.png";
 import { Link } from "react-router-dom";
 
 const Aboutus = () => {
@@ -88,7 +92,13 @@ const Aboutus = () => {
             >
               {/* Placeholder for related image */}
               <div className="w-20 h-20 bg-gray-200 rounded-full mb-4 flex items-center justify-center">
-                <span className="text-xl text-[#ab5836]">Img</span>
+                <span className="text-xl text-[#ab5836]">
+                  <img
+                    className="rounded-full"
+                    src={Expertise_and_Experience}
+                    alt="Expertise_and_Experience"
+                  />
+                </span>
               </div>
               <h5 className="text-xl font-semibold mb-2">
                 Expertise & Experience
@@ -104,7 +114,14 @@ const Aboutus = () => {
               data-aos-delay="100"
             >
               <div className="w-20 h-20 bg-gray-200 rounded-full mb-4 flex items-center justify-center">
-                <span className="text-xl text-[#ab5836]">Img</span>
+                <span className="text-xl text-[#ab5836]">
+                  {" "}
+                  <img
+                    className="rounded-full"
+                    src={Dedicated_Support}
+                    alt="Dedicated_Support"
+                  />
+                </span>
               </div>
               <h5 className="text-xl font-semibold mb-2">Dedicated Support</h5>
               <p className="text-gray-700">
@@ -118,7 +135,13 @@ const Aboutus = () => {
               data-aos-delay="200"
             >
               <div className="w-20 h-20 bg-gray-200 rounded-full mb-4 flex items-center justify-center">
-                <span className="text-xl text-[#ab5836]">Img</span>
+                <span className="text-xl text-[#ab5836]">
+                  <img
+                    className="rounded-full"
+                    src={Data_Driven_Approach}
+                    alt="Data_Driven_Approach"
+                  />
+                </span>
               </div>
               <h5 className="text-xl font-semibold mb-2">
                 Data-Driven Approach
@@ -134,7 +157,13 @@ const Aboutus = () => {
               data-aos-delay="300"
             >
               <div className="w-20 h-20 bg-gray-200 rounded-full mb-4 flex items-center justify-center">
-                <span className="text-xl text-[#ab5836]">Img</span>
+                <span className="text-xl text-[#ab5836]">
+                  <img
+                    className="rounded-full"
+                    src={Scalability_Growth}
+                    alt="Scalability_Growth"
+                  />
+                </span>
               </div>
               <h5 className="text-xl font-semibold mb-2">
                 Scalability & Growth

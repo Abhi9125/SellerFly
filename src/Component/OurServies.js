@@ -1,79 +1,224 @@
+// import React, { useEffect } from "react";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
+// import {
+//   FaShoppingCart,
+//   FaGlobe,
+//   FaDesktop,
+//   FaBullhorn,
+//   FaCamera,
+//   FaCloud,
+//   FaCog,
+//   FaLightbulb,
+//   FaTag,
+// } from "react-icons/fa";
+// import e_commerceServices from "../Images/Our_Services/e_commerce.png";
+// import websiteDevelopmentImage from "../Images/Our_Services/website_1.png";
+// import digitalMarketingImage from "../Images/Our_Services/digital_marketing.png";
+// import digitalServicesImage from "../Images/Our_Services/digital_services.png";
+
+// // Services data array
+// const services = [
+//   {
+//     image: e_commerceServices,
+//     title: "E-Commerce Seller Account Management",
+//     description:
+//       "Comprehensive end-to-end management of e-commerce seller accounts, dedicated to driving consistent sales growth.",
+//   },
+//   {
+//     image: websiteDevelopmentImage,
+//     title: "Website Design & Development",
+//     description:
+//       "Enhance your global e-commerce operations with seamless international seller account management for better sales and business expansion.",
+//   },
+//   {
+//     image: digitalMarketingImage,
+//     title: "Digital Marketing",
+//     description:
+//       "We develop fully customized websites focused on delivering high performance, adaptability, and exceptional user experience.",
+//   },
+//   {
+//     image: digitalServicesImage,
+//     title: "Digital Services",
+//     description:
+//       "Our goal is to engage the right audience, enhance brand recognition, establish a strong identity, and boost conversion rates.",
+//   },
+// ];
+
+// const OurServices = () => {
+//   useEffect(() => {
+//     AOS.init({ duration: 1000, once: true }); // Initialize AOS animation
+//   }, []);
+
+//   return (
+//     <section className="bg-gray-100 py-8">
+//       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+//         {/* Section Title */}
+//         <div className="text-center mb-8" data-aos="fade-up">
+//           <h2 className="text-4xl font-extrabold mb-4 text-blue-950">
+//             Our Services
+//           </h2>
+//           <p className="text-lg text-gray-600">
+//             Personalized solutions and services to boost your online business.
+//           </p>
+//         </div>
+
+//         {/* Services Grid */}
+//         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+//           {services.map((service, index) => (
+//             <div
+//               key={index}
+//               className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center justify-center transform transition duration-500 hover:scale-105 hover:shadow-2xl"
+//               data-aos="zoom-in"
+//               data-aos-delay={`${index * 100}`}
+//             >
+//               <div className="flex items-center justify-center w-12 h-12 mb-4 bg-[#ab5836] rounded-full animate-bounce">
+//                 {service.image}
+//               </div>
+//               <h3 className="text-lg font-semibold text-black mb-2">
+//                 {service.title}
+//               </h3>
+//               <p className="text-black text-sm text-center">
+//                 {service.description}
+//               </p>
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default OurServices;
+
+// import React, { useEffect } from "react";
+// import AOS from "aos";
+// import "aos/dist/aos.css";
+// import e_commerceServices from "../Images/Our_Services/e_commerce.png";
+// import websiteDevelopmentImage from "../Images/Our_Services/website_1.png";
+// import digitalMarketingImage from "../Images/Our_Services/digital_marketing.png";
+// import digitalServicesImage from "../Images/Our_Services/digital_services.png";
+
+// const services = [
+//   {
+//     image: e_commerceServices,
+//     title: "E-Commerce Seller Account Management",
+//     description:
+//       "Comprehensive end-to-end management of e-commerce seller accounts, dedicated to driving consistent sales growth.",
+//   },
+//   {
+//     image: websiteDevelopmentImage,
+//     title: "Website Design & Development",
+//     description:
+//       "Enhance your global e-commerce operations with seamless international seller account management for better sales and business expansion.",
+//   },
+//   {
+//     image: digitalMarketingImage,
+//     title: "Digital Marketing",
+//     description:
+//       "We develop fully customized websites focused on delivering high performance, adaptability, and exceptional user experience.",
+//   },
+//   {
+//     image: digitalServicesImage,
+//     title: "Digital Services",
+//     description:
+//       "Our goal is to engage the right audience, enhance brand recognition, establish a strong identity, and boost conversion rates.",
+//   },
+// ];
+
+// const OurServices = () => {
+//   useEffect(() => {
+//     AOS.init({ duration: 1000, once: true });
+//   }, []);
+
+//   return (
+//     <section className="bg-gray-100 py-8">
+//       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+//         {/* Section Title */}
+//         <div className="text-center mb-8" data-aos="fade-up">
+//           <h2 className="text-4xl font-extrabold mb-4 text-blue-950">
+//             Our Services
+//           </h2>
+//           <p className="text-lg text-gray-600">
+//             Personalized solutions and services to boost your online business.
+//           </p>
+//         </div>
+
+//         {/* Services Grid */}
+//         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+//           {services.map((service, index) => (
+//             <div
+//               key={index}
+//               className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center justify-center transform transition duration-500 hover:scale-105 hover:shadow-2xl"
+//               data-aos="zoom-in"
+//               data-aos-delay={`${index * 100}`}
+//             >
+//               <div className="w-full h-full mb-4">
+//                 <img
+//                   src={service.image}
+//                   alt={service.title}
+//                   className="w-60 h-64 object-contain"
+//                 />
+//               </div>
+//               <h3 className="text-lg font-semibold text-black mb-2 text-center">
+//                 {service.title}
+//               </h3>
+//               <p className="text-black text-sm text-center">
+//                 {service.description}
+//               </p>
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default OurServices;
+
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import {
-  FaShoppingCart,
-  FaGlobe,
-  FaDesktop,
-  FaBullhorn,
-  FaCamera,
-  FaCloud,
-  FaCog,
-  FaLightbulb,
-  FaTag,
-} from "react-icons/fa";
+import e_commerceServices from "../Images/Our_Services/e_commerce.png";
+import websiteDevelopmentImage from "../Images/Our_Services/website_1.png";
+import digitalMarketingImage from "../Images/Our_Services/digital_marketing.png";
+import digitalServicesImage from "../Images/Our_Services/digital_services.png";
 
-// Services data array
 const services = [
   {
-    icon: <FaShoppingCart className="text-3xl text-white" />,
+    image: e_commerceServices,
     title: "E-Commerce Seller Account Management",
     description:
       "Comprehensive end-to-end management of e-commerce seller accounts, dedicated to driving consistent sales growth.",
+    link: "/E-commerce-management", // Navigate to E-Commerce page
   },
   {
-    icon: <FaGlobe className="text-3xl text-white" />,
-    title: "Global Seller Account Management",
-    description:
-      "Enhance your global e-commerce operations with seamless international seller account management for better sales and business expansion.",
-  },
-  {
-    icon: <FaDesktop className="text-3xl text-white" />,
+    image: websiteDevelopmentImage,
     title: "Website Design & Development",
     description:
-      "We develop fully customized websites focused on delivering high performance, adaptability, and exceptional user experience.",
+      "Enhance your global e-commerce operations with seamless international seller account management for better sales and business expansion.",
+    link: "/WebsiteDevelopmentService", // Navigate to Website Development page
   },
   {
-    icon: <FaBullhorn className="text-3xl text-white" />,
+    image: digitalMarketingImage,
     title: "Digital Marketing",
     description:
+      "We develop fully customized websites focused on delivering high performance, adaptability, and exceptional user experience.",
+    link: "/Digital-Marketing", // Navigate to Digital Marketing page
+  },
+  {
+    image: digitalServicesImage,
+    title: "Digital-services",
+    description:
       "Our goal is to engage the right audience, enhance brand recognition, establish a strong identity, and boost conversion rates.",
-  },
-  {
-    icon: <FaCog className="text-3xl text-white" />,
-    title: "Shopify Development and Maintenance",
-    description:
-      "Create and maintain your online store with expert Shopify development services, ensuring a smooth, secure, and customized experience.",
-  },
-  {
-    icon: <FaCamera className="text-3xl text-white" />,
-    title: "Product Photoshoot",
-    description:
-      "We offer professional photography services tailored to your products, including model photoshoots to support your business growth.",
-  },
-  {
-    icon: <FaCloud className="text-3xl text-white" />,
-    title: "Cloud Hosting",
-    description:
-      "Our reliable hosting services ensure that your website remains secure, fast, and optimized for peak performance. Your online presence is our top priority.",
-  },
-  {
-    icon: <FaLightbulb className="text-3xl text-white" />,
-    title: "Lead Generation",
-    description:
-      "We craft targeted strategies to elevate your brand’s visibility and identity through strategic digital marketing and social media efforts.",
-  },
-  {
-    icon: <FaTag className="text-3xl text-white" />,
-    title: "Branding",
-    description:
-      "Our branding services help businesses develop a distinctive identity, effectively conveying their core values through strategic marketing and digital outreach.",
+    link: "/digital-services", // Navigate to Digital Services page
   },
 ];
 
 const OurServices = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000, once: true }); // Initialize AOS animation
+    AOS.init({ duration: 1000, once: true });
   }, []);
 
   return (
@@ -90,24 +235,29 @@ const OurServices = () => {
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service, index) => (
-            <div
+            <Link
               key={index}
-              className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center justify-center transform transition duration-500 hover:scale-105 hover:shadow-2xl"
+              to={service.link}
+              className="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center justify-center transform transition duration-500 hover:scale-105 hover:shadow-blue-950"
               data-aos="zoom-in"
               data-aos-delay={`${index * 100}`}
             >
-              <div className="flex items-center justify-center w-12 h-12 mb-4 bg-[#ab5836] rounded-full animate-bounce">
-                {service.icon}
+              <div className="w-full h-full mb-4">
+                <img
+                  src={service.image}
+                  alt={service.title}
+                  className="w-60 h-64 object-contain"
+                />
               </div>
-              <h3 className="text-lg font-semibold text-black mb-2">
+              <h3 className="text-lg font-semibold text-black mb-2 text-center">
                 {service.title}
               </h3>
               <p className="text-black text-sm text-center">
                 {service.description}
               </p>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

@@ -8,7 +8,7 @@ import PallavanoilSampleWebsite from "../Images/our_clients_Website_Images/Palla
 import DerkleySampleWebsite from "../Images/our_clients_Website_Images/derkley_Website.png";
 import SmileyButtonsSampleWebsite from "../Images/our_clients_Website_Images/smileybuttons_Website.png";
 import SellerflySampleWebsite from "../Images/our_clients_Website_Images/Sellerfly_Website.png";
-import Heading_Banner from "../Images/Rout_Banner/Web_development.png";
+import Heading_Banner from "../Images/Rout_Banner/Website_development.png";
 import { Link } from "react-router-dom";
 
 const WebsiteDevelopmentServices = () => {
@@ -423,7 +423,7 @@ const WebsiteDevelopmentServices = () => {
 
       {/* Call to Action */}
       <section
-        className="py-16 bg-[#ab5836] text-white text-center"
+        className="py-16 bg-gradient-to-r from-black to-blue-950 text-white text-center"
         data-aos="fade-up"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">

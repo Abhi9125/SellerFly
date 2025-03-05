@@ -328,7 +328,7 @@ const Blog = () => {
       </div>
       {/* Call to Action */}
       <section
-        className="py-16 my-4 bg-[#ab5836] text-center text-white"
+        className="py-16 my-4 bg-gradient-to-r from-black to-blue-950 text-center text-white"
         data-aos="fade-up"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">

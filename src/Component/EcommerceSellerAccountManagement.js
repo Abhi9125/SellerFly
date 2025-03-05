@@ -164,9 +164,6 @@ const RoadmapTimeline = () => {
         </VerticalTimeline>
       </div>
 
-      {/* Success Stories Slideshow */}
-      <OurSuccessStory />
-
       {/* Why Partner with SellerFly Section */}
       <section className="py-16 bg-white text-center" data-aos="fade-up">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -203,7 +200,7 @@ const RoadmapTimeline = () => {
 
       {/* Call to Action */}
       <section
-        className="py-16 bg-[#ab5836] text-center text-white"
+        className="py-16 bg-gradient-to-r from-black to-blue-950 text-center text-white"
         data-aos="fade-up"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">

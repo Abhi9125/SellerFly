@@ -257,7 +257,7 @@ const DigitalMarketing = () => {
 
       {/* Call to Action */}
       <section
-        className="py-16 bg-[#ab5836] text-white text-center"
+        className="py-16 bg-gradient-to-r from-black to-blue-950 text-white text-center"
         data-aos="fade-up"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
