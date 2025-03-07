@@ -19,7 +19,7 @@ import GlowroadImage from "../Images/E-commerece platform_logo/gif_glowroad.gif"
 import JioMartImage from "../Images/E-commerece platform_logo/gif_jiomart.gif";
 import BigBasketImage from "../Images/E-commerece platform_logo/gif_bigbasket.gif";
 import UdaanImage from "../Images/E-commerece platform_logo/gif_udaan.gif";
-import Rout_Banner_AccountManagement from "../Images/Rout_Banner/ACCOUNT-MANAGMENT-HEADER.png";
+import Rout_Banner_AccountManagement from "../Images/Rout_Banner/E_commerce.png";
 import ModalComponent from "./ModalComponent";
 import OurSuccessStory from "./OurSucessStory";
 

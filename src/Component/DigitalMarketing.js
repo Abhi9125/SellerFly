@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import marketingImage from "../Images/DigitalMarketing/Main_Banner.png";
+import marketingImage from "../Images/Rout_Banner/Digital_Marketing.png";
 import seoImage from "../Images/DigitalMarketing/Seo.png";
 import ppcImage from "../Images/DigitalMarketing/Pay-per-click.png";
 import socialMediaImage from "../Images/DigitalMarketing/SocialMediaMarketing.png";
@@ -9,7 +9,7 @@ import linkedinImage from "../Images/DigitalMarketing/Linkedin.png";
 import productPhotoImage from "../Images/DigitalMarketing/Photoshoot.png";
 import leadGenImage from "../Images/DigitalMarketing/Leadgen.png";
 import brandingImage from "../Images/DigitalMarketing/BrandingImg.png";
-import Heading_Banner from "../Images/Rout_Banner/DiditalMarketing.png";
+// import Heading_Banner from "../Images/Rout_Banner/Digital Marketing 1.png";
 import ModalComponent from "./ModalComponent";
 import { Link } from "react-router-dom";
 
