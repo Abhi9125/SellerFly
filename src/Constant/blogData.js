@@ -2,7 +2,7 @@
 export const blogData = [
   {
     id: "blog-1",
-    image: "/images/blog/blog1.jpg", // Update this path as needed
+    image: "../Images/Blog/Blog_Sub_banner.jpg", // Update this path as needed
     date: "2024-04-01",
     title: "Top E-commerce Trends in 2025: What Sellers Need to Know",
     shortDescription:
@@ -43,7 +43,7 @@ By embracing these trends, e-commerce sellers can position themselves for succes
   },
   {
     id: "blog-2",
-    image: "/images/blog/blog2.jpg", // Update this path as needed
+    image: "../Images/Blog/Blog_Sub_banner.jpg", // Update this path as needed
     date: "2024-04-05",
     title: "How to Scale Your E-commerce Business from 0 to 1 Million Sales",
     shortDescription:
@@ -114,7 +114,7 @@ Implementing the right strategies at the right time will help your e-commerce bu
   },
   {
     id: "blog-3",
-    image: "/images/blog/blog3.jpg", // Update this path as needed
+    image: "../Images/Blog/Blog_Sub_banner.jpg", // Update this path as needed
     date: "2024-04-10",
     title: "Understanding the Platforms: Google Ads vs. Facebook Ads",
     shortDescription:
@@ -187,7 +187,7 @@ If your goal is immediate sales from high-intent shoppers, Google Ads is ideal. 
   },
   {
     id: "blog-4",
-    image: "/images/blog/blog4.jpg", // Update this path as needed
+    image: "../Images/Blog/Blog_Sub_banner.jpg", // Update this path as needed
     date: "2024-04-15",
     title:
       "How to Create a Winning Content Marketing Plan for Your E-commerce Brand",
