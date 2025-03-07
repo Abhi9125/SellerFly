@@ -10,7 +10,7 @@ const BlogDetails = () => {
   if (!blog) {
     return (
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
-        <h2 className="text-3xl font-bold text-gray-800">Blog Not Found</h2>
+        <h2 className="text-3xl font-bold text-gray-800">Blog Not Found.</h2>
       </div>
     );
   }
