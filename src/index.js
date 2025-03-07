@@ -20,6 +20,7 @@ import DigitalMarketing from "./Component/DigitalMarketing";
 // import DigitalServices from "./Component/DigitalServices";
 import DigitalServices from "./Component/DigitalServices";
 import Blog from "./Component/Blog";
+import BlogDetails from "./Component/BlogDetails";
 // import AboutUs from "./Component/AboutUs";
 
 const appRouter = createBrowserRouter([
@@ -64,6 +65,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/blog",
         element: <Blog />,
+      },
+      {
+        path: "/blog/:id",
+        element: <BlogDetails />,
       },
       {
         path: "/contact-us",
