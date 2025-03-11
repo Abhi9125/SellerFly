@@ -1,8 +1,16 @@
 // blogData.js
+import Blog_1 from "../Images/Blog/Blog_1.png";
+import Blog_2 from "../Images/Blog/blog_2.png";
+import Blog_3 from "../Images/Blog/Blog_3.png";
+import Blog_4 from "../Images/Blog/Blog_4.png";
+import Blog_5 from "../Images/Blog/blog_5.png";
+import Blog_6 from "../Images/Blog/blog_6.png";
+import Blog_7 from "../Images/Blog/blog_7.png";
+
 export const blogData = [
   {
     id: "blog-1",
-    image: "../Images/Blog/Blog_Sub_banner.jpg", // Update this path as needed
+    image: Blog_1, // Update this path as needed
     date: "2024-04-01",
     title: "Top E-commerce Trends in 2025: What Sellers Need to Know",
     shortDescription:
@@ -43,7 +51,7 @@ By embracing these trends, e-commerce sellers can position themselves for succes
   },
   {
     id: "blog-2",
-    image: "../Images/Blog/Blog_Sub_banner.jpg", // Update this path as needed
+    image: Blog_2, // Update this path as needed
     date: "2024-04-05",
     title: "How to Scale Your E-commerce Business from 0 to 1 Million Sales",
     shortDescription:
@@ -114,7 +122,7 @@ Implementing the right strategies at the right time will help your e-commerce bu
   },
   {
     id: "blog-3",
-    image: "../Images/Blog/Blog_Sub_banner.jpg", // Update this path as needed
+    image: Blog_3, // Update this path as needed
     date: "2024-04-10",
     title: "Understanding the Platforms: Google Ads vs. Facebook Ads",
     shortDescription:
@@ -187,7 +195,7 @@ If your goal is immediate sales from high-intent shoppers, Google Ads is ideal. 
   },
   {
     id: "blog-4",
-    image: "../Images/Blog/Blog_Sub_banner.jpg", // Update this path as needed
+    image: Blog_4, // Update this path as needed
     date: "2024-04-15",
     title:
       "How to Create a Winning Content Marketing Plan for Your E-commerce Brand",
@@ -270,5 +278,31 @@ Monitor your content’s performance using analytics tools like Google Analytics
 
 Conclusion  
 Creating a winning content marketing plan for your e-commerce brand requires careful planning, audience understanding, and consistent execution. By following these steps, you can enhance brand awareness, increase customer engagement, and ultimately drive more sales. Stay adaptable, analyze results, and refine your strategy to ensure long-term success in the ever-evolving digital marketplace.`,
+  },
+
+  {
+    id: "blog-5",
+    image: Blog_5,
+    date: "2024-05-01",
+    title: "How to Handle Negative Reviews and Improve Your Seller Ratings",
+    shortDescription:
+      "Tips and strategies for turning negative reviews into positive outcomes.",
+    content: `In the competitive world of e-commerce, customer reviews play a significant role...
+  
+  ![Negative Reviews Chart](../Images/Blog/Blog_Sub_banner.jpg "Image -1")
+  
+  1. Respond Professionally and Promptly  
+  One of the worst things a seller can do...
+  
+  2. Apologize and Offer a Solution  
+  Even if you believe the review is unfair...
+  
+  ![Conversation Example](../Images/Blog/Blog_Sub_banner.jpg "Image -2")
+  
+  3. Take the Conversation Offline  
+  If the issue requires more detailed communication...
+  
+  Conclusion  
+  Negative reviews are inevitable...`,
   },
 ];
