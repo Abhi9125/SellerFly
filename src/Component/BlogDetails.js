@@ -21,6 +21,9 @@ const BlogDetails = () => {
     );
   }
 
+  // Filter out the current blog to display others
+  const otherBlogs = blogData.filter((item) => item.id !== blog.id);
+
   return (
     <div>
       {/* Hero Section */}
@@ -44,8 +47,8 @@ const BlogDetails = () => {
       </div>
 
       {/* Blog Content Section */}
-      <section className="py-16 px-60 bg-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-16 px-6 sm:px-6 lg:px-8 bg-white">
+        <div className="max-w-5xl mx-auto">
           {/* Title */}
           <h1
             className="text-4xl font-bold text-gray-800 mb-6"
@@ -74,6 +77,7 @@ const BlogDetails = () => {
               />
             </div>
           )}
+
           {/* Content Description */}
           <p
             className="text-lg text-gray-700 leading-relaxed mb-6"
@@ -82,19 +86,62 @@ const BlogDetails = () => {
           >
             {blog.content.description}
           </p>
+
           {/* Explanation Blocks */}
-          {blog.content.explaintion.map((block, idx) => (
-            <div key={idx} className="mb-8" data-aos="fade-up">
-              <h3 className="text-2xl font-bold text-gray-800 mb-2">
-                {block.heading}
-              </h3>
-              <p className="text-lg text-gray-700 leading-relaxed">
-                {block.para}
-              </p>
-            </div>
-          ))}
+          {Array.isArray(blog.content.explaintion) &&
+            blog.content.explaintion.map((block, idx) => (
+              <div key={idx} className="mb-8" data-aos="fade-up">
+                <h3 className="text-2xl font-bold text-gray-800 mb-2">
+                  {block.heading}
+                </h3>
+                <p className="text-lg text-gray-700 leading-relaxed">
+                  {block.para}
+                </p>
+              </div>
+            ))}
         </div>
       </section>
+
+      {/* More Blogs Section */}
+      {otherBlogs.length > 0 && (
+        <section className="py-16 bg-gray-100">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2
+              className="text-3xl font-bold text-center text-[#ab5836] mb-8"
+              data-aos="fade-up"
+            >
+              More Blogs
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {otherBlogs.slice(0, 3).map((item) => (
+                <Link key={item.id} to={`/blog/${item.id}`}>
+                  <div
+                    className="bg-white h-[26rem] rounded-lg shadow-lg hover:shadow-2xl transition duration-300 flex flex-col"
+                    data-aos="fade-up"
+                  >
+                    <div className="h-48 w-full overflow-hidden rounded-t-lg">
+                      <img
+                        src={item.image}
+                        alt={item.title}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div className="p-6 flex-grow flex flex-col">
+                      <p className="text-sm text-gray-500 mb-2">{item.date}</p>
+                      <h3 className="text-xl font-semibold mb-2 text-gray-800">
+                        {item.title}
+                      </h3>
+                      <p className="text-gray-700 flex-grow">
+                        {item.shortDescription}
+                      </p>
+                    </div>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
     </div>
   );
 };
