@@ -184,17 +184,6 @@ const Header = () => {
             </li>
             <li>
               <Link
-                to="/grow-with-us"
-                onClick={toggleMenu}
-                className={`${
-                  isScrolled ? "text-black" : "text-black"
-                } hover:text-[#ab5836] font-medium transition duration-300`}
-              >
-                GROW WITH US
-              </Link>
-            </li>
-            <li>
-              <Link
                 to="/blog"
                 onClick={toggleMenu}
                 className={`${
